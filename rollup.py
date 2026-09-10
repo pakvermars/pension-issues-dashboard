@@ -17,7 +17,7 @@ import store
 
 KST = timezone(timedelta(hours=9))
 
-TOP_N = 10
+TOP_N = 20
 
 ROLLUP_PERIODS = ("weekly", "monthly", "yearly")
 

@@ -27,7 +27,19 @@ DISTINCT_TITLES = [
     "DB형 최소적립비율 미달 사업장 증가",
     "퇴직연금 실물이전 제도 시행",
     "고령층 노후소득 실태조사 발표",
+    "개인투자용 국채 청약 경쟁 과열",
+    "사외적립 의무화 단계 시행안 공개",
+    "채권혼합 ETF 편입 비중 논란",
+    "수탁법인 지배구조 설계 초안",
+    "임금피크제 퇴직급여 산정 판결",
+    "중소기업퇴직연금기금 가입 확대",
+    "연금계좌 세액공제 한도 상향 검토",
+    "외국계 운용사 국내 연금시장 진출",
+    "퇴직급여 체불 사업장 특별근로감독",
+    "가상자산 편입 허용 여부 검토",
 ]
+
+assert len(DISTINCT_TITLES) > rollup.TOP_N, "상한 테스트를 하려면 제목이 TOP_N보다 많아야 한다"
 
 
 def item(title, url, importance=3, published="2026-09-10", category="제도·규제"):
@@ -150,7 +162,7 @@ class BuildPeriodTest(unittest.TestCase):
             ["국민연금 개혁안 국회 통과", "TDF 순자산 사상 최대", "은행권 IRP 수수료 인하 경쟁"],
         )
 
-    def test_at_most_ten_items_are_selected(self):
+    def test_selection_is_capped_at_top_n(self):
         items = [
             item(title, f"https://a.com/{n}", importance=3)
             for n, title in enumerate(DISTINCT_TITLES)
@@ -158,10 +170,10 @@ class BuildPeriodTest(unittest.TestCase):
         doc = rollup.build_period(
             "monthly", "2026-09", [daily_doc("2026-09-10", items)], now=FIXED_NOW
         )
-        self.assertEqual(doc["item_count"], 10)
+        self.assertEqual(doc["item_count"], rollup.TOP_N)
         self.assertIsNone(doc["shortfall_note"])
 
-    def test_shortfall_note_is_set_when_fewer_than_ten(self):
+    def test_shortfall_note_is_set_when_below_top_n(self):
         doc = rollup.build_period(
             "weekly",
             "2026-W37",
