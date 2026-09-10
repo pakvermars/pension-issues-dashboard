@@ -124,6 +124,29 @@ class RenderTest(unittest.TestCase):
         )
 
 
+class ArtifactFragmentTest(unittest.TestCase):
+    def setUp(self):
+        self.html = (
+            Path(__file__).resolve().parent.parent / "template.html"
+        ).read_text(encoding="utf-8")
+
+    def test_outer_document_tags_are_dropped(self):
+        fragment = build.artifact_fragment(self.html)
+        for tag in ("<!doctype", "<html", "</html>", "<body", "</body>", "<head>"):
+            self.assertNotIn(tag, fragment.lower())
+
+    def test_title_and_style_and_content_survive(self):
+        fragment = build.artifact_fragment(self.html)
+        self.assertIn("<title>퇴직연금 주요 이슈</title>", fragment)
+        self.assertIn("<style>", fragment)
+        self.assertIn('id="payload"', fragment)
+        self.assertIn(build.PLACEHOLDER, fragment)
+
+    def test_missing_body_raises(self):
+        with self.assertRaises(ValueError):
+            build.artifact_fragment("<html><head></head></html>")
+
+
 class TemplateFileTest(unittest.TestCase):
     def test_real_template_has_placeholder_and_no_external_requests(self):
         text = (Path(__file__).resolve().parent.parent / "template.html").read_text(

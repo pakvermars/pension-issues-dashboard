@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -67,15 +68,39 @@ def render(template: str, docs: dict, now: datetime) -> str:
     return template.replace(PLACEHOLDER, encoded)
 
 
+def artifact_fragment(html: str) -> str:
+    """Artifact 게시용 조각.
+
+    Artifact는 문서 껍데기를 직접 씌우므로 doctype·html·head·body 태그를 넘기면
+    안 된다. 제목과 스타일은 살리고 바깥 태그만 벗겨낸다.
+    """
+    body = re.search(r"<body[^>]*>(.*?)</body>", html, re.DOTALL | re.IGNORECASE)
+    if body is None:
+        raise ValueError("템플릿에서 <body>를 찾지 못했습니다.")
+
+    parts = []
+    for pattern in (r"<title>.*?</title>", r"<style>.*?</style>"):
+        found = re.search(pattern, html, re.DOTALL | re.IGNORECASE)
+        if found:
+            parts.append(found.group(0))
+    parts.append(body.group(1).strip())
+    return "\n".join(parts) + "\n"
+
+
 def main() -> int:
     data_dir = ROOT / "data"
     day = latest_daily_date(data_dir) or datetime.now(KST).date()
     template = (ROOT / "template.html").read_text(encoding="utf-8")
     html = render(template, collect(data_dir, day), datetime.now(KST))
 
-    output = ROOT / "index.html"
-    output.write_text(html, encoding="utf-8")
-    print(f"작성: {output} (기준일 {day.isoformat()})")
+    page = ROOT / "index.html"
+    page.write_text(html, encoding="utf-8")
+
+    fragment = ROOT / "artifact.html"
+    fragment.write_text(artifact_fragment(html), encoding="utf-8")
+
+    print(f"작성: {page} (기준일 {day.isoformat()})")
+    print(f"작성: {fragment} (웹 게시용)")
     return 0
 
 

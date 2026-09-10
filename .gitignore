@@ -3,5 +3,5 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .playwright-mcp/
-data/
 index.html
+artifact.html

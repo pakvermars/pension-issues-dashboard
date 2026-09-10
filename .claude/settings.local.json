@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest --version)",
+      "Bash(git --version)",
+      "Bash(python *)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m 'feat: 중복·후속 기사 묶기 추가 *)",
+      "Bash(git commit -q -m 'feat: 주간/월간/연간 집계 추가 *)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "Bash(rm -rf data index.html)",
+      "Bash(git commit -q -m 'feat: 기간 데이터를 인라인으로 담은 index.html 생성 추가 *)",
+      "WebSearch",
+      "WebFetch(domain:www.ftoday.co.kr)",
+      "WebFetch(domain:www.fnnews.com)",
+      "WebFetch(domain:www.hankyung.com)",
+      "WebFetch(domain:www.newspim.com)",
+      "WebFetch(domain:v.daum.net)",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "mcp__plugin_playwright_playwright__browser_run_code_unsafe",
+      "Bash(rm -f daily-light.png daily-mobile.png daily-dark.png)",
+      "Bash(git commit -q -m 'style: 기간 축을 축으로 삼은 대시보드 디자인 적용 및 첫 실데이터 수집 *)",
+      "Artifact",
+      "Bash(git commit -q -m 'docs: 일일 수집 런북과 README 추가, 웹 게시용 빌드 분리 *)"
+    ]
+  }
+}
