@@ -219,15 +219,21 @@ for path in sorted(glob.glob('data/*/*.json')):
 검색이 실패하거나 관련 기사를 하나도 못 찾았으면, **아무 파일도 쓰지 않고 중단한다.**
 `index.html`은 마지막으로 성공한 데이터를 그대로 보여준다.
 
-## 9. 게시
+## 9. 게시 — 여기서는 하지 않는다
 
-`build.py`가 만든 **`artifact.html`**(웹 게시용 조각)을 Artifact로 재게시한다.
-`index.html`이 아니다 — 그건 로컬 더블클릭용 전체 문서다.
+**게시는 `publish.ps1`이 맡는다.** `run_daily.ps1`이 이 절차를 마친 뒤 자동으로 부른다.
+6번의 `build.py`까지 끝내고 7번 검토를 마쳤으면 여기서 멈추면 된다.
 
-반드시 기존과 **같은 URL**로 업데이트한다. `Artifact` 도구의 `url` 파라미터에 아래 주소를 넘긴다.
+이렇게 나눈 이유: `claude -p` 헤드리스 세션에는 `Artifact` 도구가 주입되지 않는다.
+`--allowedTools`에 명시해도 마찬가지다. 그래서 2026-09-10~11 이틀간 로컬 파일은
+정상 갱신됐는데 웹 페이지만 멈춰 있었다. 게시처럼 반드시 성공해야 하는 단계는
+도구 유무에 좌우되지 않는 결정적인 스크립트가 맡는 편이 안전하다.
+
+`publish.ps1`은 `git add` → `commit` → `push`를 한다. 푸시되면 GitHub Pages가
+1분 안에 다시 빌드해 아래 주소에 반영한다.
 
 ```
-https://claude.ai/code/artifact/193698ba-0ed1-4069-8493-efd6cc70b3c2
+https://pakvermars.github.io/pension-issues-dashboard/
 ```
 
-favicon은 `📊`로 고정한다.
+수동으로 게시해야 하면 프로젝트 루트에서 `pwsh -File publish.ps1`을 실행한다.

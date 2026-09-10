@@ -5,8 +5,8 @@
 ## 보는 방법
 
 - **PC** — 이 폴더의 `index.html` 더블클릭
-- **웹·휴대폰** — https://claude.ai/code/artifact/193698ba-0ed1-4069-8493-efd6cc70b3c2
-  (비공개. 공유하려면 페이지의 공유 메뉴를 쓴다. 매일 같은 주소가 갱신된다.)
+- **웹·휴대폰** — https://pakvermars.github.io/pension-issues-dashboard/
+  (공개 주소. 로그인 없이 어디서나 열린다. 같은 주소가 계속 갱신된다.)
 
 ## 화면
 
@@ -30,7 +30,11 @@
 
 Windows 작업 스케줄러에 **`퇴직연금 주요 이슈 데일리`** 작업이 등록돼 있다.
 매일 **07:37부터 3시간마다 19:37까지 다섯 번** `run_daily.ps1`이 실행되어
-수집 → 요약 → 빌드 → 웹 게시까지 처리한다.
+수집 → 요약 → 빌드 → 게시까지 처리한다.
+
+게시는 `publish.ps1`이 맡는다. `git push` 하면 GitHub Pages가 1분 안에 반영한다.
+Claude가 아니라 스크립트가 하는 이유는 `claude -p` 헤드리스 세션에
+`Artifact` 도구가 주입되지 않기 때문이다 — 이걸 몰라서 이틀간 웹만 멈춰 있었다.
 
 일간은 그날 나온 기사를 실행할 때마다 쌓아간다. 아침에는 몇 건이던 것이
 저녁에는 그날치가 다 차 있다. 이미 담긴 기사는 다시 담지 않는다.
@@ -41,6 +45,9 @@ Windows 작업 스케줄러에 **`퇴직연금 주요 이슈 데일리`** 작업
 
 클라우드 예약 에이전트를 쓰지 않은 이유: 클라우드 세션은 이 PC의 `data/` 폴더에
 접근할 수 없어 과거 데이터 누적과 기간별 집계가 불가능하다.
+
+작업 스케줄러는 `pwsh`(PowerShell 7)를 부른다. `powershell.exe`(5.1)는 BOM 없는
+UTF-8 스크립트를 CP949로 읽어 한글을 깨뜨린다.
 
 ## 직접 갱신하기
 
@@ -65,6 +72,8 @@ python -X utf8 build.py     # 데이터 → index.html, artifact.html
 | `build.py` | 기간 파일 → `index.html`(로컬용) + `artifact.html`(웹 게시용) |
 | `template.html` | 화면 뼈대. 데이터가 인라인으로 주입된다 |
 | `naver_news.js` | 네이버 뉴스에서 기사 목록을 긁는 Playwright 스크립트. 검색어는 여기 `QUERIES`에 있다 |
+| `run_daily.ps1` | 작업 스케줄러가 부르는 진입점. 수집을 돌리고 게시를 부른다 |
+| `publish.ps1` | 빌드 결과를 GitHub Pages에 올린다 (git add/commit/push) |
 | `daily_update.md` | 매일 수행하는 수집 절차 |
 | `data/` | 날짜별 원본 데이터. 지우면 과거 이슈가 사라진다 |
 
