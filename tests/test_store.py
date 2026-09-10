@@ -46,6 +46,11 @@ class ItemErrorsTest(unittest.TestCase):
         del item["summary"]
         self.assertIn("필수 항목 누락: summary", store.item_errors(item))
 
+    def test_every_listed_category_is_accepted(self):
+        for category in store.CATEGORIES:
+            with self.subTest(category=category):
+                self.assertEqual(store.item_errors(sample_item(category=category)), [])
+
     def test_unknown_category_is_reported(self):
         errors = store.item_errors(sample_item(category="기타"))
         self.assertTrue(any("카테고리" in message for message in errors))

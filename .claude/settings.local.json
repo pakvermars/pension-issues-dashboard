@@ -28,7 +28,16 @@
       "Skill(schedule)",
       "Bash(claude --version)",
       "Bash(where.exe claude *)",
-      "Bash(git commit -q -m 'feat: 매일 07:40 자동 갱신 작업 등록 및 웹 게시 연결 *)"
+      "Bash(git commit -q -m 'feat: 매일 07:40 자동 갱신 작업 등록 및 웹 게시 연결 *)",
+      "WebFetch(domain:edaily.co.kr)",
+      "WebFetch(domain:www.edaily.co.kr)",
+      "WebFetch(domain:www.sisaon.co.kr)",
+      "WebFetch(domain:www.sedaily.com)",
+      "WebFetch(domain:www.careyounews.org)",
+      "WebFetch(domain:biz.heraldcorp.com)",
+      "WebFetch(domain:www.mt.co.kr)",
+      "WebFetch(domain:www.investchosun.com)",
+      "Bash(git commit -q -m 'feat: 법인·자금운용 분야 추가, 일간을 당일 기사 실시간 누적으로 변경 *)"
     ]
   }
 }

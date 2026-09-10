@@ -87,6 +87,21 @@ class MergeTest(unittest.TestCase):
         merged = rollup.merge([item("혼자", "https://a.com/1")])
         self.assertEqual(merged["related"], [])
 
+    def test_same_article_collected_twice_is_not_its_own_related(self):
+        # 일간이 전일 기사까지 담으므로 같은 기사가 이틀치 파일에 들어온다.
+        same = item("퇴직연금 적립금 400조 돌파", "https://a.com/1")
+        merged = rollup.merge([same, dict(same)])
+        self.assertEqual(merged["related"], [])
+
+    def test_related_drops_repeats_of_the_same_url(self):
+        group = [
+            item("원 기사", "https://a.com/1", importance=5),
+            item("다른 매체 기사", "https://b.com/2", importance=3),
+            item("다른 매체 기사", "https://www.b.com/2?utm_source=x", importance=3),
+        ]
+        merged = rollup.merge(group)
+        self.assertEqual([rel["url"] for rel in merged["related"]], ["https://b.com/2"])
+
 
 class BuildPeriodTest(unittest.TestCase):
     def test_duplicate_stories_across_days_collapse_into_one(self):

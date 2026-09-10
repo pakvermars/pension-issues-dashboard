@@ -30,13 +30,27 @@ def cluster_score(group: list[dict]) -> tuple[int, int, str]:
 
 
 def merge(group: list[dict]) -> dict:
-    """묶음을 대표 기사 1건으로 접고 나머지는 related에 담는다."""
+    """묶음을 대표 기사 1건으로 접고 나머지는 related에 담는다.
+
+    같은 기사가 여러 번 수집될 수 있으므로(하루 여러 번 실행, 기간 겹침)
+    대표 기사와 URL이 같은 것은 related에서 뺀다. 기사가 자기 자신을
+    관련 기사로 달고 있으면 안 된다.
+    """
     lead, rest = group[0], group[1:]
+
+    seen = {dedupe.make_id(lead["url"])}
+    related = []
+    for item in rest:
+        item_id = dedupe.make_id(item["url"])
+        if item_id in seen:
+            continue
+        seen.add(item_id)
+        related.append(
+            {"title": item["title"], "source": item["source"], "url": item["url"]}
+        )
+
     merged = dict(lead)
-    merged["related"] = [
-        {"title": item["title"], "source": item["source"], "url": item["url"]}
-        for item in rest
-    ]
+    merged["related"] = related
     return merged
 
 

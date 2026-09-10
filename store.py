@@ -6,7 +6,7 @@ import json
 from datetime import date
 from pathlib import Path
 
-CATEGORIES = ("제도·규제", "업계·경쟁사", "가입자·사회")
+CATEGORIES = ("제도·규제", "업계·경쟁사", "가입자·사회", "법인·자금운용")
 
 ITEM_FIELDS = (
     "id",
