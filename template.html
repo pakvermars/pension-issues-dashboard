@@ -18,8 +18,9 @@
     --hot: #B23A2E;
     --cat-1: #2A3F66;
     --cat-2: #1F5C4E;
-    --cat-3: #8A5A2B;
+    --cat-3: #14657C;
     --cat-4: #7A3B5C;
+    --cat-5: #8A5A2B;
 
     --font-ui: 'Pretendard Variable', Pretendard, 'Apple SD Gothic Neo',
                'Malgun Gothic', system-ui, sans-serif;
@@ -39,8 +40,9 @@
       --hot: #E0705E;
       --cat-1: #7E9BD4;
       --cat-2: #63AD97;
-      --cat-3: #C79A63;
+      --cat-3: #6BB8CE;
       --cat-4: #D28FB0;
+      --cat-5: #C79A63;
     }
   }
 
@@ -230,6 +232,7 @@
   article[data-cat="2"] .badge { color: var(--cat-2); }
   article[data-cat="3"] .badge { color: var(--cat-3); }
   article[data-cat="4"] .badge { color: var(--cat-4); }
+  article[data-cat="5"] .badge { color: var(--cat-5); }
 
   .when {
     font-family: var(--font-mono);
@@ -332,7 +335,7 @@
     { key: 'monthly', name: '월간', span: '1개월' },
     { key: 'yearly', name: '연간', span: '1년' }
   ];
-  var CATEGORIES = ['제도·규제', '업계·경쟁사', '가입자·사회', '법인·자금운용'];
+  var CATEGORIES = ['제도·규제', '업계·경쟁사', '운용·상품', '법인·자금운용', '가입자·사회'];
   var WEEKDAYS = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
 
   var currentPeriod = 'daily';

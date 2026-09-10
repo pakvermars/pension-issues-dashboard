@@ -37,7 +37,18 @@
       "WebFetch(domain:biz.heraldcorp.com)",
       "WebFetch(domain:www.mt.co.kr)",
       "WebFetch(domain:www.investchosun.com)",
-      "Bash(git commit -q -m 'feat: 법인·자금운용 분야 추가, 일간을 당일 기사 실시간 누적으로 변경 *)"
+      "Bash(git commit -q -m 'feat: 법인·자금운용 분야 추가, 일간을 당일 기사 실시간 누적으로 변경 *)",
+      "WebFetch(domain:www.bloter.net)",
+      "WebFetch(domain:www.kmib.co.kr)",
+      "WebFetch(domain:www.mk.co.kr)",
+      "WebFetch(domain:biz.newdaily.co.kr)",
+      "WebFetch(domain:www.ddaily.co.kr)",
+      "WebFetch(domain:magazine.hankyung.com)",
+      "WebFetch(domain:biz.chosun.com)",
+      "WebFetch(domain:www.fetv.co.kr)",
+      "WebFetch(domain:www.dailian.co.kr)",
+      "WebFetch(domain:www.ohmynews.com)",
+      "Bash(git commit -q -m 'feat: 네이버 뉴스 전 매체 수집으로 전환, 운용·상품 분야 추가 *)"
     ]
   }
 }
