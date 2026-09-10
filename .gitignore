@@ -5,3 +5,4 @@ Thumbs.db
 .playwright-mcp/
 index.html
 artifact.html
+logs/
