@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>퇴직연금 주요 이슈</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, sans-serif; margin: 0 auto; max-width: 860px; padding: 24px 16px 64px; line-height: 1.6; }
+  h1 { margin: 0 0 4px; font-size: 1.5rem; }
+  .meta { margin: 0 0 20px; opacity: 0.7; font-size: 0.85rem; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .tabs button { padding: 8px 16px; cursor: pointer; border: 1px solid currentColor; background: transparent; color: inherit; border-radius: 999px; font: inherit; }
+  .tabs button[aria-selected="true"] { background: currentColor; }
+  .tabs button[aria-selected="true"] span { filter: invert(1); }
+  .filters { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; font-size: 0.85rem; }
+  .filters button { padding: 4px 12px; cursor: pointer; border: 1px solid currentColor; background: transparent; color: inherit; border-radius: 999px; font: inherit; opacity: 0.55; }
+  .filters button[aria-pressed="true"] { opacity: 1; }
+  .notice { padding: 12px 14px; border: 1px dashed currentColor; border-radius: 8px; margin-bottom: 16px; font-size: 0.9rem; }
+  article { padding: 16px 0; border-top: 1px solid rgba(128,128,128,0.35); }
+  article h2 { margin: 6px 0; font-size: 1.05rem; }
+  .rank { font-variant-numeric: tabular-nums; opacity: 0.5; margin-right: 6px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor; font-size: 0.75rem; }
+  .summary { margin: 8px 0; }
+  .source { font-size: 0.85rem; opacity: 0.7; }
+  .source a { color: inherit; }
+  details { margin-top: 8px; font-size: 0.85rem; }
+  details ul { margin: 8px 0 0; padding-left: 18px; }
+</style>
+</head>
+<body>
+<h1>퇴직연금 주요 이슈</h1>
+<p class="meta" id="meta"></p>
+
+<nav class="tabs" id="tabs" aria-label="기간 선택"></nav>
+<div class="filters" id="filters" aria-label="카테고리 필터"></div>
+<main id="list"></main>
+
+<script id="payload" type="application/json">/*__DATA__*/</script>
+<script>
+(function () {
+  var DATA = JSON.parse(document.getElementById('payload').textContent);
+  var PERIOD_NAMES = { daily: '일간', weekly: '주간', monthly: '월간', yearly: '연간' };
+  var ORDER = ['daily', 'weekly', 'monthly', 'yearly'];
+  var CATEGORIES = ['제도·규제', '업계·경쟁사', '가입자·사회'];
+
+  var currentPeriod = 'daily';
+  var currentCategory = null;
+
+  var tabsEl = document.getElementById('tabs');
+  var filtersEl = document.getElementById('filters');
+  var listEl = document.getElementById('list');
+  var metaEl = document.getElementById('meta');
+
+  function el(tag, className, text) {
+    var node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function buildTabs() {
+    ORDER.forEach(function (period) {
+      var button = el('button');
+      button.appendChild(el('span', null, PERIOD_NAMES[period]));
+      button.setAttribute('aria-selected', String(period === currentPeriod));
+      button.addEventListener('click', function () {
+        currentPeriod = period;
+        render();
+      });
+      tabsEl.appendChild(button);
+    });
+  }
+
+  function buildFilters() {
+    [null].concat(CATEGORIES).forEach(function (category) {
+      var button = el('button', null, category === null ? '전체' : category);
+      button.setAttribute('aria-pressed', String(category === currentCategory));
+      button.addEventListener('click', function () {
+        currentCategory = category;
+        render();
+      });
+      filtersEl.appendChild(button);
+    });
+  }
+
+  function articleNode(item, rank) {
+    var node = el('article');
+
+    var head = el('div');
+    head.appendChild(el('span', 'rank', String(rank)));
+    head.appendChild(el('span', 'badge', item.category));
+    node.appendChild(head);
+
+    node.appendChild(el('h2', null, item.title));
+    node.appendChild(el('p', 'summary', item.summary));
+
+    var source = el('p', 'source', item.source + ' · ' + item.published + ' · ');
+    var link = el('a', null, '원문 보기');
+    link.href = item.url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    source.appendChild(link);
+    node.appendChild(source);
+
+    var related = item.related || [];
+    if (related.length > 0) {
+      var details = el('details');
+      details.appendChild(el('summary', null, '관련 기사 ' + related.length + '건'));
+      var list = el('ul');
+      related.forEach(function (rel) {
+        var li = el('li');
+        var relLink = el('a', null, rel.source + ' — ' + rel.title);
+        relLink.href = rel.url;
+        relLink.target = '_blank';
+        relLink.rel = 'noopener noreferrer';
+        li.appendChild(relLink);
+        list.appendChild(li);
+      });
+      details.appendChild(list);
+      node.appendChild(details);
+    }
+    return node;
+  }
+
+  function render() {
+    var doc = DATA.periods[currentPeriod];
+
+    metaEl.textContent = doc.label + ' 기준 · 화면 갱신 ' + DATA.built_at;
+
+    Array.prototype.forEach.call(tabsEl.children, function (button, index) {
+      button.setAttribute('aria-selected', String(ORDER[index] === currentPeriod));
+    });
+    Array.prototype.forEach.call(filtersEl.children, function (button, index) {
+      var category = index === 0 ? null : CATEGORIES[index - 1];
+      button.setAttribute('aria-pressed', String(category === currentCategory));
+    });
+
+    listEl.textContent = '';
+
+    if (doc.shortfall_note) {
+      listEl.appendChild(el('p', 'notice', doc.shortfall_note));
+    }
+
+    var items = doc.items.filter(function (item) {
+      return currentCategory === null || item.category === currentCategory;
+    });
+
+    if (items.length === 0) {
+      listEl.appendChild(el('p', 'notice', '표시할 이슈가 없습니다.'));
+      return;
+    }
+
+    items.forEach(function (item, index) {
+      listEl.appendChild(articleNode(item, index + 1));
+    });
+  }
+
+  buildTabs();
+  buildFilters();
+  render();
+})();
+</script>
+</body>
+</html>
