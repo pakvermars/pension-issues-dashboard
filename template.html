@@ -5,44 +5,332 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>퇴직연금 주요 이슈</title>
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: system-ui, sans-serif; margin: 0 auto; max-width: 860px; padding: 24px 16px 64px; line-height: 1.6; }
-  h1 { margin: 0 0 4px; font-size: 1.5rem; }
-  .meta { margin: 0 0 20px; opacity: 0.7; font-size: 0.85rem; }
-  .tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
-  .tabs button { padding: 8px 16px; cursor: pointer; border: 1px solid currentColor; background: transparent; color: inherit; border-radius: 999px; font: inherit; }
-  .tabs button[aria-selected="true"] { background: currentColor; }
-  .tabs button[aria-selected="true"] span { filter: invert(1); }
-  .filters { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; font-size: 0.85rem; }
-  .filters button { padding: 4px 12px; cursor: pointer; border: 1px solid currentColor; background: transparent; color: inherit; border-radius: 999px; font: inherit; opacity: 0.55; }
-  .filters button[aria-pressed="true"] { opacity: 1; }
-  .notice { padding: 12px 14px; border: 1px dashed currentColor; border-radius: 8px; margin-bottom: 16px; font-size: 0.9rem; }
-  article { padding: 16px 0; border-top: 1px solid rgba(128,128,128,0.35); }
-  article h2 { margin: 6px 0; font-size: 1.05rem; }
-  .rank { font-variant-numeric: tabular-nums; opacity: 0.5; margin-right: 6px; }
-  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor; font-size: 0.75rem; }
-  .summary { margin: 8px 0; }
-  .source { font-size: 0.85rem; opacity: 0.7; }
-  .source a { color: inherit; }
-  details { margin-top: 8px; font-size: 0.85rem; }
-  details ul { margin: 8px 0 0; padding-left: 18px; }
+  /* ── 팔레트 ───────────────────────────────────────────────
+     잉크 네이비 위에 차가운 석재 종이. 강조색은 적립·성장을 뜻하는
+     깊은 소나무색 하나, 그리고 '오늘'에만 쓰는 벽돌색 하나. */
+  :root {
+    --ink: #101C33;
+    --ink-soft: #4A5670;
+    --paper: #E7EAEF;
+    --surface: #F6F7F9;
+    --rule: #C9CEDA;
+    --accent: #1F5C4E;
+    --hot: #B23A2E;
+    --cat-1: #2A3F66;
+    --cat-2: #1F5C4E;
+    --cat-3: #8A5A2B;
+
+    --font-ui: 'Pretendard Variable', Pretendard, 'Apple SD Gothic Neo',
+               'Malgun Gothic', system-ui, sans-serif;
+    /* 숫자와 로마자에만 쓰는 올드스타일 세리프. 한글은 섞지 않는다. */
+    --font-num: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --font-mono: Consolas, 'SF Mono', Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #DCE2EC;
+      --ink-soft: #8C97AC;
+      --paper: #0E141F;
+      --surface: #151D2B;
+      --rule: #2A3547;
+      --accent: #63AD97;
+      --hot: #E0705E;
+      --cat-1: #7E9BD4;
+      --cat-2: #63AD97;
+      --cat-3: #C79A63;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
+
+  a { color: inherit; }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ── 머리말: 이 화면의 주인공은 날짜다 ───────────────────── */
+  .wordmark {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+
+  .hero-date {
+    font-family: var(--font-num);
+    font-size: clamp(3.4rem, 13vw, 5rem);
+    line-height: 0.86;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin: 0;
+    font-variant-numeric: oldstyle-nums;
+  }
+
+  .hero-sub {
+    margin: 12px 0 0;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
+  .hero-sub .dot { color: var(--rule); padding: 0 6px; }
+
+  /* ── 서명 요소: 기간 축 ────────────────────────────────────
+     일 ⊂ 주 ⊂ 월 ⊂ 연. 오른쪽으로 갈수록 구간이 넓어지는 축 자체가
+     탭 역할을 한다. 시야를 넓힌다는 사실을 폭으로 말한다. */
+  .rail {
+    display: flex;
+    align-items: stretch;
+    gap: 3px;
+    margin: 36px 0 0;
+  }
+
+  .rail button {
+    flex: 1 1 0;
+    display: block;
+    padding: 12px 4px 0;
+    border: 0;
+    border-top: 3px solid var(--rule);
+    background: transparent;
+    color: var(--ink-soft);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 0.18s, color 0.18s;
+  }
+
+  .rail button:nth-child(1) { flex-grow: 1; }
+  .rail button:nth-child(2) { flex-grow: 1.7; }
+  .rail button:nth-child(3) { flex-grow: 2.6; }
+  .rail button:nth-child(4) { flex-grow: 3.7; }
+
+  .rail button:hover { color: var(--ink); border-top-color: var(--ink-soft); }
+
+  .rail button[aria-selected="true"] {
+    border-top-color: var(--accent);
+    border-top-width: 6px;
+    padding-top: 9px;
+    color: var(--ink);
+  }
+
+  .rail .name { display: block; font-size: 0.95rem; font-weight: 600; }
+
+  .rail .span {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    opacity: 0.75;
+  }
+
+  .range {
+    margin: 14px 0 0;
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+  }
+
+  /* ── 분야 필터 ─────────────────────────────────────────── */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 28px 0 0;
+    padding: 14px 0 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .filters button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--ink-soft);
+    font: inherit;
+    font-size: 0.83rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .filters button:hover { color: var(--ink); }
+
+  .filters button[aria-pressed="true"] {
+    color: var(--ink);
+    font-weight: 600;
+    border-bottom-color: var(--accent);
+  }
+
+  /* ── 안내문 ───────────────────────────────────────────── */
+  .notice {
+    margin: 28px 0 0;
+    padding: 14px 16px;
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    font-size: 0.83rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  /* ── 이슈 카드 ────────────────────────────────────────── */
+  .list { margin: 8px 0 0; }
+
+  article {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 0 16px;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .rank {
+    grid-row: 1 / span 4;
+    font-family: var(--font-num);
+    font-size: 2rem;
+    line-height: 1.1;
+    color: var(--ink-soft);
+    opacity: 0.6;
+    font-variant-numeric: oldstyle-nums;
+    text-align: right;
+    padding-top: 2px;
+  }
+
+  .head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+
+  .badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--cat-1);
+  }
+
+  article[data-cat="2"] .badge { color: var(--cat-2); }
+  article[data-cat="3"] .badge { color: var(--cat-3); }
+
+  .when {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+
+  .when[data-fresh="true"] { color: var(--hot); font-weight: 700; }
+
+  article h2 {
+    margin: 0;
+    font-size: 1.12rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+
+  .summary { margin: 10px 0 0; font-size: 0.92rem; color: var(--ink-soft); }
+
+  .source {
+    margin: 12px 0 0;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .source a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .source a:hover { border-bottom-color: var(--accent); }
+
+  details { margin: 12px 0 0; font-size: 0.82rem; }
+
+  details summary {
+    cursor: pointer;
+    color: var(--ink-soft);
+    list-style: none;
+  }
+
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: '+ '; font-family: var(--font-mono); }
+  details[open] summary::before { content: '− '; }
+
+  details ul { margin: 10px 0 0; padding-left: 18px; color: var(--ink-soft); }
+  details li { margin-bottom: 4px; }
+  details a { color: var(--ink); }
+
+  .footer {
+    margin: 32px 0 0;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: 520px) {
+    .page { padding: 28px 16px 60px; }
+    article { grid-template-columns: 30px 1fr; gap: 0 12px; }
+    .rank { font-size: 1.25rem; }
+    .rail .span { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
 </style>
 </head>
 <body>
-<h1>퇴직연금 주요 이슈</h1>
-<p class="meta" id="meta"></p>
+<div class="page">
+  <p class="wordmark">퇴직연금 주요 이슈</p>
+  <h1 class="hero-date" id="hero-date"></h1>
+  <p class="hero-sub" id="hero-sub"></p>
 
-<nav class="tabs" id="tabs" aria-label="기간 선택"></nav>
-<div class="filters" id="filters" aria-label="카테고리 필터"></div>
-<main id="list"></main>
+  <nav class="rail" id="tabs" aria-label="기간 선택"></nav>
+  <p class="range" id="meta"></p>
+
+  <div class="filters" id="filters" aria-label="분야 선택"></div>
+
+  <main class="list" id="list"></main>
+
+  <p class="footer" id="footer"></p>
+</div>
 
 <script id="payload" type="application/json">/*__DATA__*/</script>
 <script>
 (function () {
   var DATA = JSON.parse(document.getElementById('payload').textContent);
-  var PERIOD_NAMES = { daily: '일간', weekly: '주간', monthly: '월간', yearly: '연간' };
-  var ORDER = ['daily', 'weekly', 'monthly', 'yearly'];
+
+  var PERIODS = [
+    { key: 'daily', name: '일간', span: '1일' },
+    { key: 'weekly', name: '주간', span: '1주' },
+    { key: 'monthly', name: '월간', span: '1개월' },
+    { key: 'yearly', name: '연간', span: '1년' }
+  ];
   var CATEGORIES = ['제도·규제', '업계·경쟁사', '가입자·사회'];
+  var WEEKDAYS = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
 
   var currentPeriod = 'daily';
   var currentCategory = null;
@@ -59,13 +347,52 @@
     return node;
   }
 
+  function parseDay(iso) {
+    var parts = String(iso).split('-');
+    return new Date(+parts[0], +parts[1] - 1, +parts[2]);
+  }
+
+  /** 기준일은 일간 문서의 날짜다. 없으면 화면을 만든 날. */
+  function referenceDay() {
+    var daily = DATA.periods.daily;
+    if (daily && /^\d{4}-\d{2}-\d{2}$/.test(daily.key)) return parseDay(daily.key);
+    return parseDay(DATA.built_at.slice(0, 10));
+  }
+
+  var TODAY = referenceDay();
+
+  /** 기준일로부터 며칠 전인지를 사람 말로. 일주일이 넘으면 날짜로. */
+  function relativeDay(published) {
+    var days = Math.round((TODAY - parseDay(published)) / 86400000);
+    if (days <= 0) return { text: '오늘', fresh: true };
+    if (days === 1) return { text: '어제', fresh: true };
+    if (days < 7) return { text: days + '일 전', fresh: false };
+    var d = parseDay(published);
+    return { text: (d.getMonth() + 1) + '월 ' + d.getDate() + '일', fresh: false };
+  }
+
+  function buildHero() {
+    var d = TODAY;
+    var pad = function (n) { return n < 10 ? '0' + n : String(n); };
+    document.getElementById('hero-date').textContent =
+      pad(d.getMonth() + 1) + '.' + pad(d.getDate());
+    document.getElementById('hero-sub').innerHTML = '';
+    document.getElementById('hero-sub').append(
+      WEEKDAYS[d.getDay()],
+      Object.assign(document.createElement('span'), { className: 'dot', textContent: '·' }),
+      d.getFullYear() + '년 기준'
+    );
+    document.getElementById('footer').textContent = '화면 갱신 ' + DATA.built_at;
+  }
+
   function buildTabs() {
-    ORDER.forEach(function (period) {
+    PERIODS.forEach(function (period) {
       var button = el('button');
-      button.appendChild(el('span', null, PERIOD_NAMES[period]));
-      button.setAttribute('aria-selected', String(period === currentPeriod));
+      button.setAttribute('aria-selected', String(period.key === currentPeriod));
+      button.appendChild(el('span', 'name', period.name));
+      button.appendChild(el('span', 'span', period.span));
       button.addEventListener('click', function () {
-        currentPeriod = period;
+        currentPeriod = period.key;
         render();
       });
       tabsEl.appendChild(button);
@@ -86,17 +413,24 @@
 
   function articleNode(item, rank) {
     var node = el('article');
+    node.setAttribute('data-cat', String(CATEGORIES.indexOf(item.category) + 1));
 
-    var head = el('div');
-    head.appendChild(el('span', 'rank', String(rank)));
+    node.appendChild(el('div', 'rank', String(rank)));
+
+    var head = el('div', 'head');
     head.appendChild(el('span', 'badge', item.category));
+    var when = relativeDay(item.published);
+    var whenEl = el('span', 'when', when.text);
+    whenEl.setAttribute('data-fresh', String(when.fresh));
+    head.appendChild(whenEl);
     node.appendChild(head);
 
     node.appendChild(el('h2', null, item.title));
     node.appendChild(el('p', 'summary', item.summary));
 
-    var source = el('p', 'source', item.source + ' · ' + item.published + ' · ');
-    var link = el('a', null, '원문 보기');
+    var source = el('div', 'source');
+    source.appendChild(el('span', null, item.source));
+    var link = el('a', null, '원문 보기 →');
     link.href = item.url;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
@@ -110,11 +444,12 @@
       var list = el('ul');
       related.forEach(function (rel) {
         var li = el('li');
-        var relLink = el('a', null, rel.source + ' — ' + rel.title);
+        var relLink = el('a', null, rel.title);
         relLink.href = rel.url;
         relLink.target = '_blank';
         relLink.rel = 'noopener noreferrer';
         li.appendChild(relLink);
+        li.append(' — ' + rel.source);
         list.appendChild(li);
       });
       details.appendChild(list);
@@ -126,15 +461,19 @@
   function render() {
     var doc = DATA.periods[currentPeriod];
 
-    metaEl.textContent = doc.label + ' 기준 · 화면 갱신 ' + DATA.built_at;
-
     Array.prototype.forEach.call(tabsEl.children, function (button, index) {
-      button.setAttribute('aria-selected', String(ORDER[index] === currentPeriod));
+      button.setAttribute('aria-selected', String(PERIODS[index].key === currentPeriod));
     });
     Array.prototype.forEach.call(filtersEl.children, function (button, index) {
       var category = index === 0 ? null : CATEGORIES[index - 1];
       button.setAttribute('aria-pressed', String(category === currentCategory));
     });
+
+    var items = doc.items.filter(function (item) {
+      return currentCategory === null || item.category === currentCategory;
+    });
+
+    metaEl.textContent = doc.label + '   ·   ' + items.length + '건';
 
     listEl.textContent = '';
 
@@ -142,12 +481,8 @@
       listEl.appendChild(el('p', 'notice', doc.shortfall_note));
     }
 
-    var items = doc.items.filter(function (item) {
-      return currentCategory === null || item.category === currentCategory;
-    });
-
     if (items.length === 0) {
-      listEl.appendChild(el('p', 'notice', '표시할 이슈가 없습니다.'));
+      listEl.appendChild(el('p', 'notice', '이 조건에 해당하는 이슈가 없습니다.'));
       return;
     }
 
@@ -156,6 +491,7 @@
     });
   }
 
+  buildHero();
   buildTabs();
   buildFilters();
   render();
