@@ -49,7 +49,11 @@
       "WebFetch(domain:www.dailian.co.kr)",
       "WebFetch(domain:www.ohmynews.com)",
       "Bash(git commit -q -m 'feat: 네이버 뉴스 전 매체 수집으로 전환, 운용·상품 분야 추가 *)",
-      "Bash(git commit -q -m 'feat: 기간별 표시 상한을 10건에서 20건으로 상향 *)"
+      "Bash(git commit -q -m 'feat: 기간별 표시 상한을 10건에서 20건으로 상향 *)",
+      "Bash(git config *)",
+      "Bash(git branch *)",
+      "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch -f --env-filter ' *)",
+      "Bash(git commit -q -m 'fix: 헤드리스 게시 실패 수정, GitHub Pages 배포로 전환 *)"
     ]
   }
 }
