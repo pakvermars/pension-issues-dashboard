@@ -110,5 +110,57 @@ class ClusterTest(unittest.TestCase):
         self.assertEqual(dedupe.cluster([]), [])
 
 
+class ManualCorrectionTest(unittest.TestCase):
+    """제목이 달라 못 묶거나, 비슷해서 잘못 묶이는 경우를 사람이 바로잡는다."""
+
+    def test_same_forces_unrelated_titles_into_one_group(self):
+        items = [
+            article("퇴직연금 적립금 400조 돌파", "https://a.com/1"),
+            article("국민연금 개혁안 국회 통과", "https://b.com/2"),
+        ]
+        groups = dedupe.cluster(items, same=[["https://a.com/1", "https://b.com/2"]])
+        self.assertEqual(len(groups), 1)
+
+    def test_same_is_transitive_across_a_group_of_three(self):
+        items = [
+            article("퇴직연금 적립금 400조 돌파", "https://a.com/1"),
+            article("국민연금 개혁안 국회 통과", "https://b.com/2"),
+            article("TDF 순자산 사상 최대", "https://c.com/3"),
+        ]
+        groups = dedupe.cluster(
+            items, same=[["https://a.com/1", "https://b.com/2", "https://c.com/3"]]
+        )
+        self.assertEqual([len(g) for g in groups], [3])
+
+    def test_different_keeps_similar_titles_apart(self):
+        items = [
+            article("퇴직연금 디폴트옵션 수익률 공시, 원리금보장형 3%대", "https://a.com/1"),
+            article("[속보] 디폴트옵션 수익률 공시…원리금보장형 3%대 기록", "https://b.com/2"),
+        ]
+        self.assertEqual(len(dedupe.cluster(items)), 1)
+        groups = dedupe.cluster(
+            items, different=[["https://a.com/1", "https://b.com/2"]]
+        )
+        self.assertEqual(len(groups), 2)
+
+    def test_same_wins_over_different_is_not_needed_but_urls_normalize(self):
+        # 지정할 때 추적 파라미터가 붙어 있어도 같은 기사로 인식해야 한다.
+        items = [
+            article("퇴직연금 적립금 400조 돌파", "https://a.com/1"),
+            article("국민연금 개혁안 국회 통과", "https://b.com/2"),
+        ]
+        groups = dedupe.cluster(
+            items, same=[["https://www.a.com/1?utm_source=x", "http://b.com/2/"]]
+        )
+        self.assertEqual(len(groups), 1)
+
+    def test_corrections_for_absent_urls_are_ignored(self):
+        items = [article("퇴직연금 적립금 400조 돌파", "https://a.com/1")]
+        groups = dedupe.cluster(
+            items, same=[["https://zzz.com/9", "https://yyy.com/8"]]
+        )
+        self.assertEqual(len(groups), 1)
+
+
 if __name__ == "__main__":
     unittest.main()

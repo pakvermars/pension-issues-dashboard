@@ -1,0 +1,17 @@
+{
+  "_설명": "제목만으로는 판단이 틀리는 경우를 사람이 바로잡는 곳. rollup.py가 매번 읽으므로 여기 적은 내용은 재생성돼도 살아남는다. same=제목이 달라도 같은 사건, different=제목이 비슷해도 다른 사건.",
+
+  "same": [
+    [
+      "https://www.investchosun.com/site/data/html_dir/2026/09/10/2026091080075.html",
+      "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609081504121440101838"
+    ],
+    [
+      "https://www.ftoday.co.kr/news/articleView.html?idxno=365111",
+      "https://www.ddaily.co.kr/page/view/2026091010295983047",
+      "https://www.dailian.co.kr/news/view/1688375/"
+    ]
+  ],
+
+  "different": []
+}

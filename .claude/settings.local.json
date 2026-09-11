@@ -53,7 +53,8 @@
       "Bash(git config *)",
       "Bash(git branch *)",
       "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch -f --env-filter ' *)",
-      "Bash(git commit -q -m 'fix: 헤드리스 게시 실패 수정, GitHub Pages 배포로 전환 *)"
+      "Bash(git commit -q -m 'fix: 헤드리스 게시 실패 수정, GitHub Pages 배포로 전환 *)",
+      "Bash(pwsh -NoProfile -ExecutionPolicy Bypass -File ./publish.ps1)"
     ]
   }
 }

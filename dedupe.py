@@ -45,28 +45,65 @@ def similarity(a: str, b: str) -> float:
 
 
 def cluster(
-    items: list[dict], threshold: float = SIMILARITY_THRESHOLD
+    items: list[dict],
+    threshold: float = SIMILARITY_THRESHOLD,
+    same: list[list[str]] | None = None,
+    different: list[list[str]] | None = None,
 ) -> list[list[dict]]:
     """URL이 같거나 제목이 충분히 비슷한 기사끼리 묶는다.
 
+    제목만으로는 판단이 틀릴 때가 있다. `same`은 제목이 달라도 같은 사건인 URL 묶음,
+    `different`는 제목이 비슷해도 다른 사건인 URL 묶음이다. 사람이 바로잡은 내용을
+    여기로 넘기면 자동 판정을 덮어쓴다.
+
     각 묶음은 중요도가 높은 기사가 앞에 오도록 정렬해 돌려준다.
     """
+    same_pairs = _to_pairs(same)
+    different_pairs = _to_pairs(different)
+
     groups: list[list[dict]] = []
     for item in items:
         for group in groups:
-            if any(_is_same_story(existing, item, threshold) for existing in group):
+            if any(
+                _is_same_story(existing, item, threshold, same_pairs, different_pairs)
+                for existing in group
+            ):
                 group.append(item)
                 break
         else:
             groups.append([item])
 
+    # 대표는 중요도가 가장 높은 기사, 동점이면 가장 최근 것. 이어진 이슈에서는
+    # 첫 보도보다 최신 보도가 지금 상태를 더 잘 말해준다.
     return [
-        sorted(group, key=lambda item: (-item["importance"], item["published"]))
+        sorted(group, key=lambda item: (item["importance"], item["published"]), reverse=True)
         for group in groups
     ]
 
 
-def _is_same_story(a: dict, b: dict, threshold: float) -> bool:
-    if make_id(a["url"]) == make_id(b["url"]):
+def _to_pairs(groups: list[list[str]] | None) -> set[tuple[str, str]]:
+    """URL 묶음 목록을 정규화된 id 쌍의 집합으로 편다."""
+    pairs = set()
+    for group in groups or []:
+        ids = sorted({make_id(url) for url in group})
+        for index, first in enumerate(ids):
+            for second in ids[index + 1 :]:
+                pairs.add((first, second))
+    return pairs
+
+
+def _is_same_story(
+    a: dict,
+    b: dict,
+    threshold: float,
+    same_pairs: set[tuple[str, str]],
+    different_pairs: set[tuple[str, str]],
+) -> bool:
+    first, second = sorted((make_id(a["url"]), make_id(b["url"])))
+    if (first, second) in same_pairs:
+        return True
+    if (first, second) in different_pairs:
+        return False
+    if first == second:
         return True
     return similarity(a["title"], b["title"]) >= threshold

@@ -163,12 +163,13 @@ class BuildPeriodTest(unittest.TestCase):
         )
 
     def test_selection_is_capped_at_top_n(self):
+        # 주간은 분산 상한이 없으므로 TOP_N만으로 잘린다.
         items = [
             item(title, f"https://a.com/{n}", importance=3)
             for n, title in enumerate(DISTINCT_TITLES)
         ]
         doc = rollup.build_period(
-            "monthly", "2026-09", [daily_doc("2026-09-10", items)], now=FIXED_NOW
+            "weekly", "2026-W37", [daily_doc("2026-09-10", items)], now=FIXED_NOW
         )
         self.assertEqual(doc["item_count"], rollup.TOP_N)
         self.assertIsNone(doc["shortfall_note"])
@@ -187,6 +188,124 @@ class BuildPeriodTest(unittest.TestCase):
         self.assertEqual(doc["items"], [])
         self.assertEqual(doc["label"], "2026년")
         self.assertEqual(doc["generated_at"], "2026-09-10T07:40:00+09:00")
+
+
+class PeriodScoringTest(unittest.TestCase):
+    """주간은 최신·중요도, 월간·연간은 오래 이어진 이슈를 위로 올린다."""
+
+    def dailies(self):
+        # A: 하루짜리 큰 뉴스. B: 사흘에 걸쳐 이어진 이슈.
+        return [
+            daily_doc("2026-09-07", [
+                item("기금형 퇴직연금 도입 논의 재점화", "https://b.com/1", importance=3, published="2026-09-07"),
+            ]),
+            daily_doc("2026-09-08", [
+                item("기금형 퇴직연금 도입 논의 재점화 후속", "https://b.com/2", importance=3, published="2026-09-08"),
+            ]),
+            daily_doc("2026-09-09", [
+                item("기금형 퇴직연금 도입 논의 또 재점화", "https://b.com/3", importance=3, published="2026-09-09"),
+                item("퇴직연금 적립금 400조 돌파", "https://a.com/1", importance=5, published="2026-09-09"),
+            ]),
+        ]
+
+    def test_weekly_puts_the_single_big_story_first(self):
+        doc = rollup.build_period("weekly", "2026-W37", self.dailies(), now=FIXED_NOW)
+        self.assertEqual(doc["items"][0]["url"], "https://a.com/1")
+
+    def test_monthly_puts_the_sustained_story_first(self):
+        doc = rollup.build_period("monthly", "2026-09", self.dailies(), now=FIXED_NOW)
+        self.assertEqual(doc["items"][0]["url"], "https://b.com/3")
+
+    def test_yearly_puts_the_sustained_story_first(self):
+        doc = rollup.build_period("yearly", "2026", self.dailies(), now=FIXED_NOW)
+        self.assertEqual(doc["items"][0]["url"], "https://b.com/3")
+
+
+class YearlySpreadTest(unittest.TestCase):
+    """연간은 한 달이 목록을 독차지하지 않게 월별 상한을 둔다."""
+
+    def crowded_month(self):
+        items = [
+            item(title, f"https://a.com/{n}", importance=5, published="2026-09-09")
+            for n, title in enumerate(DISTINCT_TITLES)
+        ]
+        # DISTINCT_TITLES와 겹치지 않아야 9월 기사와 묶이지 않는다.
+        older = [
+            item("근로복지공단 푸른씨앗 가입 사업장 3만 곳", "https://old.com/1", importance=2, published="2026-03-11"),
+            item("자본시장연구원 다층 노후소득 보고서", "https://old.com/2", importance=2, published="2026-05-20"),
+        ]
+        return [daily_doc("2026-09-09", items), daily_doc("2026-03-11", [older[0]]), daily_doc("2026-05-20", [older[1]])]
+
+    def test_yearly_caps_items_per_month(self):
+        doc = rollup.build_period("yearly", "2026", self.crowded_month(), now=FIXED_NOW)
+        september = [i for i in doc["items"] if i["published"].startswith("2026-09")]
+        self.assertEqual(len(september), rollup.YEARLY_MONTH_CAP)
+
+    def test_yearly_keeps_the_thin_months(self):
+        doc = rollup.build_period("yearly", "2026", self.crowded_month(), now=FIXED_NOW)
+        months = {i["published"][:7] for i in doc["items"]}
+        self.assertIn("2026-03", months)
+        self.assertIn("2026-05", months)
+
+    def test_monthly_is_not_capped_by_month(self):
+        doc = rollup.build_period("monthly", "2026-09", self.crowded_month(), now=FIXED_NOW)
+        september = [i for i in doc["items"] if i["published"].startswith("2026-09")]
+        self.assertGreater(len(september), rollup.YEARLY_MONTH_CAP)
+
+    def test_monthly_caps_items_per_week(self):
+        # 한 주에 몰린 기사와 다른 주 기사를 섞어 둔다.
+        crowded = [
+            item(title, f"https://a.com/{n}", importance=5, published="2026-09-09")
+            for n, title in enumerate(DISTINCT_TITLES)
+        ]
+        other_week = [
+            item("근로복지공단 푸른씨앗 가입 사업장 3만 곳", "https://w36.com/1", importance=2, published="2026-09-02"),
+            item("자본시장연구원 다층 노후소득 보고서", "https://w36.com/2", importance=2, published="2026-09-03"),
+        ]
+        dailies = [
+            daily_doc("2026-09-09", crowded),
+            daily_doc("2026-09-02", [other_week[0]]),
+            daily_doc("2026-09-03", [other_week[1]]),
+        ]
+        doc = rollup.build_period("monthly", "2026-09", dailies, now=FIXED_NOW)
+        big_week = [i for i in doc["items"] if i["published"] == "2026-09-09"]
+        self.assertEqual(len(big_week), rollup.MONTHLY_WEEK_CAP)
+        self.assertTrue(any(i["url"].startswith("https://w36.com/") for i in doc["items"]))
+
+
+class MergeMapTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_missing_file_gives_empty_corrections(self):
+        self.assertEqual(rollup.load_corrections(self.root), {"same": [], "different": []})
+
+    def test_corrections_are_read(self):
+        (self.root / "merges.json").write_text(
+            '{"same": [["https://a.com/1", "https://b.com/2"]], "different": []}',
+            encoding="utf-8",
+        )
+        self.assertEqual(
+            rollup.load_corrections(self.root)["same"],
+            [["https://a.com/1", "https://b.com/2"]],
+        )
+
+    def test_corrections_survive_regeneration(self):
+        store.save(self.root / "daily" / "2026-09-09.json", daily_doc("2026-09-09", [
+            item("퇴직연금 적립금 400조 돌파", "https://a.com/1", published="2026-09-09"),
+            item("국민연금 개혁안 국회 통과", "https://b.com/2", published="2026-09-09"),
+        ]))
+        (self.root / "merges.json").write_text(
+            '{"same": [["https://a.com/1", "https://b.com/2"]]}', encoding="utf-8"
+        )
+        rollup.rollup(self.root, date(2026, 9, 9), now=FIXED_NOW)
+        weekly = store.load(self.root / "weekly" / "2026-W37.json")
+        self.assertEqual(weekly["item_count"], 1)
+        self.assertEqual(len(weekly["items"][0]["related"]), 1)
 
 
 class RollupTest(unittest.TestCase):
