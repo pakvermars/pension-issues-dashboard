@@ -68,12 +68,29 @@
   }
 
   /* ── 머리말: 이 화면의 주인공은 날짜다 ───────────────────── */
+  .masthead {
+    display: flex;
+    align-items: baseline;
+    gap: 12px 20px;
+    flex-wrap: wrap;
+    margin: 0 0 14px;
+  }
+
   .wordmark {
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.22em;
     color: var(--ink-soft);
-    margin: 0 0 14px;
+    margin: 0;
+  }
+
+  .slogan {
+    margin: 0 0 0 auto;
+    font-size: 15pt;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+    white-space: nowrap;
   }
 
   .hero-date {
@@ -310,7 +327,10 @@
 </head>
 <body>
 <div class="page">
-  <p class="wordmark">퇴직연금 주요 이슈</p>
+  <div class="masthead">
+    <p class="wordmark">퇴직연금 주요 이슈</p>
+    <p class="slogan">[퇴직연금은 역시 키움]</p>
+  </div>
   <h1 class="hero-date" id="hero-date"></h1>
   <p class="hero-sub" id="hero-sub"></p>
 
