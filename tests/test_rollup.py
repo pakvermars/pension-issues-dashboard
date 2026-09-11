@@ -236,10 +236,16 @@ class YearlySpreadTest(unittest.TestCase):
         ]
         return [daily_doc("2026-09-09", items), daily_doc("2026-03-11", [older[0]]), daily_doc("2026-05-20", [older[1]])]
 
-    def test_yearly_caps_items_per_month(self):
+    def test_yearly_still_fills_to_top_n(self):
+        # 분산 상한은 자리를 비우라는 뜻이 아니다. 다른 달에 자리를 주고,
+        # 남는 자리는 순위대로 채워 TOP_N을 맞춘다.
+        doc = rollup.build_period("yearly", "2026", self.crowded_month(), now=FIXED_NOW)
+        self.assertEqual(doc["item_count"], rollup.TOP_N)
+
+    def test_yearly_does_not_let_one_month_take_everything(self):
         doc = rollup.build_period("yearly", "2026", self.crowded_month(), now=FIXED_NOW)
         september = [i for i in doc["items"] if i["published"].startswith("2026-09")]
-        self.assertEqual(len(september), rollup.YEARLY_MONTH_CAP)
+        self.assertLess(len(september), doc["item_count"])
 
     def test_yearly_keeps_the_thin_months(self):
         doc = rollup.build_period("yearly", "2026", self.crowded_month(), now=FIXED_NOW)
@@ -268,9 +274,12 @@ class YearlySpreadTest(unittest.TestCase):
             daily_doc("2026-09-03", [other_week[1]]),
         ]
         doc = rollup.build_period("monthly", "2026-09", dailies, now=FIXED_NOW)
-        big_week = [i for i in doc["items"] if i["published"] == "2026-09-09"]
-        self.assertEqual(len(big_week), rollup.MONTHLY_WEEK_CAP)
-        self.assertTrue(any(i["url"].startswith("https://w36.com/") for i in doc["items"]))
+        # 다른 주 기사가 반드시 들어가고, 그러고도 자리는 TOP_N까지 채운다.
+        self.assertTrue(all(
+            any(i["url"] == url for i in doc["items"])
+            for url in ("https://w36.com/1", "https://w36.com/2")
+        ))
+        self.assertEqual(doc["item_count"], rollup.TOP_N)
 
 
 class MergeMapTest(unittest.TestCase):

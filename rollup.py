@@ -83,17 +83,33 @@ def _bucket_of(group: list[dict], unit: str) -> str:
     return periods.keys_for(date.fromisoformat(latest))["weekly"]
 
 
-def limit_spread(groups: list[list[dict]], unit: str, cap: int) -> list[list[dict]]:
-    """구간별로 cap개까지만 남긴다. 순서는 그대로 유지한다."""
+def spread_out(
+    groups: list[list[dict]], unit: str, cap: int, target: int
+) -> list[list[dict]]:
+    """한 구간이 목록을 독차지하지 않도록 다른 구간에 자리를 먼저 준다.
+
+    먼저 구간당 cap개까지만 골라 소수 구간의 자리를 확보하고, 그러고도 target을
+    못 채우면 남겨둔 것들을 순위대로 끌어올려 채운다. 상한은 독점을 막자는 것이지
+    목록을 줄이자는 게 아니다 — 긴 기간이 짧은 기간보다 적게 나오면 안 된다.
+
+    groups는 순위대로 정렬돼 있다고 본다.
+    """
     counts: dict[str, int] = {}
-    kept = []
+    reserved = []
+    overflow = []
+
     for group in groups:
         bucket = _bucket_of(group, unit)
         if counts.get(bucket, 0) >= cap:
+            overflow.append(group)
             continue
         counts[bucket] = counts.get(bucket, 0) + 1
-        kept.append(group)
-    return kept
+        reserved.append(group)
+
+    if len(reserved) >= target:
+        return reserved
+
+    return reserved + overflow[: target - len(reserved)]
 
 
 def merge(group: list[dict]) -> dict:
@@ -139,7 +155,9 @@ def build_period(
 
     if period in SPREAD_CAPS:
         unit, cap = SPREAD_CAPS[period]
-        groups = limit_spread(groups, unit, cap)
+        groups = spread_out(groups, unit, cap, TOP_N)
+        # 자리를 확보한 뒤에는 다시 순위대로 보여준다.
+        groups.sort(key=SCORES.get(period, cluster_score), reverse=True)
 
     selected = [merge(group) for group in groups[:TOP_N]]
 
