@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "2026-09",
   "label": "2026년 9월",
-  "generated_at": "2026-09-11T19:38:42+09:00",
+  "generated_at": "2026-09-12T07:39:40+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -42,6 +42,23 @@
           "title": "[퇴직연금 Radar] 기금형 사장단 간담회 또 연기…협의 '공회전'",
           "source": "더벨",
           "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609081504121440101838"
+        }
+      ]
+    },
+    {
+      "id": "1d9eac5cfd02",
+      "title": "[오늘의 시니어 트렌드] 기초연금 수급률 4년 연속 하락, 부부감액 2조4000억",
+      "summary": "기초연금 수급자가 처음 700만 명을 넘었으나 전체 노인 중 수급률은 65.3%로 4년 연속 하락했다. 부부가 함께 받을 때 각각 20%를 깎는 부부감액 조항이 연 2조4000억원 규모의 급여를 줄이면서 위장 황혼이혼을 유도한다는 지적이 나온다. 베이비부머의 대규모 수급 진입으로 지출은 2030년 30조원, 2045년 71조원까지 늘어날 전망이다. 제도 개편의 시급성이 강조되고 있다.",
+      "category": "가입자·사회",
+      "importance": 4,
+      "source": "캐어유 뉴스",
+      "published": "2026-09-10",
+      "url": "https://www.careyounews.org/news/articleView.html?idxno=11450",
+      "related": [
+        {
+          "title": "기초연금 수급 대상자보다 노인인구 증가 속도 더 빨라…수급률 4년 연속 하락",
+          "source": "헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10867434"
         }
       ]
     },
@@ -153,17 +170,6 @@
       "source": "뉴스웨이",
       "published": "2026-09-11",
       "url": "https://www.newsway.co.kr/news/view?ud=2026091114253182016",
-      "related": []
-    },
-    {
-      "id": "1d9eac5cfd02",
-      "title": "[오늘의 시니어 트렌드] 기초연금 수급률 4년 연속 하락, 부부감액 2조4000억",
-      "summary": "기초연금 수급자가 처음 700만 명을 넘었으나 전체 노인 중 수급률은 65.3%로 4년 연속 하락했다. 부부가 함께 받을 때 각각 20%를 깎는 부부감액 조항이 연 2조4000억원 규모의 급여를 줄이면서 위장 황혼이혼을 유도한다는 지적이 나온다. 베이비부머의 대규모 수급 진입으로 지출은 2030년 30조원, 2045년 71조원까지 늘어날 전망이다. 제도 개편의 시급성이 강조되고 있다.",
-      "category": "가입자·사회",
-      "importance": 4,
-      "source": "캐어유 뉴스",
-      "published": "2026-09-10",
-      "url": "https://www.careyounews.org/news/articleView.html?idxno=11450",
       "related": []
     },
     {
