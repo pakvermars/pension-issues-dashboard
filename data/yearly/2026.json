@@ -2,7 +2,7 @@
   "period": "yearly",
   "key": "2026",
   "label": "2026년",
-  "generated_at": "2026-09-12T10:39:31+09:00",
+  "generated_at": "2026-09-12T13:39:02+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -25,6 +25,11 @@
           "title": "“예금 이자론 성 안 차”…은행 퇴직연금, 국채 품고 반격할까",
           "source": "데일리안",
           "url": "https://www.dailian.co.kr/news/view/1688375/"
+        },
+        {
+          "title": "개인투자용 국채 품은 퇴직연금 계좌···증권사, 연금자금 유치전",
+          "source": "서울파이낸스",
+          "url": "https://www.seoulfn.com/news/articleView.html?idxno=637698"
         }
       ]
     },
