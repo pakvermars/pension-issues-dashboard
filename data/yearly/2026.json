@@ -2,7 +2,7 @@
   "period": "yearly",
   "key": "2026",
   "label": "2026년",
-  "generated_at": "2026-09-14T08:55:56+09:00",
+  "generated_at": "2026-09-14T09:13:25+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -22,6 +22,11 @@
           "url": "https://news.tvchosun.com/site/data/html_dir/2026/09/14/2026091490036.html"
         },
         {
+          "title": "[돈이 보이는 경제] 퇴직연금으로 국채 산다…\"10년 만기 때 60% 확정 수익\"",
+          "source": "TV조선",
+          "url": "https://news.tvchosun.com/site/data/html_dir/2026/09/13/2026091390109.html"
+        },
+        {
           "title": "“20년 묻어두면 수익률 161%”…퇴직연금 국채, 증권사 유치전 불붙었다",
           "source": "디지털데일리",
           "url": "https://www.ddaily.co.kr/page/view/2026091010295983047"
@@ -30,6 +35,11 @@
           "title": "“예금 이자론 성 안 차”…은행 퇴직연금, 국채 품고 반격할까",
           "source": "데일리안",
           "url": "https://www.dailian.co.kr/news/view/1688375/"
+        },
+        {
+          "title": "\"월급 끊겨도 매달 400만원 들어옵니다\"…은퇴 앞둔 직장인이 알아야 할 자산",
+          "source": "매일경제",
+          "url": "https://www.mk.co.kr/article/12151487"
         },
         {
           "title": "개인투자용 국채 품은 퇴직연금 계좌···증권사, 연금자금 유치전",

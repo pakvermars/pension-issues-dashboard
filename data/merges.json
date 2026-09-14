@@ -1,30 +1,30 @@
 {
-  "_설명": "제목만으로는 판단이 틀리는 경우를 사람이 바로잡는 곳. rollup.py가 매번 읽으므로 여기 적은 내용은 재생성돼도 살아남는다. same=제목이 달라도 같은 사건, different=제목이 비슷해도 다른 사건.",
-
-  "same": [
-    [
-      "https://www.investchosun.com/site/data/html_dir/2026/09/10/2026091080075.html",
-      "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609081504121440101838",
-      "http://www.globalepic.co.kr/view.php?ud=2026091408374115157cc35ccc5c_29"
-    ],
-    [
-      "https://www.ftoday.co.kr/news/articleView.html?idxno=365111",
-      "https://www.ddaily.co.kr/page/view/2026091010295983047",
-      "https://www.dailian.co.kr/news/view/1688375/",
-      "https://www.seoulfn.com/news/articleView.html?idxno=637698",
-      "https://www.etoday.co.kr/news/view/2624549",
-      "https://news.tvchosun.com/site/data/html_dir/2026/09/14/2026091490036.html",
-      "https://www.seoul.co.kr/news/economy/finance/2026/09/14/20260914018002?wlog_tag3=naver"
-    ],
-    [
-      "https://biz.heraldcorp.com/article/10867434",
-      "https://www.careyounews.org/news/articleView.html?idxno=11450"
-    ],
-    [
-      "https://www.donga.com/news/Economy/article/all/20260910/134646204/2",
-      "https://www.ebn.co.kr/news/articleView.html?idxno=1723772"
-    ]
+ "_설명": "제목만으로는 판단이 틀리는 경우를 사람이 바로잡는 곳. rollup.py가 매번 읽으므로 여기 적은 내용은 재생성돼도 살아남는다. same=제목이 달라도 같은 사건, different=제목이 비슷해도 다른 사건.",
+ "same": [
+  [
+   "https://www.investchosun.com/site/data/html_dir/2026/09/10/2026091080075.html",
+   "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609081504121440101838",
+   "http://www.globalepic.co.kr/view.php?ud=2026091408374115157cc35ccc5c_29"
   ],
-
-  "different": []
+  [
+   "https://www.ftoday.co.kr/news/articleView.html?idxno=365111",
+   "https://www.ddaily.co.kr/page/view/2026091010295983047",
+   "https://www.dailian.co.kr/news/view/1688375/",
+   "https://www.seoulfn.com/news/articleView.html?idxno=637698",
+   "https://www.etoday.co.kr/news/view/2624549",
+   "https://news.tvchosun.com/site/data/html_dir/2026/09/14/2026091490036.html",
+   "https://www.seoul.co.kr/news/economy/finance/2026/09/14/20260914018002?wlog_tag3=naver",
+   "https://news.tvchosun.com/site/data/html_dir/2026/09/13/2026091390109.html",
+   "https://www.mk.co.kr/article/12151487"
+  ],
+  [
+   "https://biz.heraldcorp.com/article/10867434",
+   "https://www.careyounews.org/news/articleView.html?idxno=11450"
+  ],
+  [
+   "https://www.donga.com/news/Economy/article/all/20260910/134646204/2",
+   "https://www.ebn.co.kr/news/articleView.html?idxno=1723772"
+  ]
+ ],
+ "different": []
 }
