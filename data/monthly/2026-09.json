@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "2026-09",
   "label": "2026년 9월",
-  "generated_at": "2026-09-15T19:37:22+09:00",
+  "generated_at": "2026-09-16T07:39:42+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -133,6 +133,40 @@
           "title": "[리셋 코리아] 정치적 득실 따지지 말고 기초연금 개혁해야",
           "source": "중앙일보",
           "url": "https://www.joongang.co.kr/article/25461512"
+        }
+      ]
+    },
+    {
+      "id": "a5e7a7fba12f",
+      "title": "NH농협은행, 퇴직연금 운용 선택지 넓힌다",
+      "summary": "NH농협은행이 퇴직연금 계좌에 개인투자용국채를 도입하고 ETF 라인업을 확대한다고 밝혔다. 7월에 22종을 내놓은 데 이어 10월에 36개를 추가한다. 전문가 포트폴리오 서비스의 2026년 상반기 수익률은 공격투자형 기준 40.11%를 기록했다. 금융감독원 통합연금포털 기준 원리금비보장형 수익률에서 3분기 연속 5대 시중은행 중 1위에 올랐다.",
+      "category": "업계·경쟁사",
+      "importance": 3,
+      "source": "퍼블릭타임스",
+      "published": "2026-09-16",
+      "url": "https://www.public25.com/news/articleView.html?idxno=54796",
+      "related": [
+        {
+          "title": "\"보수적 운용 벗고 수익률 띄운다\"…NH농협은행, 퇴직연금 체계 대개편",
+          "source": "더페어",
+          "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=88073"
+        }
+      ]
+    },
+    {
+      "id": "ab894d0c4867",
+      "title": "[금융 HOT 뉴스] KB자산운용, 골드 특별자산 펀드 눈길",
+      "summary": "KB자산운용이 골드 특별자산 펀드의 운용 구조를 파생상품 중심에서 국내외 금 ETF 활용 방식으로 바꿨다. 파생상품 위험평가액을 40% 이하로 낮춰 퇴직연금 적격 요건을 충족했고 운용보수는 기존 대비 약 40% 인하했다. 비교지수는 LBMA Gold PM Price로 변경했고 환매대금은 4영업일 내에 지급한다. 현재 국민은행과 신한투자증권의 퇴직연금 계좌에서 매매할 수 있다.",
+      "category": "운용·상품",
+      "importance": 2,
+      "source": "비즈월드",
+      "published": "2026-09-16",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=146330",
+      "related": [
+        {
+          "title": "KB자산운용, 18년 된 금 펀드 손질…퇴직연금서도 투자",
+          "source": "AP신문",
+          "url": "https://www.apnews.kr/news/articleView.html?idxno=3051270"
         }
       ]
     },
@@ -277,28 +311,6 @@
       "source": "한스경제",
       "published": "2026-09-14",
       "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=864386",
-      "related": []
-    },
-    {
-      "id": "9b969dc48569",
-      "title": "500조 퇴직연금 '장투' 이어지도록… 구조 바꾸고 혜택 늘려야 [시험대 오른 자본시장]",
-      "summary": "퇴직연금 적립금은 2020년 말 255조5000억원에서 지난해 말 501조4000억원으로 5년 만에 2배로 늘었다. 그러나 최근 10년 평균 수익률은 2.64%로 국민연금의 7.93%에 크게 못 미치는데, 원리금보장상품 비중이 75.4%에 달하기 때문이다. 전문가들은 타깃데이트펀드 자동배분 도입 등 제도 개편과 연금계좌의 국내 투자 세제혜택을 검토해야 한다고 지적했다. 일본처럼 ISA를 단기 절세상품이 아닌 생애주기형 자산관리 플랫폼으로 전환할 필요가 있다는 제언도 나왔다.",
-      "category": "운용·상품",
-      "importance": 4,
-      "source": "파이낸셜뉴스",
-      "published": "2026-09-13",
-      "url": "https://www.fnnews.com/news/202609131811420430",
-      "related": []
-    },
-    {
-      "id": "99fcd85edc4b",
-      "title": "[내 퇴직연금 뜯어보니 ③] '선택과 책임은 노동자, 결정은 회사' 구조 바꾸려면?",
-      "summary": "고용노동부가 내년 퇴직연금사업자 평가제도를 전면 개편한다. 정성평가 비중을 줄이고 수익률 등 정량평가를 강화해 전체 사업자의 순위를 공개하는 방안을 추진하며, 교육·정보제공 의무도 주기적으로 점검한다. 지난해 퇴직연금 수익률은 6.47%로 제도 도입 이후 최고치였지만, 적립금의 84%를 실적배당형에 넣은 상위 10%는 평균 19.5%, 원리금보장형에 74%를 둔 하위 10%는 0.5%에 그쳤다. 지난해 유형별 수익률은 DC형 8.47%, IRP 9.44%, DB형 3.53%였다.",
-      "category": "제도·규제",
-      "importance": 4,
-      "source": "매일노동뉴스",
-      "published": "2026-09-11",
-      "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=236734",
       "related": []
     }
   ]
