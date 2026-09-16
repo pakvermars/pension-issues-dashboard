@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-17",
   "label": "2026-09-17 (목)",
-  "generated_at": "2026-09-17T08:05:00+09:00",
-  "item_count": 8,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 8건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-17T08:20:00+09:00",
+  "item_count": 9,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 9건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "ed223b9a6214",
@@ -55,6 +55,16 @@
       "source": "FETV",
       "published": "2026-09-17",
       "url": "https://www.fetv.co.kr/news/articleView.html?idxno=310327"
+    },
+    {
+      "id": "5268de30e3f2",
+      "title": "[IB탈탈털기] 한국투자금융, 카디프생명 800억 인수 막바지…싼 라이선스 뒤 적자 부담",
+      "summary": "한국투자금융지주가 BNP파리바카디프생명을 800억원에 인수하는 협상을 마무리 단계에 두고 있다. 이는 7월 시장에서 거론되던 1500억~2000억원보다 46.7~60% 낮은 가격이다. 한국투자증권의 자산관리 고객과 한국투자신탁운용의 ETF 상품, 퇴직연금 사업을 보험상품과 연결할 수 있다는 점이 인수 명분으로 꼽힌다. 다만 카디프생명이 2025년 248억원의 순손실을 낸 점과 판매채널 재편 비용은 과제로 남았다.",
+      "category": "업계·경쟁사",
+      "importance": 2,
+      "source": "뉴스워커",
+      "published": "2026-09-17",
+      "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=504774"
     },
     {
       "id": "3881c183cea1",
