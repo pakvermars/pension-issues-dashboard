@@ -1,0 +1,8 @@
+{
+  "name": "pension-issues-dashboard",
+  "private": true,
+  "description": "게이트 스크래퍼(check_new.js)가 쓰는 의존성. 브라우저는 Playwright MCP가 받아 둔 ms-playwright 캐시를 그대로 쓴다.",
+  "dependencies": {
+    "playwright-core": "1.63.0"
+  }
+}

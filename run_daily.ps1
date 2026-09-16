@@ -36,14 +36,33 @@ if (-not (Test-Path $claude)) {
 
 $prompt = 'daily_update.md 파일을 읽고 1번부터 8번까지의 절차를 그대로 수행하라. 오늘 날짜(KST) 기준으로 수집한다. 웹 게시(9번)는 스크립트가 따로 처리하므로 하지 않는다.'
 
-Write-Log '수집 시작'
+# 게이트(run_gate.ps1)와 3시간 안전망 작업이 동시에 터질 수 있다. 수집 세션 둘이
+# 같은 파일을 쓰거나 git이 겹쳐 커밋하는 걸 막는다.
+$lock = Join-Path $logDir '.run.lock'
+if (Test-Path $lock) {
+    $age = (Get-Date) - (Get-Item $lock).LastWriteTime
+    if ($age.TotalMinutes -lt 15) {
+        Write-Log ("실행 건너뜀: 이전 실행이 진행 중 ({0}분 전 시작)" -f [int]$age.TotalMinutes)
+        exit 0
+    }
+    # 15분을 넘겼으면 앞 실행이 죽은 것이다. 잠금이 영영 안 풀리게 두지 않는다.
+    Write-Log ("남은 잠금 무시: {0}분 전 것" -f [int]$age.TotalMinutes)
+}
+New-Item -ItemType File -Path $lock -Force | Out-Null
 
-$output = & $claude -p $prompt `
-    --permission-mode acceptEdits `
-    --allowedTools Bash Read Write Edit Glob Grep WebSearch WebFetch 2>&1
+try {
+    Write-Log '수집 시작'
 
-[System.IO.File]::AppendAllText($log, ($output | Out-String), $utf8)
-Write-Log "수집 종료 (exit $LASTEXITCODE)"
+    $output = & $claude -p $prompt `
+        --permission-mode acceptEdits `
+        --allowedTools Bash Read Write Edit Glob Grep WebSearch WebFetch 2>&1
 
-# 수집이 실패했어도 이전 빌드 결과가 남아 있으면 게시는 시도한다.
-& (Join-Path $root 'publish.ps1')
+    [System.IO.File]::AppendAllText($log, ($output | Out-String), $utf8)
+    Write-Log "수집 종료 (exit $LASTEXITCODE)"
+
+    # 수집이 실패했어도 이전 빌드 결과가 남아 있으면 게시는 시도한다.
+    & (Join-Path $root 'publish.ps1')
+}
+finally {
+    Remove-Item $lock -Force -ErrorAction SilentlyContinue
+}

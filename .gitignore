@@ -5,3 +5,4 @@ Thumbs.db
 .playwright-mcp/
 artifact.html
 logs/
+node_modules/
