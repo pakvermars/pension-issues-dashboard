@@ -2,7 +2,7 @@
   "period": "yearly",
   "key": "2026",
   "label": "2026년",
-  "generated_at": "2026-09-16T10:39:07+09:00",
+  "generated_at": "2026-09-16T13:38:57+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -35,6 +35,16 @@
           "title": "“예금 이자론 성 안 차”…은행 퇴직연금, 국채 품고 반격할까",
           "source": "데일리안",
           "url": "https://www.dailian.co.kr/news/view/1688375/"
+        },
+        {
+          "title": "[흔들리는 국채 공식④] 퇴직연금에 국채 담을까…개인투자자의 새 셈법",
+          "source": "연합인포맥스",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4435180"
+        },
+        {
+          "title": "[필드뒷얘기] 퇴직연금 국채로 고객 묶는 증권사",
+          "source": "대한금융신문",
+          "url": "https://www.kbanker.co.kr/news/articleView.html?idxno=225952"
         },
         {
           "title": "\"월급 끊겨도 매달 400만원 들어옵니다\"…은퇴 앞둔 직장인이 알아야 할 자산",
@@ -77,6 +87,23 @@
           "title": "[퇴직연금 Radar] 기금형 사장단 간담회 또 연기…협의 '공회전'",
           "source": "더벨",
           "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609081504121440101838"
+        }
+      ]
+    },
+    {
+      "id": "230cdb384f9b",
+      "title": "전삼노, 경영성과급 DC형 퇴직연금-개인형 IRP 선택제 도입 요구",
+      "summary": "전국삼성전자노동조합이 15일 입장문을 내고 경영성과급의 DC형 퇴직연금·개인형 IRP 계좌 편입 선택제를 즉각 도입하라고 촉구했다. 전삼노는 이 제도가 회사의 추가 재원 투입이 거의 필요 없으며 SK하이닉스와 LG전자 등 주요 대기업은 노사 합의로 수년 전부터 운영해 왔다고 밝혔다. 초과이익성과급(OPI) 지급 시 예상 소득세를 투명하게 공지하고 현금 수령과 연금 편입 중 직원이 직접 고르게 할 것을 제안했다. 삼성전자는 그간 경영성과급을 세후 자사주나 현금으로 지급해 왔다.",
+      "category": "법인·자금운용",
+      "importance": 4,
+      "source": "뉴스1",
+      "published": "2026-09-15",
+      "url": "https://www.news1.kr/industry/general-industry/6291233",
+      "related": [
+        {
+          "title": "삼성전자 성과급 '절세' 요구…전삼노가 꺼낸 '성과급 퇴직연금' 뭐길래",
+          "source": "비즈한국",
+          "url": "https://bizhankook.com/articles/samsung-performance-bonus-pension-plan.html"
         }
       ]
     },
@@ -201,17 +228,6 @@
       "source": "뉴데일리",
       "published": "2026-09-10",
       "url": "https://biz.newdaily.co.kr/site/data/html/2026/09/10/2026091000173.html",
-      "related": []
-    },
-    {
-      "id": "de4a8500263d",
-      "title": "수익률 32%에도 돈이 안 온다…디폴트옵션의 역설",
-      "summary": "디폴트옵션 시행 3년 차 데이터에서 적극투자형 1년 수익률이 32.66%를 기록했으나 자금의 82.5%는 여전히 안정형에 머물러 있다. 은행권은 고객 자금 대부분을 안정형에 두는 반면 증권사 고객은 위험자산에 투자해 업권별로 뚜렷이 갈렸다. 제도의 병목은 상품 품질이 아니라 자금이 좋은 상품에 도달하는 경로에 있다는 지적이다.",
-      "category": "운용·상품",
-      "importance": 5,
-      "source": "한경머니",
-      "published": "2026-09-10",
-      "url": "https://magazine.hankyung.com/money/article/202608199155c",
       "related": []
     },
     {
