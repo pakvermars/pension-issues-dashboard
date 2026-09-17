@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "2026-09",
   "label": "2026년 9월",
-  "generated_at": "2026-09-17T11:46:28+09:00",
+  "generated_at": "2026-09-17T12:02:10+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -16,6 +16,11 @@
       "published": "2026-09-09",
       "url": "https://www.ftoday.co.kr/news/articleView.html?idxno=365111",
       "related": [
+        {
+          "title": "개인 국채투자, '퇴직연금서 투자'에 흥행…9월 청약서 초과 수요",
+          "source": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260917099600008"
+        },
         {
           "title": "\"1억 넣어두면 20년 뒤 2.6억\"…연금개미들 외면한 이유",
           "source": "한국경제",
