@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-18",
   "label": "2026-09-18 (금)",
-  "generated_at": "2026-09-18T07:40:00+09:00",
-  "item_count": 7,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 7건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-18T07:50:00+09:00",
+  "item_count": 8,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 8건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "dcf786923bfb",
@@ -75,6 +75,16 @@
       "source": "주간한국",
       "published": "2026-09-18",
       "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7183628"
+    },
+    {
+      "id": "935eb0d1c489",
+      "title": "[THE Biz&CEO] 이재원 대표의 균형 경영… 푸본현대생명 미래 기반 다진다",
+      "summary": "푸본현대생명이 올해 상반기 당기순이익 1586억 원을 기록하며 흑자 전환했고, 2분기 투자손익은 2071억 원 이익을 냈다. 상반기 신계약 CSM 효과는 703억 원으로 전년 동기 대비 37.3% 늘었다. 회사는 그간 퇴직연금 비중이 높았던 사업구조를 개선하기 위해 종신·정기·건강보험 등 보장성 상품 확대를 추진하고 있다. K-ICS 지급여력비율은 211.24%로 집계됐다.",
+      "category": "업계·경쟁사",
+      "importance": 2,
+      "source": "THE Biz(더비즈)",
+      "published": "2026-09-18",
+      "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=728003"
     }
   ]
 }
