@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-17",
   "label": "2026-09-17 (목)",
-  "generated_at": "2026-09-17T12:46:34+09:00",
-  "item_count": 16,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 16건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-17T13:46:40+09:00",
+  "item_count": 17,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 17건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "a6e5af30d59e",
@@ -125,6 +125,16 @@
       "source": "메가경제",
       "published": "2026-09-17",
       "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065572163997578"
+    },
+    {
+      "id": "b0ab80213fbe",
+      "title": "IRP에 600만원 넣으면 79만원 세액공제…연봉별 절세 효과는 [1인가구 재테크]",
+      "summary": "연금저축과 IRP를 합산해 연 최대 900만원까지 세액공제 대상이 된다. 총급여 5,500만원 이하 근로자는 납입액에 16.5%, 5,500만원을 넘으면 13.2%의 공제율이 적용된다. 총급여 7,000만원 근로자가 IRP에 600만원을 납입하면 약 79만2,000원의 세액공제 효과가 발생한다. 총급여 5,000만원 이하 근로자가 같은 금액을 납입하면 99만원의 세액공제가 예상된다.",
+      "category": "가입자·사회",
+      "importance": 2,
+      "source": "데일리팝",
+      "published": "2026-09-17",
+      "url": "http://www.dailypop.kr/news/articleView.html?idxno=99953"
     },
     {
       "id": "cab10ccbb8df",
