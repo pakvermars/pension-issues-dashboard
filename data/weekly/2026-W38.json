@@ -2,7 +2,7 @@
   "period": "weekly",
   "key": "2026-W38",
   "label": "2026-W38 (2026-09-14 ~ 2026-09-20)",
-  "generated_at": "2026-09-18T08:17:07+09:00",
+  "generated_at": "2026-09-18T08:31:41+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -63,6 +63,11 @@
           "title": "퇴직연금으로 산 개인투자용 국채, 10년 뒤 수익률은?",
           "source": "브라보마이라이프",
           "url": "https://bravo.etoday.co.kr/view/atc_view/20072"
+        },
+        {
+          "title": "퇴직연금으로 국채 투자…첫 청약부터 흥행",
+          "source": "SBS",
+          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008759230"
         },
         {
           "title": "[흔들리는 국채 공식④] 퇴직연금에 국채 담을까…개인투자자의 새 셈법",
