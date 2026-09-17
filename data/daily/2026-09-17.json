@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-17",
   "label": "2026-09-17 (목)",
-  "generated_at": "2026-09-17T15:16:21+09:00",
-  "item_count": 19,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 19건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-17T15:31:48+09:00",
+  "item_count": 20,
+  "shortfall_note": null,
   "items": [
     {
       "id": "a6e5af30d59e",
@@ -155,6 +155,16 @@
       "source": "데일리팝",
       "published": "2026-09-17",
       "url": "http://www.dailypop.kr/news/articleView.html?idxno=99953"
+    },
+    {
+      "id": "f22427d51808",
+      "title": "NH농협은행, 2026년 제2차 투자상품 완전판매 대토론회 개최",
+      "summary": "NH농협은행은 17일 서울 중구 본사에서 2026년 제2차 투자상품 완전판매 대토론회를 열었다. 투자상품 미스터리쇼핑 만점자와 영업본부 완전판매 TOP리더 등 약 40명이 참석해 펀드·방카슈랑스·신탁·퇴직연금 부문의 상담 준비, 상품 설명, 적합성·적정성 원칙 준수 사례를 공유했다. NH농협은행은 토론회 내용을 영상으로 제작해 영업점 교육자료로 활용할 계획이다. 박현동 투자상품부문 부행장은 완전판매가 절차 준수에 그치지 않고 고객 입장에서 충분히 설명하고 신뢰를 쌓는 과정이라고 강조했다.",
+      "category": "업계·경쟁사",
+      "importance": 2,
+      "source": "뉴스퀘스트",
+      "published": "2026-09-17",
+      "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=301184"
     },
     {
       "id": "cab10ccbb8df",
