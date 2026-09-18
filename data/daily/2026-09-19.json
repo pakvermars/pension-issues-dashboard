@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-19",
   "label": "2026-09-19 (토)",
-  "generated_at": "2026-09-19T07:05:00+09:00",
-  "item_count": 4,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 4건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-19T07:20:00+09:00",
+  "item_count": 5,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 5건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "c9301e64a757",
@@ -45,6 +45,16 @@
       "source": "노컷뉴스",
       "published": "2026-09-19",
       "url": "https://www.nocutnews.co.kr/news/6580724"
+    },
+    {
+      "id": "c7bf0bcc0498",
+      "title": "[AI시대, 권력 대이동-우리은행] AI 에이전트로 업무 프로세스 혁신",
+      "summary": "우리은행이 예·적금, 대출, 청약, 자산관리 등 8대 영역에서 약 200개의 AI 유스케이스를 발굴해 업무 프로세스에 적용하고 있다. 내부 생성형 AI 플랫폼 '우리GPT'는 월 9000명 이상의 직원이 이용하며 월 21만 건의 상담을 처리한다. 운영리스크와 외환, 퇴직연금 등 업무별 특화 GPT도 함께 운영한다. 우리은행은 AI 조직을 130명에서 150명으로 늘리고 디지털전략그룹을 AX혁신그룹으로 재편했다.",
+      "category": "업계·경쟁사",
+      "importance": 1,
+      "source": "포인트데일리",
+      "published": "2026-09-19",
+      "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=319830"
     }
   ]
 }
