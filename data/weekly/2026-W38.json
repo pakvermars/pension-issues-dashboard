@@ -2,7 +2,7 @@
   "period": "weekly",
   "key": "2026-W38",
   "label": "2026-W38 (2026-09-14 ~ 2026-09-20)",
-  "generated_at": "2026-09-18T11:45:25+09:00",
+  "generated_at": "2026-09-18T12:00:56+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -78,6 +78,11 @@
           "title": "[필드뒷얘기] 퇴직연금 국채로 고객 묶는 증권사",
           "source": "대한금융신문",
           "url": "https://www.kbanker.co.kr/news/articleView.html?idxno=225952"
+        },
+        {
+          "title": "퇴직연금에 들어온 ‘개인투자용 국채’…롯데손해보험 매각, 어려운 이유 [머니카운터 방송 예고]",
+          "source": "경인방송",
+          "url": "https://news.ifm.kr/news/articleView.html?idxno=479676"
         },
         {
           "title": "퇴직연금 계좌로 국채 투자하면 포인트 제공",
