@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-18",
   "label": "2026-09-18 (금)",
-  "generated_at": "2026-09-18T08:46:24+09:00",
-  "item_count": 14,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 14건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-18T09:12:00+09:00",
+  "item_count": 15,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 15건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "dcf786923bfb",
@@ -135,6 +135,16 @@
       "source": "매일일보",
       "published": "2026-09-18",
       "url": "https://www.m-i.kr/news/articleView.html?idxno=1415686"
+    },
+    {
+      "id": "b0811719b752",
+      "title": "미래에셋 TIGER에 쌓이는 '긴 돈'… 시장이 변해도 선택은 같았다",
+      "summary": "미래에셋자산운용의 TIGER 미국S&P500 ETF와 TIGER 미국나스닥100 ETF에 올해 하반기 개인투자자 순매수 2조1465억원이 유입됐다. 두 상품의 합산 순자산은 31조8688억원으로, TIGER 미국S&P500이 20조3922억원, TIGER 미국나스닥100이 11조4766억원이다. TIGER 미국S&P500의 명목 총보수는 연 0.0068%다. 미래에셋 관계자는 연금저축과 퇴직연금을 활용한 적립식 투자가 가능해 장기 투자 수요가 꾸준히 유입되는 것으로 보고 있다고 밝혔으며, DC·IRP에서는 위험자산 합산 70% 한도가 적용된다.",
+      "category": "운용·상품",
+      "importance": 2,
+      "source": "리버티코리아포스트",
+      "published": "2026-09-18",
+      "url": "http://www.lkp.news/news/articleView.html?idxno=84171"
     },
     {
       "id": "95bdd3307701",
