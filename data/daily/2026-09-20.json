@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-20",
   "label": "2026-09-20 (일)",
-  "generated_at": "2026-09-20T16:18:20+09:00",
-  "item_count": 15,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 15건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-20T17:32:21+09:00",
+  "item_count": 16,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 16건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "4811f65ec7cf",
@@ -145,6 +145,16 @@
       "source": "IT조선",
       "published": "2026-09-20",
       "url": "https://it.chosun.com/news/articleView.html?idxno=2023092170469"
+    },
+    {
+      "id": "dff4e535a16c",
+      "title": "SK증권, '연금저축랩' 신규 출시",
+      "summary": "SK증권이 9월 20일 연금저축랩을 새로 출시했다. 고객이 직접 투자 종목을 정하거나 포트폴리오를 조정하지 않아도 전문가가 자산배분과 운용을 맡는 구조다. 출시를 기념해 1000만원 이상 가입한 고객에게 최대 10만원의 현금 혜택을 제공한다.",
+      "category": "업계·경쟁사",
+      "importance": 2,
+      "source": "비즈월드",
+      "published": "2026-09-20",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=146836"
     },
     {
       "id": "772c6207d432",
