@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-21",
   "label": "2026-09-21 (월)",
-  "generated_at": "2026-09-21T10:02:10+09:00",
-  "item_count": 15,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 15건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-21T10:16:50+09:00",
+  "item_count": 17,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 17건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "ebc5d7f86d92",
@@ -45,6 +45,16 @@
       "source": "월간노동법률",
       "published": "2026-09-21",
       "url": "http://www.worklaw.co.kr/view/view.asp?accessSite=Naver&accessMethod=Search&accessMenu=News&in_cate=106&in_cate2=0&gopage=1&bi_pidx=39555"
+    },
+    {
+      "id": "8c2b86c6d933",
+      "title": "\"어디 투자하든 AI 리스크 떠안는다\"…연기금 분산투자도 무력화",
+      "summary": "AI 관련 자산이 주요 자산군 전반으로 퍼지면서 기관투자자의 분산투자 전략이 힘을 잃고 있다는 진단이 나왔다. S&P500 시가총액의 약 40%가 AI 인프라 기업이고, 투자적격 등급 회사채 발행의 49%와 벤처캐피털 투자의 87%가 AI와 관련돼 있다. 940억달러를 굴리는 LA카운티 공무원퇴직연금(LACERA)은 전체 자산의 8~19%가 AI에 노출된 것으로 분석됐다. 3270억달러를 운용하는 뉴욕시 퇴직연금(NYCRS)의 최고투자책임자는 앞으로 투자하는 거의 모든 펀드가 결국 AI 노출을 더 늘릴 것이라고 말했다.",
+      "category": "운용·상품",
+      "importance": 3,
+      "source": "이데일리",
+      "published": "2026-09-21",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=02437046645582416&mediaCodeNo=257"
     },
     {
       "id": "31937fac1fd1",
@@ -155,6 +165,16 @@
       "source": "뷰어스",
       "published": "2026-09-21",
       "url": "https://theviewers.co.kr/View.aspx?No=4235609"
+    },
+    {
+      "id": "a27549eaa512",
+      "title": "교보생명, 퇴직연금·신탁·펀드·여신 정보보호 강화",
+      "summary": "교보생명이 퇴직연금과 신탁, 펀드, 여신 등 금융서비스 전반을 대상으로 ISMS-P(정보보호 및 개인정보보호 관리체계) 인증을 획득했다. 2023년 보험업무와 홈페이지를 대상으로 인증을 받은 데 이어 적용 범위를 확대한 것이다. 교보생명은 금융업무 전반에 걸쳐 ISMS-P 인증을 받은 국내 금융회사는 이번이 처음이라고 밝혔다. 인공지능 활용 확대에 대응해 AI 보안 위험평가 기준과 보안 가이드라인도 마련했다.",
+      "category": "업계·경쟁사",
+      "importance": 1,
+      "source": "아주경제",
+      "published": "2026-09-21",
+      "url": "https://www.ajunews.com/view/20260921100110186"
     }
   ]
 }
