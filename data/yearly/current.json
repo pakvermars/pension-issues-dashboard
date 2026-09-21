@@ -2,7 +2,7 @@
   "period": "yearly",
   "key": "current",
   "label": "2025-09-21 ~ 2026-09-20",
-  "generated_at": "2026-09-21T11:30:25+09:00",
+  "generated_at": "2026-09-21T11:46:03+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -100,6 +100,38 @@
           "title": "[금상소] IRP·DC에 들어온 개인투자용 국채…10년·20년물 뭐가 나을까",
           "source": "이투데이",
           "url": "https://www.etoday.co.kr/news/view/2624549"
+        }
+      ]
+    },
+    {
+      "id": "8bb193e0ea59",
+      "title": "“정부 기초연금개편안, 겉으로는 하후상박 실제는 재정 절감안”",
+      "summary": "정부가 노인 하위 70%를 세 집단으로 나눠 차등 지급하는 하후상박 방식을 내놨다. 하위 30%에 월 38만원, 30~45%에 35만9000원, 45~70%에 35만원(동결)을 지급한다. 필자는 기초연금이 빈곤대책이 아니라 연금제도의 기초선 역할을 위해 도입된 제도라며 빈곤대책과 혼동된 정책이라고 비판했다. 실제로는 전체 노인의 70%가 아니라 약 40%만 인상되므로 지출 절감이 핵심이라는 평가다.",
+      "category": "가입자·사회",
+      "importance": 4,
+      "source": "오마이뉴스",
+      "published": "2026-09-10",
+      "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003265852",
+      "related": [
+        {
+          "title": "기초연금 개혁, 기만적 '하후상박' 대신 노인 기본소득을!",
+          "source": "슬로우뉴스",
+          "url": "https://slownews.kr/166386"
+        },
+        {
+          "title": "빈곤 노인에게 고작 3만원 더? 李 정부 기초연금 개편안 왜 후퇴했나 [기초연금 개편의 맹점②]",
+          "source": "더스쿠프",
+          "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311603"
+        },
+        {
+          "title": "[리셋 코리아] 정치적 득실 따지지 말고 기초연금 개혁해야",
+          "source": "중앙일보",
+          "url": "https://www.joongang.co.kr/article/25461512"
+        },
+        {
+          "title": "[충남시론] 개혁 발표 중단된 기초연금제도 허점 많다",
+          "source": "충남일보",
+          "url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=909274"
         }
       ]
     },
@@ -222,28 +254,6 @@
           "title": "노인 3명 중 1명 빈곤…\"기초연금 하후상박·일자리 연계해야\"",
           "source": "연합뉴스",
           "url": "https://www.yna.co.kr/view/AKR20260918117300530?input=1195m"
-        }
-      ]
-    },
-    {
-      "id": "f8e6de7fbf89",
-      "title": "기초연금 개혁, 기만적 '하후상박' 대신 노인 기본소득을!",
-      "summary": "정부가 2026년 9월 1일 발표한 기초연금 개편안은 수급 대상인 소득 하위 70%를 셋으로 나눠 하위 30%는 월 38만원, 30~45%는 35만9000원으로 올리고 45~70%는 35만원으로 묶는 내용이다. 필자인 남찬섭 동아대 교수는 충분한 사회적 논의 없이 발표됐고 기초연금을 노인 70%의 빈곤 예방 장치가 아니라 빈곤 구제 수단으로 다뤘다고 비판했다. '하후상박'을 내세웠지만 실제로 인상 혜택을 보는 수급자는 약 40%에 그치고 하위 7%는 기초생활보장 급여가 깎여 상쇄된다고 지적했다. 대안으로는 모든 노인에게 지급하고 과세하는 노인 기본소득을 제안했다.",
-      "category": "가입자·사회",
-      "importance": 3,
-      "source": "슬로우뉴스",
-      "published": "2026-09-15",
-      "url": "https://slownews.kr/166386",
-      "related": [
-        {
-          "title": "빈곤 노인에게 고작 3만원 더? 李 정부 기초연금 개편안 왜 후퇴했나 [기초연금 개편의 맹점②]",
-          "source": "더스쿠프",
-          "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311603"
-        },
-        {
-          "title": "[리셋 코리아] 정치적 득실 따지지 말고 기초연금 개혁해야",
-          "source": "중앙일보",
-          "url": "https://www.joongang.co.kr/article/25461512"
         }
       ]
     },
