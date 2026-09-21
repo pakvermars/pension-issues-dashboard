@@ -63,7 +63,7 @@ class CollectTest(unittest.TestCase):
         docs = build.collect(self.root, date(2026, 9, 10))
         self.assertEqual(set(docs), {"daily", "weekly", "monthly", "yearly"})
         self.assertEqual(docs["weekly"]["items"], [])
-        self.assertEqual(docs["weekly"]["label"], "2026-W37 (2026-09-07 ~ 2026-09-13)")
+        self.assertEqual(docs["weekly"]["label"], "2026-09-03 ~ 2026-09-09")
         self.assertIn("아직", docs["yearly"]["shortfall_note"])
 
     def test_existing_files_are_loaded(self):
@@ -95,9 +95,9 @@ class RenderTest(unittest.TestCase):
     def setUp(self):
         self.docs = {
             "daily": daily_doc("2026-09-10", [item()]),
-            "weekly": build.empty_doc("weekly", "2026-W37"),
-            "monthly": build.empty_doc("monthly", "2026-09"),
-            "yearly": build.empty_doc("yearly", "2026"),
+            "weekly": build.empty_doc("weekly", date(2026, 9, 3), date(2026, 9, 9)),
+            "monthly": build.empty_doc("monthly", date(2026, 8, 10), date(2026, 9, 9)),
+            "yearly": build.empty_doc("yearly", date(2025, 9, 10), date(2026, 9, 9)),
         }
 
     def test_placeholder_is_replaced(self):

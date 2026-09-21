@@ -21,12 +21,12 @@ ROOT = Path(__file__).resolve().parent
 PLACEHOLDER = "/*__DATA__*/"
 
 
-def empty_doc(period: str, key: str) -> dict:
+def empty_doc(period: str, start: date, end: date) -> dict:
     """아직 파일이 없는 기간을 채울 빈 문서."""
     return {
         "period": period,
-        "key": key,
-        "label": periods.label_for(period, key),
+        "key": periods.keys_for(start)[period],
+        "label": periods.label_for(period, start, end),
         "generated_at": "",
         "item_count": 0,
         "shortfall_note": "아직 수집된 이슈가 없습니다.",
@@ -50,12 +50,18 @@ def latest_daily_date(data_dir) -> date | None:
 
 
 def collect(data_dir, day: date) -> dict:
-    """day가 속한 네 기간의 문서를 모은다. 없는 기간은 빈 문서로 채운다."""
+    """day에서 뒤를 돌아본 네 기간의 문서를 모은다. 없는 기간은 빈 문서로 채운다."""
     data_dir = Path(data_dir)
+    keys = periods.keys_for(day)
+    windows = periods.windows_for(day)
     docs = {}
-    for period, key in periods.keys_for(day).items():
+    for period, key in keys.items():
         path = data_dir / period / f"{key}.json"
-        docs[period] = store.load(path) if path.exists() else empty_doc(period, key)
+        docs[period] = (
+            store.load(path)
+            if path.exists()
+            else empty_doc(period, *windows[period])
+        )
     return docs
 
 

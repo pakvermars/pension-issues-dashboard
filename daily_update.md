@@ -175,7 +175,7 @@ page.goto(url) → .news_cnt_detail_wrap 의 innerText, .time_area 의 게재일
 
 ```bash
 python -X utf8 -c "import dedupe; print(dedupe.make_id('여기에 기사 URL'))"
-python -X utf8 -c "import periods; print(periods.label_for('daily', '2026-09-10'))"
+python -X utf8 -c "import periods; from datetime import date; d = date(2026, 9, 10); print(periods.label_for('daily', d, d))"
 ```
 
 일간이 20건이 안 되는 것은 정상이다. 특히 오전에는 그날 기사가 아직 안 나왔을 뿐이다.
@@ -196,7 +196,8 @@ python -X utf8 build.py
 
 ## 7. 검토
 
-`data/weekly/`, `data/monthly/`, `data/yearly/`의 오늘자 파일을 열어 확인한다.
+`data/weekly/current.json`, `data/monthly/current.json`, `data/yearly/current.json`을 열어 확인한다.
+이 셋은 조회 시점에서 뒤를 돌아보는 창이라 매 실행 덮어쓴다. 창은 어제까지이고 오늘은 일간에만 들어간다.
 
 **기간 파일을 직접 고치지 마라.** `rollup.py`가 매번 일간 파일에서 처음부터 다시 만들기
 때문에, 여기 가한 수정은 다음 실행(3시간 뒤)에 그대로 덮어씌워진다.

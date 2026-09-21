@@ -115,8 +115,8 @@
   .hero-sub .dot { color: var(--rule); padding: 0 6px; }
 
   /* ── 서명 요소: 기간 축 ────────────────────────────────────
-     일 ⊂ 주 ⊂ 월 ⊂ 연. 오른쪽으로 갈수록 구간이 넓어지는 축 자체가
-     탭 역할을 한다. 시야를 넓힌다는 사실을 폭으로 말한다. */
+     일 ⊂ 주 ⊂ 월 ⊂ 연. 네 칸을 똑같은 폭으로 나눠 축을 만든다.
+     어디까지 거슬러 보는지는 탭 아래 기간 표기와 상단 날짜 구간이 말한다. */
   .rail {
     display: flex;
     align-items: stretch;
@@ -137,11 +137,6 @@
     cursor: pointer;
     transition: border-color 0.18s, color 0.18s;
   }
-
-  .rail button:nth-child(1) { flex-grow: 1; }
-  .rail button:nth-child(2) { flex-grow: 1.7; }
-  .rail button:nth-child(3) { flex-grow: 2.6; }
-  .rail button:nth-child(4) { flex-grow: 3.7; }
 
   .rail button:hover { color: var(--ink); border-top-color: var(--ink-soft); }
 

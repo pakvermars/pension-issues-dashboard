@@ -80,7 +80,7 @@ def _bucket_of(group: list[dict], unit: str) -> str:
     latest = max(item["published"] for item in group)
     if unit == "month":
         return latest[:7]
-    return periods.keys_for(date.fromisoformat(latest))["weekly"]
+    return periods.iso_week_key(date.fromisoformat(latest))
 
 
 def spread_out(
@@ -139,12 +139,13 @@ def merge(group: list[dict]) -> dict:
 
 def build_period(
     period: str,
-    key: str,
+    start: date,
+    end: date,
     dailies: list[dict],
     now: datetime | None = None,
     corrections: dict[str, list[list[str]]] | None = None,
 ) -> dict:
-    """일간 문서 여러 개를 하나의 기간 문서로 만든다."""
+    """일간 문서 여러 개를 start~end 창 하나의 기간 문서로 만든다."""
     corrections = corrections or {"same": [], "different": []}
     items = [item for doc in dailies for item in doc.get("items", [])]
 
@@ -169,8 +170,8 @@ def build_period(
     )
     return {
         "period": period,
-        "key": key,
-        "label": periods.label_for(period, key),
+        "key": periods.ROLLING_KEY,
+        "label": periods.label_for(period, start, end),
         "generated_at": generated,
         "item_count": len(selected),
         "shortfall_note": shortfall,
@@ -179,23 +180,27 @@ def build_period(
 
 
 def rollup(data_dir, day: date, now: datetime | None = None) -> list[Path]:
-    """day가 속한 주·월·연 파일을 다시 만들고 쓴 경로를 돌려준다."""
+    """day에서 뒤를 돌아본 주·월·연 파일을 다시 만들고 쓴 경로를 돌려준다.
+
+    창이 매번 움직이므로 기간마다 파일 하나를 두고 덮어쓴다. 지난 창이 필요하면
+    남아 있는 일간 파일로 언제든 다시 만들 수 있다.
+    """
     data_dir = Path(data_dir)
-    keys = periods.keys_for(day)
+    windows = periods.windows_for(day)
     corrections = load_corrections(data_dir)
 
     written = []
     for period in ROLLUP_PERIODS:
-        key = keys[period]
-        start, end = periods.date_range(period, key)
+        start, end = windows[period]
         doc = build_period(
             period,
-            key,
+            start,
+            end,
             store.load_dailies(data_dir, start, end),
             now=now,
             corrections=corrections,
         )
-        path = data_dir / period / f"{key}.json"
+        path = data_dir / period / f"{periods.ROLLING_KEY}.json"
         store.save(path, doc)
         written.append(path)
     return written

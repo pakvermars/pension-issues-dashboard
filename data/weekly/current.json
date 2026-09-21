@@ -1,8 +1,8 @@
 {
   "period": "weekly",
-  "key": "2026-W38",
-  "label": "2026-W38 (2026-09-14 ~ 2026-09-20)",
-  "generated_at": "2026-09-20T19:37:59+09:00",
+  "key": "current",
+  "label": "2026-09-14 ~ 2026-09-20",
+  "generated_at": "2026-09-21T10:14:35+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
