@@ -107,6 +107,7 @@ python -X utf8 build.py     # 데이터 → index.html, artifact.html
 | `dedupe.py` | 중복·후속 기사 묶기 |
 | `rollup.py` | 일간 파일 → 기간별 TOP 20 |
 | `build.py` | 기간 파일 → `index.html`(로컬용) + `artifact.html`(웹 게시용) |
+| `lock.ps1` | 수집 실행 잠금. 주인 프로세스의 생사로 판단한다 |
 | `template.html` | 화면 뼈대. 데이터가 인라인으로 주입된다 |
 | `naver_news.js` | 네이버 뉴스에서 기사 목록을 긁는 Playwright 스크립트. 검색어는 여기 `QUERIES`에 있다 |
 | `check_new.js` | 오늘 기사 URL만 긁는 게이트용 스크래퍼. Node 단독 실행 |
@@ -125,7 +126,8 @@ python -X utf8 build.py     # 데이터 → index.html, artifact.html
 ## 테스트
 
 ```bash
-python -X utf8 -m unittest discover -s tests -t . -v
+python -X utf8 -m unittest discover -s tests -t . -v   # 수집·집계·빌드
+pwsh -NoProfile -File tests/test_lock.ps1              # 실행 잠금
 ```
 
 ## 설계 문서

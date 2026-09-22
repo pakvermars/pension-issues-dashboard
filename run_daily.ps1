@@ -15,6 +15,8 @@ $OutputEncoding = [System.Text.Encoding]::UTF8
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
 
+. (Join-Path $root 'lock.ps1')
+
 $logDir = Join-Path $root 'logs'
 if (-not (Test-Path $logDir)) {
     New-Item -ItemType Directory -Path $logDir | Out-Null
@@ -38,17 +40,20 @@ $prompt = 'daily_update.md 파일을 읽고 1번부터 8번까지의 절차를 �
 
 # 게이트(run_gate.ps1)와 3시간 안전망 작업이 동시에 터질 수 있다. 수집 세션 둘이
 # 같은 파일을 쓰거나 git이 겹쳐 커밋하는 걸 막는다.
+#
+# 잠금의 주인이 살아 있는지로 판단한다(lock.ps1). 나이로 판단하면 두 가지를
+# 동시에 틀린다 — 급사해 남은 잠금에 15분을 묶이고, 15분 넘게 걸리는 정상 실행은
+# 잠금을 빼앗겨 수집이 둘로 겹친다.
 $lock = Join-Path $logDir '.run.lock'
-if (Test-Path $lock) {
-    $age = (Get-Date) - (Get-Item $lock).LastWriteTime
-    if ($age.TotalMinutes -lt 15) {
-        Write-Log ("실행 건너뜀: 이전 실행이 진행 중 ({0}분 전 시작)" -f [int]$age.TotalMinutes)
-        exit 0
-    }
-    # 15분을 넘겼으면 앞 실행이 죽은 것이다. 잠금이 영영 안 풀리게 두지 않는다.
-    Write-Log ("남은 잠금 무시: {0}분 전 것" -f [int]$age.TotalMinutes)
+$state = Get-RunLockState -Path $lock
+if ($state.Held) {
+    Write-Log ("실행 건너뜀: {0}" -f $state.Reason)
+    exit 0
 }
-New-Item -ItemType File -Path $lock -Force | Out-Null
+if (Test-Path $lock) {
+    Write-Log ("남은 잠금 무시: {0}" -f $state.Reason)
+}
+Set-RunLock -Path $lock
 
 try {
     Write-Log '수집 시작'
@@ -64,5 +69,5 @@ try {
     & (Join-Path $root 'publish.ps1')
 }
 finally {
-    Remove-Item $lock -Force -ErrorAction SilentlyContinue
+    Remove-RunLock -Path $lock
 }
