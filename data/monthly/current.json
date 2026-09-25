@@ -1,8 +1,8 @@
 {
   "period": "monthly",
   "key": "current",
-  "label": "2026-08-25 ~ 2026-09-24",
-  "generated_at": "2026-09-25T19:48:41+09:00",
+  "label": "2026-08-26 ~ 2026-09-25",
+  "generated_at": "2026-09-26T07:03:45+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -16,6 +16,11 @@
       "published": "2026-09-09",
       "url": "https://www.ftoday.co.kr/news/articleView.html?idxno=365111",
       "related": [
+        {
+          "title": "퇴직연금 문 열린 개인용 국채…첫 선택은 10년물에 쏠렸다",
+          "source": "연합인포맥스",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4436449"
+        },
         {
           "title": "개인 퇴직연금 계좌 통해 장기국채 투자 길 열렸다",
           "source": "동아일보",
@@ -50,6 +55,11 @@
           "title": "“예금 이자론 성 안 차”…은행 퇴직연금, 국채 품고 반격할까",
           "source": "데일리안",
           "url": "https://www.dailian.co.kr/news/view/1688375/"
+        },
+        {
+          "title": "[개인국채 시대] 퇴직연금 '입성', 장기물 수요↑",
+          "source": "딜사이트경제TV",
+          "url": "https://news.dealsitetv.com/articles/176339"
         },
         {
           "title": "삼전닉스 '몰빵' 대신 '개인투자용 국채' 사볼까",
