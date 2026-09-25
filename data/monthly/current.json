@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-08-25 ~ 2026-09-24",
-  "generated_at": "2026-09-25T10:18:46+09:00",
+  "generated_at": "2026-09-25T10:41:00+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -50,6 +50,11 @@
           "title": "“예금 이자론 성 안 차”…은행 퇴직연금, 국채 품고 반격할까",
           "source": "데일리안",
           "url": "https://www.dailian.co.kr/news/view/1688375/"
+        },
+        {
+          "title": "삼전닉스 '몰빵' 대신 '개인투자용 국채' 사볼까",
+          "source": "경향신문",
+          "url": "https://www.khan.co.kr/article/202609240600021"
         },
         {
           "title": "\"원리금보장이라고 다 같은 예금 아닙니다\"…퇴직연금, 국채 갈아타기 전 따져볼 것은",
