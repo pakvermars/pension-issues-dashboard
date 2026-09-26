@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-08-27 ~ 2026-09-26",
-  "generated_at": "2026-09-27T07:32:21+09:00",
+  "generated_at": "2026-09-27T07:42:25+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -55,6 +55,11 @@
           "title": "“예금 이자론 성 안 차”…은행 퇴직연금, 국채 품고 반격할까",
           "source": "데일리안",
           "url": "https://www.dailian.co.kr/news/view/1688375/"
+        },
+        {
+          "title": "[개인국채 시대] 미래에셋 선구안 빛났다…선점효과 기대",
+          "source": "딜사이트경제TV",
+          "url": "https://news.dealsitetv.com/articles/176340"
         },
         {
           "title": "[개인국채 시대] 퇴직연금 '입성', 장기물 수요↑",
