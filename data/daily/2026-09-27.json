@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-27",
   "label": "2026-09-27 (일)",
-  "generated_at": "2026-09-27T07:10:00+09:00",
-  "item_count": 3,
-  "shortfall_note": "일요일 이른 아침이라 오늘 지금까지 나온 관련 기사는 3건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-27T07:20:00+09:00",
+  "item_count": 4,
+  "shortfall_note": "일요일 이른 아침이라 오늘 지금까지 나온 관련 기사는 4건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "fe27a9c1f72c",
@@ -25,6 +25,16 @@
       "source": "중앙일보 (유료)",
       "published": "2026-09-27",
       "url": "https://www.joongang.co.kr/article/25464916"
+    },
+    {
+      "id": "0efaa0e8bbd4",
+      "title": "증시 변동성에 주목받는 파킹 ETF···KOFR·CD금리·머니마켓 3色",
+      "summary": "증시 변동성이 커지면서 단기 자금을 잠시 맡겨두는 파킹형 ETF에 자금이 몰리고 있다고 전했다. 국내 파킹형 ETF는 KOFR금리·CD금리·머니마켓 세 유형으로 나뉘며, KOFR금리 ETF는 듀레이션이 하루 수준이어서 가격 위험이 가장 작고 기대수익률도 가장 낮다고 설명했다. CD금리 ETF는 91일물과 1년물이 있어 만기가 길수록 기간 프리미엄을 기대할 수 있고, 머니마켓 ETF는 CP·전자단기사채·단기채권·CD·RP를 함께 담아 기대수익률이 가장 높은 대신 시가평가로 가격이 움직인다고 짚었다. 상당수 파킹형 ETF는 연금저축에서 매수할 수 있고 IRP·DC형 퇴직연금에서는 안전자산으로 분류돼 적립금의 100%까지 투자할 수 있다고 덧붙였다.",
+      "category": "운용·상품",
+      "importance": 2,
+      "source": "시사저널이코노미",
+      "published": "2026-09-27",
+      "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=423895"
     },
     {
       "id": "079c118e8578",
