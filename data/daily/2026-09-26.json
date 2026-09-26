@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-26",
   "label": "2026-09-26 (토)",
-  "generated_at": "2026-09-26T13:40:59+09:00",
-  "item_count": 19,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 19건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-26T16:04:34+09:00",
+  "item_count": 20,
+  "shortfall_note": null,
   "items": [
     {
       "id": "f2491164d33c",
@@ -195,6 +195,16 @@
       "source": "인더스트리뉴스",
       "published": "2026-09-26",
       "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=86225"
+    },
+    {
+      "id": "3d3c3ce4b45a",
+      "title": "[추석기획] \"받긴 했는데 애매하네\"…현명한 추석 상여금 활용법",
+      "summary": "올해 명절 상여금을 지급하는 기업 비율은 56.9%, 1인당 평균 지급액은 628만원으로 집계됐다. 기업 규모별로는 300인 이상이 1059만원, 100~300인이 763만원, 100인 미만이 591만원이었다. 전문가들은 100만원 이상을 받았다면 고금리 부채를 먼저 상환한 뒤 IRP 추가 납입을 고려하라고 권했다. IRP는 연금저축을 합쳐 연 900만원 한도로 소득 구간에 따라 13.2~16.5%의 세액공제를 받을 수 있다.",
+      "category": "가입자·사회",
+      "importance": 1,
+      "source": "아시아타임즈",
+      "published": "2026-09-26",
+      "url": "https://www.asiatime.co.kr/article/20260918500354"
     }
   ]
 }
