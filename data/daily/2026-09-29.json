@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-09-29",
   "label": "2026-09-29 (화)",
-  "generated_at": "2026-09-29T07:50:00+09:00",
-  "item_count": 11,
-  "shortfall_note": "오늘 오전 7시 50분까지 나온 관련 기사는 11건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-09-29T08:20:00+09:00",
+  "item_count": 12,
+  "shortfall_note": "오늘 오전 8시 20분까지 나온 관련 기사는 12건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "66fa13a160da",
@@ -25,6 +25,16 @@
       "source": "조선일보",
       "published": "2026-09-29",
       "url": "https://www.chosun.com/economy/economy_general/2026/09/29/BHOHXGOUTNG7PFIHQCJEBSOUN4/"
+    },
+    {
+      "id": "268f8567f095",
+      "title": "연금제도 개혁 정책 토론회 개최",
+      "summary": "국회 연금개혁특별위원회 위원장인 국민의힘 윤영석 의원이 주최한 연금제도 개혁 정책 토론회가 28일 열렸다. 토론회에서는 기금 운용을 정치와 분리할 필요가 있다는 지적과 함께 공적연금에 초과세수 등 재정을 투입할 수 있도록 법을 개정해야 한다는 의견이 제기됐다. 퇴직연금과 관련해서는 일시금 수령을 제한하는 방안과 중소기업으로 퇴직연금 제도를 확대 시행하는 방안이 제안됐다.",
+      "category": "제도·규제",
+      "importance": 4,
+      "source": "KNN",
+      "published": "2026-09-29",
+      "url": "https://news.knn.co.kr/news/article/192689"
     },
     {
       "id": "102d216548d8",
