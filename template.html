@@ -60,6 +60,10 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* 페이지의 가장자리. 본문 폭에 갇히지 않고 화면 끝까지 지나가야
+     구분선이 아니라 종이의 테두리로 읽힌다. */
+  .topline { height: 4px; background: var(--kiwoom); }
+
   .page { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
 
   a { color: inherit; }
@@ -406,6 +410,7 @@
 </style>
 </head>
 <body>
+<div class="topline"></div>
 <div class="page">
   <div class="masthead">
     <p class="wordmark">퇴직연금 주요 이슈</p>
