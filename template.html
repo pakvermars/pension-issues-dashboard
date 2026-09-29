@@ -7,7 +7,11 @@
 <style>
   /* ── 팔레트 ───────────────────────────────────────────────
      잉크 네이비 위에 차가운 석재 종이. 강조색은 적립·성장을 뜻하는
-     깊은 소나무색 하나, 그리고 '오늘'에만 쓰는 벽돌색 하나. */
+     깊은 소나무색 하나, 그리고 '오늘'에만 쓰는 벽돌색 하나.
+
+     키움 두 색은 kiwoomam.com 로고의 구조를 그대로 옮긴 것이다.
+     글자는 감청, 포인트 마크만 마젠타. 그래서 맨 위 줄은 감청이고
+     마젠타는 슬로건 한 줄에만 쓴다. 둘을 같은 넓이로 쓰면 서로 죽는다. */
   :root {
     --ink: #101C33;
     --ink-soft: #4A5670;
@@ -21,7 +25,8 @@
     --cat-3: #14657C;
     --cat-4: #7A3B5C;
     --cat-5: #8A5A2B;
-    --kiwoom: #D6341F;
+    --kiwoom-deep: #1A399E;
+    --kiwoom-point: #EC008C;
 
     --font-ui: 'Pretendard Variable', Pretendard, 'Apple SD Gothic Neo',
                'Malgun Gothic', system-ui, sans-serif;
@@ -44,8 +49,10 @@
       --cat-3: #6BB8CE;
       --cat-4: #D28FB0;
       --cat-5: #C79A63;
-      /* 어두운 바탕에서는 다홍이 탁해 보여 한 단계 밝게 쓴다. */
-      --kiwoom: #FF7A63;
+      /* 감청 원색은 어두운 종이에서 1.9:1까지 떨어져 줄이 보이지 않는다.
+         마젠타도 한 단계 올려 짝을 맞춘다. 각각 6.2:1, 6.6:1. */
+      --kiwoom-deep: #6E92F5;
+      --kiwoom-point: #FF5FB4;
     }
   }
 
@@ -62,7 +69,7 @@
 
   /* 페이지의 가장자리. 본문 폭에 갇히지 않고 화면 끝까지 지나가야
      구분선이 아니라 종이의 테두리로 읽힌다. */
-  .topline { height: 4px; background: var(--kiwoom); }
+  .topline { height: 4px; background: var(--kiwoom-deep); }
 
   .page { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
 
@@ -96,7 +103,7 @@
     font-size: 15pt;
     font-weight: 700;
     letter-spacing: -0.01em;
-    color: var(--kiwoom);
+    color: var(--kiwoom-point);
     white-space: nowrap;
   }
 
