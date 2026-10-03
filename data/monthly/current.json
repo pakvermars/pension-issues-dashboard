@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-09-03 ~ 2026-10-02",
-  "generated_at": "2026-10-03T09:15:44+09:00",
+  "generated_at": "2026-10-03T10:03:03+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -166,6 +166,43 @@
       ]
     },
     {
+      "id": "268f8567f095",
+      "title": "연금제도 개혁 정책 토론회 개최",
+      "summary": "국회 연금개혁특별위원회 위원장인 국민의힘 윤영석 의원이 주최한 연금제도 개혁 정책 토론회가 28일 열렸다. 토론회에서는 기금 운용을 정치와 분리할 필요가 있다는 지적과 함께 공적연금에 초과세수 등 재정을 투입할 수 있도록 법을 개정해야 한다는 의견이 제기됐다. 퇴직연금과 관련해서는 일시금 수령을 제한하는 방안과 중소기업으로 퇴직연금 제도를 확대 시행하는 방안이 제안됐다.",
+      "category": "제도·규제",
+      "importance": 4,
+      "source": "KNN",
+      "published": "2026-09-29",
+      "url": "https://news.knn.co.kr/news/article/192689",
+      "related": [
+        {
+          "title": "60세 은퇴 뒤 연금까지 8년 기다리나…국민연금 68세 수급안 따져보니",
+          "source": "세계일보",
+          "url": "https://www.segye.com/newsView/20261002501170?OutUrl=naver"
+        },
+        {
+          "title": "“국민연금 65세→68세로 늦추자?”…개혁 또 나오는 이유는? [잇슈 머니]",
+          "source": "KBS",
+          "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8674198&ref=A"
+        },
+        {
+          "title": "“국민연금 넘어 기초·퇴직연금까지”",
+          "source": "양산신문",
+          "url": "http://www.yangsanilbo.com/news/articleView.html?idxno=127699"
+        },
+        {
+          "title": "[사설] 미래세대 부담 줄일 연금 구조개혁, 더는 미룰 수 없다",
+          "source": "서울경제",
+          "url": "https://www.sedaily.com/article/20095714"
+        },
+        {
+          "title": "윤영석 의원 '연금제도 구조개혁' 정책토론회 개최",
+          "source": "경남도민신문",
+          "url": "http://www.gndomin.com/news/articleView.html?idxno=490747"
+        }
+      ]
+    },
+    {
       "id": "8bb193e0ea59",
       "title": "“정부 기초연금개편안, 겉으로는 하후상박 실제는 재정 절감안”",
       "summary": "정부가 노인 하위 70%를 세 집단으로 나눠 차등 지급하는 하후상박 방식을 내놨다. 하위 30%에 월 38만원, 30~45%에 35만9000원, 45~70%에 35만원(동결)을 지급한다. 필자는 기초연금이 빈곤대책이 아니라 연금제도의 기초선 역할을 위해 도입된 제도라며 빈곤대책과 혼동된 정책이라고 비판했다. 실제로는 전체 노인의 70%가 아니라 약 40%만 인상되므로 지출 절감이 핵심이라는 평가다.",
@@ -221,38 +258,6 @@
           "title": "[이슈] 은퇴자금 지키면서 굴린다...미래에셋생명 '보증형실적배당보험' 주목",
           "source": "오늘경제",
           "url": "https://www.startuptoday.co.kr/news/articleView.html?idxno=813516"
-        }
-      ]
-    },
-    {
-      "id": "268f8567f095",
-      "title": "연금제도 개혁 정책 토론회 개최",
-      "summary": "국회 연금개혁특별위원회 위원장인 국민의힘 윤영석 의원이 주최한 연금제도 개혁 정책 토론회가 28일 열렸다. 토론회에서는 기금 운용을 정치와 분리할 필요가 있다는 지적과 함께 공적연금에 초과세수 등 재정을 투입할 수 있도록 법을 개정해야 한다는 의견이 제기됐다. 퇴직연금과 관련해서는 일시금 수령을 제한하는 방안과 중소기업으로 퇴직연금 제도를 확대 시행하는 방안이 제안됐다.",
-      "category": "제도·규제",
-      "importance": 4,
-      "source": "KNN",
-      "published": "2026-09-29",
-      "url": "https://news.knn.co.kr/news/article/192689",
-      "related": [
-        {
-          "title": "“국민연금 65세→68세로 늦추자?”…개혁 또 나오는 이유는? [잇슈 머니]",
-          "source": "KBS",
-          "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8674198&ref=A"
-        },
-        {
-          "title": "“국민연금 넘어 기초·퇴직연금까지”",
-          "source": "양산신문",
-          "url": "http://www.yangsanilbo.com/news/articleView.html?idxno=127699"
-        },
-        {
-          "title": "[사설] 미래세대 부담 줄일 연금 구조개혁, 더는 미룰 수 없다",
-          "source": "서울경제",
-          "url": "https://www.sedaily.com/article/20095714"
-        },
-        {
-          "title": "윤영석 의원 '연금제도 구조개혁' 정책토론회 개최",
-          "source": "경남도민신문",
-          "url": "http://www.gndomin.com/news/articleView.html?idxno=490747"
         }
       ]
     },
