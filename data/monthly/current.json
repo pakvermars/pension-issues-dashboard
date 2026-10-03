@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-09-04 ~ 2026-10-03",
-  "generated_at": "2026-10-04T07:08:00+09:00",
+  "generated_at": "2026-10-04T07:42:29+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -139,6 +139,48 @@
       ]
     },
     {
+      "id": "8bb193e0ea59",
+      "title": "“정부 기초연금개편안, 겉으로는 하후상박 실제는 재정 절감안”",
+      "summary": "정부가 노인 하위 70%를 세 집단으로 나눠 차등 지급하는 하후상박 방식을 내놨다. 하위 30%에 월 38만원, 30~45%에 35만9000원, 45~70%에 35만원(동결)을 지급한다. 필자는 기초연금이 빈곤대책이 아니라 연금제도의 기초선 역할을 위해 도입된 제도라며 빈곤대책과 혼동된 정책이라고 비판했다. 실제로는 전체 노인의 70%가 아니라 약 40%만 인상되므로 지출 절감이 핵심이라는 평가다.",
+      "category": "가입자·사회",
+      "importance": 4,
+      "source": "오마이뉴스",
+      "published": "2026-09-10",
+      "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003265852",
+      "related": [
+        {
+          "title": "“부유한 노인도 받는다”…기초연금 ‘하위 70%’ 기준 개편 추진",
+          "source": "세계일보",
+          "url": "https://www.segye.com/newsView/20261002510945?OutUrl=naver"
+        },
+        {
+          "title": "이재명 정부, 기초연금 개혁 회피해선 안 된다",
+          "source": "시사IN",
+          "url": "https://www.sisain.co.kr/news/articleView.html?idxno=58534"
+        },
+        {
+          "title": "기초연금 개혁, 기만적 '하후상박' 대신 노인 기본소득을!",
+          "source": "슬로우뉴스",
+          "url": "https://slownews.kr/166386"
+        },
+        {
+          "title": "빈곤 노인에게 고작 3만원 더? 李 정부 기초연금 개편안 왜 후퇴했나 [기초연금 개편의 맹점②]",
+          "source": "더스쿠프",
+          "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311603"
+        },
+        {
+          "title": "[리셋 코리아] 정치적 득실 따지지 말고 기초연금 개혁해야",
+          "source": "중앙일보",
+          "url": "https://www.joongang.co.kr/article/25461512"
+        },
+        {
+          "title": "[충남시론] 개혁 발표 중단된 기초연금제도 허점 많다",
+          "source": "충남일보",
+          "url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=909274"
+        }
+      ]
+    },
+    {
       "id": "ebc5d7f86d92",
       "title": "기금형 퇴직연금 가이드라인이 늦어지는 까닭은",
       "summary": "기금형 퇴직연금 가이드라인 발표가 지연되면서 금융사 CEO 간담회 일정도 9월 2일에서 15일로, 다시 추석 이후로 밀렸다. 지연 이유는 퇴직연금 수탁기관의 성격과 관리·감독 주체, 기존 확정기여형(DC) 적립금의 기금형 이전 방식을 둘러싼 이견이 정리되지 않았기 때문이다. 지난 2월 노사정 합의로 금융기관 개방형·공공기관 개방형·연합형 세 유형을 두기로 했으나, 민간 금융기관은 금융기관 개방형에, 노동계는 노사 동수 이사회를 구성할 수 있는 연합형에, 국민연금공단은 300명 이상 공기업을 대상으로 한 공공기관 개방형에 각각 집중하고 있다. 합의문상 수탁법인 이사회의 절반은 독립이사여야 하고 독립이사의 30% 이상은 기금 가입자가 추천한 인사여야 한다.",
@@ -199,38 +241,6 @@
           "title": "윤영석 의원 '연금제도 구조개혁' 정책토론회 개최",
           "source": "경남도민신문",
           "url": "http://www.gndomin.com/news/articleView.html?idxno=490747"
-        }
-      ]
-    },
-    {
-      "id": "8bb193e0ea59",
-      "title": "“정부 기초연금개편안, 겉으로는 하후상박 실제는 재정 절감안”",
-      "summary": "정부가 노인 하위 70%를 세 집단으로 나눠 차등 지급하는 하후상박 방식을 내놨다. 하위 30%에 월 38만원, 30~45%에 35만9000원, 45~70%에 35만원(동결)을 지급한다. 필자는 기초연금이 빈곤대책이 아니라 연금제도의 기초선 역할을 위해 도입된 제도라며 빈곤대책과 혼동된 정책이라고 비판했다. 실제로는 전체 노인의 70%가 아니라 약 40%만 인상되므로 지출 절감이 핵심이라는 평가다.",
-      "category": "가입자·사회",
-      "importance": 4,
-      "source": "오마이뉴스",
-      "published": "2026-09-10",
-      "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003265852",
-      "related": [
-        {
-          "title": "기초연금 개혁, 기만적 '하후상박' 대신 노인 기본소득을!",
-          "source": "슬로우뉴스",
-          "url": "https://slownews.kr/166386"
-        },
-        {
-          "title": "빈곤 노인에게 고작 3만원 더? 李 정부 기초연금 개편안 왜 후퇴했나 [기초연금 개편의 맹점②]",
-          "source": "더스쿠프",
-          "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311603"
-        },
-        {
-          "title": "[리셋 코리아] 정치적 득실 따지지 말고 기초연금 개혁해야",
-          "source": "중앙일보",
-          "url": "https://www.joongang.co.kr/article/25461512"
-        },
-        {
-          "title": "[충남시론] 개혁 발표 중단된 기초연금제도 허점 많다",
-          "source": "충남일보",
-          "url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=909274"
         }
       ]
     },
