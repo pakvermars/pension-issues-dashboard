@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-10-07",
   "label": "2026-10-07 (수)",
-  "generated_at": "2026-10-07T07:49:03+09:00",
-  "item_count": 13,
-  "shortfall_note": "오늘 오전 7시 50분까지 나온 관련 기사는 13건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-10-07T08:25:00+09:00",
+  "item_count": 14,
+  "shortfall_note": "오늘 오전 8시 25분까지 나온 관련 기사는 14건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "e2715a68b129",
@@ -115,6 +115,16 @@
       "source": "리얼캐스트",
       "published": "2026-10-07",
       "url": "https://www.rcast.co.kr/news/articleView.html?idxno=31774"
+    },
+    {
+      "id": "d86212c7d0db",
+      "title": "신한투자증권, 연금고객관리팀 신설…생애주기별 관리 체계 구축",
+      "summary": "신한투자증권이 퇴직연금 시장 성장에 맞춰 연금고객관리팀을 신설하고 고객 생애주기별 연금관리 체계를 구축했다. 신규 DC·IRP 가입 고객에게 계좌 개설 후 3일 이내 제도를 안내하는 웰컴콜, 우수 연금PB와 고객을 1대1로 매칭하는 연금스타, 퇴직소득세 절세 전략 시뮬레이션과 연금 수령 계획을 담은 신한 Premier 연금컨설팅을 운영한다. 법인 CEO와 고위 임원을 대상으로 한 C-Level 컨설팅과 8월 도입한 모바일 상담도 함께 제공한다. 연금고객관리팀은 신설 이후 신한 Premier 연금컨설팅을 약 200건 제공했다.",
+      "category": "업계·경쟁사",
+      "importance": 2,
+      "source": "더퍼블릭",
+      "published": "2026-10-07",
+      "url": "https://www.thepublic.kr/news/articleView.html?idxno=321337"
     },
     {
       "id": "d340502626d5",
