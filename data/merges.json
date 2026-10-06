@@ -54,7 +54,8 @@
       "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003265852",
       "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=909274",
       "https://www.segye.com/newsView/20261002510945?OutUrl=naver",
-      "https://www.sisain.co.kr/news/articleView.html?idxno=58534"
+      "https://www.sisain.co.kr/news/articleView.html?idxno=58534",
+      "https://www.news1.kr/economy/trend/6308073"
     ],
     [
       "https://www.thefairnews.co.kr/news/articleView.html?idxno=88073",
@@ -169,7 +170,12 @@
     ],
     [
       "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8677562&ref=A",
-      "https://www.m-i.kr/news/articleView.html?idxno=2002553"
+      "https://www.m-i.kr/news/articleView.html?idxno=2002553",
+      "https://www.theguru.co.kr/news/article.html?no=107765"
+    ],
+    [
+      "https://www.mt.co.kr/stock/2026/10/05/2026100217232429211",
+      "https://www.mdtoday.co.kr/news/articleView.html?idxno=617415"
     ]
   ],
   "different": []
