@@ -1,8 +1,8 @@
 {
   "period": "monthly",
   "key": "current",
-  "label": "2026-09-12 ~ 2026-10-11",
-  "generated_at": "2026-10-12T20:01:15+09:00",
+  "label": "2026-09-13 ~ 2026-10-12",
+  "generated_at": "2026-10-13T07:02:59+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -102,11 +102,6 @@
           "url": "https://www.mk.co.kr/article/12151487"
         },
         {
-          "title": "개인투자용 국채 품은 퇴직연금 계좌···증권사, 연금자금 유치전",
-          "source": "서울파이낸스",
-          "url": "https://www.seoulfn.com/news/articleView.html?idxno=637698"
-        },
-        {
           "title": "1000만원 넣으면 10년 뒤 1597만원…국채 사볼까",
           "source": "더스쿠프",
           "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311873"
@@ -135,11 +130,6 @@
           "title": "퇴직연금 계좌로 국채 투자하면 포인트 제공",
           "source": "서울신문",
           "url": "https://www.seoul.co.kr/news/economy/finance/2026/09/14/20260914018002?wlog_tag3=naver"
-        },
-        {
-          "title": "[금상소] IRP·DC에 들어온 개인투자용 국채…10년·20년물 뭐가 나을까",
-          "source": "이투데이",
-          "url": "https://www.etoday.co.kr/news/view/2624549"
         }
       ]
     },
