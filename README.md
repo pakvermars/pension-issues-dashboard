@@ -108,6 +108,7 @@ python -X utf8 build.py     # 데이터 → index.html, artifact.html
 | `rollup.py` | 일간 파일 → 기간별 TOP 20 |
 | `build.py` | 기간 파일 → `index.html`(로컬용) + `artifact.html`(웹 게시용) |
 | `lock.ps1` | 수집 실행 잠금. 주인 프로세스의 생사로 판단한다 |
+| `register_tasks.ps1` | 스케줄러 작업 등록·복구. 버전 박힌 경로를 거부한다 |
 | `template.html` | 화면 뼈대. 데이터가 인라인으로 주입된다 |
 | `naver_news.js` | 네이버 뉴스에서 기사 목록을 긁는 Playwright 스크립트. 검색어는 여기 `QUERIES`에 있다 |
 | `check_new.js` | 오늘 기사 URL만 긁는 게이트용 스크래퍼. Node 단독 실행 |
@@ -128,7 +129,21 @@ python -X utf8 build.py     # 데이터 → index.html, artifact.html
 ```bash
 python -X utf8 -m unittest discover -s tests -t . -v   # 수집·집계·빌드
 pwsh -NoProfile -File tests/test_lock.ps1              # 실행 잠금
+pwsh -NoProfile -File tests/test_tasks.ps1             # 작업 등록 경로
 ```
+
+## 멈췄을 때
+
+화면 맨 위에 빨간 띠가 떠 있으면 수집이 14시간 넘게 멈춘 것이다. 순서대로 본다.
+
+```bash
+pwsh -NoProfile -File register_tasks.ps1 -Check   # 작업이 살아 있나
+tail -5 logs/daily-$(date +%Y-%m).log             # 실행 기록이 남았나
+```
+
+- `-Check`가 NG면 `-Check` 없이 다시 실행해 작업을 고친다.
+- 로그에 `수집 시작`조차 없으면 작업이 안 걸린 것이다. 위 검사로 잡힌다.
+- 로그는 있는데 커밋이 없으면 OAuth 만료나 게시 실패 쪽을 본다.
 
 ## 설계 문서
 

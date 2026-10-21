@@ -71,6 +71,20 @@
      구분선이 아니라 종이의 테두리로 읽힌다. */
   .topline { height: 4px; background: var(--kiwoom-deep); }
 
+  /* 수집이 멈춰도 index.html은 그대로 남아 아무 일 없어 보인다. 그래서
+     보는 사람의 시계와 비교해 묵은 정도를 화면에서 직접 말한다.
+     2026-10-15에 엿새를 멈췄는데 아무도 몰랐던 것이 이 띠를 만든 이유다. */
+  .stale {
+    padding: 10px 20px;
+    background: var(--hot);
+    color: var(--paper);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .stale[hidden] { display: none; }
+
   .page { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
 
   a { color: inherit; }
@@ -418,6 +432,7 @@
 </head>
 <body>
 <div class="topline"></div>
+<div class="stale" id="stale" hidden></div>
 <div class="page">
   <div class="masthead">
     <p class="wordmark">퇴직연금 주요 이슈</p>
@@ -501,6 +516,42 @@
     return { text: (d.getMonth() + 1) + '월 ' + d.getDate() + '일', fresh: false };
   }
 
+  /* 게이트는 07:00~20:00만 돈다. 밤사이 11시간은 정상적으로 묵으므로
+     그보다 넉넉히 잡아야 매일 아침 헛경보가 뜨지 않는다. */
+  var STALE_HOURS = 14;
+
+  function agoText(hours) {
+    if (hours < 1) return '방금';
+    if (hours < 24) return Math.floor(hours) + '시간 전';
+    return Math.floor(hours / 24) + '일 전';
+  }
+
+  function stampText(d) {
+    var pad = function (n) { return n < 10 ? '0' + n : String(n); };
+    return pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + ' '
+         + pad(d.getHours()) + ':' + pad(d.getMinutes());
+  }
+
+  /** 마지막 갱신이 얼마나 묵었는지. 읽을 수 없으면 null. */
+  function builtAge() {
+    var built = new Date(DATA.built_at);
+    if (isNaN(built.getTime())) return null;
+    return { at: built, hours: (Date.now() - built.getTime()) / 3600000 };
+  }
+
+  function buildStaleNotice() {
+    var age = builtAge();
+    var el = document.getElementById('stale');
+    // 읽을 수 없는 값으로 헛경보를 내지 않는다.
+    if (age === null || age.hours <= STALE_HOURS) {
+      el.hidden = true;
+      return;
+    }
+    el.textContent = '갱신이 멈춘 것 같습니다. 마지막 갱신 '
+      + stampText(age.at) + ' (' + agoText(age.hours) + ')';
+    el.hidden = false;
+  }
+
   function buildHero() {
     var d = TODAY;
     var pad = function (n) { return n < 10 ? '0' + n : String(n); };
@@ -512,7 +563,10 @@
       Object.assign(document.createElement('span'), { className: 'dot', textContent: '·' }),
       d.getFullYear() + '년 기준'
     );
-    document.getElementById('footer').textContent = '화면 갱신 ' + DATA.built_at;
+    var age = builtAge();
+    document.getElementById('footer').textContent = age === null
+      ? '화면 갱신 ' + DATA.built_at
+      : '화면 갱신 ' + stampText(age.at) + ' · ' + agoText(age.hours);
   }
 
   function buildTabs() {
@@ -689,6 +743,7 @@
     if (event.key === 'Escape') clearSearch();
   });
 
+  buildStaleNotice();
   buildHero();
   buildTabs();
   buildFilters();
