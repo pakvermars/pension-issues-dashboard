@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-09-21 ~ 2026-10-20",
-  "generated_at": "2026-10-21T15:46:32+09:00",
+  "generated_at": "2026-10-21T16:01:27+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -232,6 +232,23 @@
           "title": "[이코노 브리핑] 신한銀, 퇴직연금 ETF 당일 매매 시행 외",
           "source": "세계일보",
           "url": "https://www.segye.com/newsView/20260921516039"
+        }
+      ]
+    },
+    {
+      "id": "e2120a500d3a",
+      "title": "한국투자증권, 퇴직연금 DC·IRP 적립금 44.8%↑… 성장률 1위",
+      "summary": "한국투자증권의 3분기 말 퇴직연금 DC·IRP 적립금이 18조5160억원으로 집계됐다. 지난해 말보다 5조7292억원, 44.8% 늘어 전체 퇴직연금 사업자 가운데 증가율 1위다. 회사는 연금 가입자들이 실질적인 자산관리 역량과 검증된 수익률을 갖춘 금융사로 자금을 옮기는 흐름이 뚜렷해지고 있다고 설명했다.",
+      "category": "업계·경쟁사",
+      "importance": 4,
+      "source": "머니투데이",
+      "published": "2026-10-19",
+      "url": "https://www.mt.co.kr/stock/2026/10/19/2026101916592725470",
+      "related": [
+        {
+          "title": "한국투자증권, DC·IRP 적립금 44.8% 증가…성장률 1위",
+          "source": "비즈월드",
+          "url": "http://www.bizwnews.com/news/articleView.html?idxno=149340"
         }
       ]
     },
@@ -466,23 +483,6 @@
           "title": "611만명 퇴직연금 사각지대 \"푸른씨앗 키워 포괄하자\"",
           "source": "매일노동뉴스",
           "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=237050"
-        }
-      ]
-    },
-    {
-      "id": "ca4b29701d4c",
-      "title": "새 경제팀 첫 테이블에 '전기차·퇴직연금'…이형일, 경제현안간담회 신설",
-      "summary": "이형일 부총리 겸 재정경제부 장관이 27일 취임 후 첫 경제현안간담회를 열고 전기차 산업 정책방향과 퇴직연금 제도개선 방안을 논의했다. 간담회에는 기후에너지환경부·고용노동부·기획예산처 장관과 산업통상부 차관, 금융위원장, 청와대 경제성장수석이 참석했다. 퇴직연금이 첫 안건에 오른 것은 근로자의 노후소득 보장이라는 노동정책 측면과 자본시장에 투입될 장기자금이라는 금융정책 측면을 함께 갖고 있기 때문이다. 정부는 이날 구체적인 개편 방향은 공개하지 않았고, 수익률과 운용방식, 가입자 선택권, 금융회사의 운용 경쟁을 어떻게 개선할지가 향후 쟁점으로 남았다.",
-      "category": "제도·규제",
-      "importance": 5,
-      "source": "지이코노미",
-      "published": "2026-09-28",
-      "url": "https://www.geconomy.co.kr/news/article.html?no=323945",
-      "related": [
-        {
-          "title": "[닻 올린 이형일號③] 잠재성장률 3% 도전…'적극 재정'이 구조개혁으로 이어질까",
-          "source": "뉴시안",
-          "url": "http://www.newsian.co.kr/news/articleView.html?idxno=96052"
         }
       ]
     }

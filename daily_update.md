@@ -272,3 +272,71 @@ https://pakvermars.github.io/pension-issues-dashboard/
 ```
 
 수동으로 게시해야 하면 프로젝트 루트에서 `pwsh -File publish.ps1`을 실행한다.
+
+---
+
+## 부록 — 지난 날짜 메우기
+
+수집이 멈춰 빠진 날이 생겼을 때 쓴다. 평소 실행에서는 볼 일이 없다.
+
+빠진 날을 찾는다.
+
+```bash
+ls data/daily/ | tail -20
+```
+
+### 1. 날짜를 박은 사본을 만든다
+
+`naver_news.js`는 통째로 실행되는 함수라 인자를 못 받는다. 원본을 고치면 당일
+수집이 망가지므로 사본을 만들어 그것만 실행한다. **Playwright MCP는 프로젝트
+폴더 밖의 파일을 읽지 못하므로** 사본은 `.playwright-mcp/`에 둔다(gitignore 대상).
+
+```bash
+python -X utf8 -c "
+from pathlib import Path
+out = Path('.playwright-mcp'); out.mkdir(exist_ok=True)
+src = Path('naver_news.js').read_text(encoding='utf-8')
+for d in ('2026-10-16', '2026-10-17'):   # 메울 날짜들
+    (out / f'naver_{d}.js').write_text(
+        src.replace('const TARGET_DATE = null;', f\"const TARGET_DATE = '{d}';\"),
+        encoding='utf-8')
+"
+```
+
+### 2. 하루씩 수집한다
+
+```
+browser_run_code_unsafe(filename="<프로젝트 경로>/.playwright-mcp/naver_<날짜>.js")
+```
+
+`기준일`이 그 날짜로 찍히는지 확인한다. 결과는 `대상일기사`에 모두 담겨 나온다 —
+날짜 범위를 URL로 이미 못박았으므로 `참고_범위밖`은 비어 있다.
+
+그 다음은 2~5번을 그대로 따른다. 다만 두 가지가 다르다.
+
+- **0번은 그 날짜 파일을 읽는다.** 오늘 파일이 아니다.
+- **게재일 확인(3번)이 특히 중요하다.** 과거 검색 결과의 `when`은 `5일 전` 같은
+  상대값이라 게재일을 가릴 수 없다. 또 네이버 날짜 필터에는 **다른 날 기사가
+  섞여 들어온다** — 실측에서 10-17 결과에 10-15·10-21 기사가 들어 있었다.
+  URL의 숫자도 믿을 수 없다(`[[url-id-timestamp-is-not-publish-date]]`). 원문을
+  열어 확인하고, 확인이 안 되면 뺀다.
+
+### 3. 후속 보도를 빼지 않는다
+
+앞날에 담은 사건이 다음 날 또 보도됐다면 **그건 중복이 아니라 후속 보도이므로
+담는다.** 같은 날 안의 중복만 1건으로 줄인다.
+
+이걸 틀리면 주간은 멀쩡한데 월간·연간에서 그 날짜가 통째로 사라진다. 월간·연간은
+`persistence_score`가 '며칠에 걸쳐 다뤄졌나'를 먼저 보기 때문에, 여러 날 이어진
+이슈를 하루짜리로 납작하게 만들면 순위에서 밀려난다.
+
+### 4. 마지막에 한 번만 집계한다
+
+날마다 돌릴 이유가 없다. 다 채운 뒤 한 번 돌린다.
+
+```bash
+python -X utf8 rollup.py && python -X utf8 build.py
+```
+
+집계 창은 어제까지를 보므로 오늘 기준으로 돌리면 채운 날짜가 자동으로 들어온다.
+끝나면 사본을 지운다.
