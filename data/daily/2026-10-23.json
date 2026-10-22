@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-10-23",
   "label": "2026-10-23 (금)",
-  "generated_at": "2026-10-23T08:31:53+09:00",
-  "item_count": 16,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 16건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-10-23T08:46:39+09:00",
+  "item_count": 17,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 17건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "e63418b95bc2",
@@ -115,6 +115,16 @@
       "source": "데일리팝",
       "published": "2026-10-23",
       "url": "http://www.dailypop.kr/news/articleView.html?idxno=103677"
+    },
+    {
+      "id": "ce2de41991a0",
+      "title": "삼성생명, 퇴직연금 앱 ‘SSUM 라운지’ 개편…투자정보 강화",
+      "summary": "삼성생명은 퇴직연금 가입자 전용 부가서비스 앱인 ‘SSUM 라운지’를 전면 개편했다고 23일 밝혔다. 이메일·유튜브 등 여러 채널에서 제공하던 연금·투자 콘텐츠를 앱으로 통합하고, 시장 지표를 보여주는 ‘투데이브리핑’과 DC·IRP 가입자용 ‘투자 인사이트’를 새로 마련했다. 매월 한 차례 삼성생명·삼성자산운용 전문가가 제도와 시장 전망을 설명하는 온라인 교육 ‘연금 클래스’도 운영한다. 기존 제휴 혜택 8종은 유지되며 DB·DC·IRP 가입자 누구나 무료로 이용할 수 있다.",
+      "category": "업계·경쟁사",
+      "importance": 2,
+      "source": "메가경제",
+      "published": "2026-10-23",
+      "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065569724632297"
     },
     {
       "id": "87ad9dbcccaf",
