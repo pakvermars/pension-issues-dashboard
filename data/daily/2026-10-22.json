@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-10-22",
   "label": "2026-10-22 (목)",
-  "generated_at": "2026-10-22T10:05:00+09:00",
-  "item_count": 13,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 13건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-10-22T10:17:12+09:00",
+  "item_count": 14,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 14건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "b4cc17311e1b",
@@ -75,6 +75,16 @@
       "source": "더페어",
       "published": "2026-10-22",
       "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=91512"
+    },
+    {
+      "id": "ed8d10359937",
+      "title": "우리은행, 퇴직연금 DC 수익률 18.4% 1위 기록…IRP 3위로 순위 상승",
+      "summary": "우리은행은 지난 16일 금융감독원 퇴직연금 비교공시에서 2026년 3분기 원리금비보장형 수익률이 적립금 상위 10개 사업자 중 DC 부문 1위, IRP 부문 3위를 기록했다고 22일 밝혔다. 3분기 원리금비보장형 수익률은 DC 18.4%, IRP 18.3%로 집계됐다. 4대 시중은행 기준으로는 DC 1위, IRP 2위로 3분기 연속 상위권을 유지했고, 상위 10개사 기준으로는 DC와 IRP 모두 전 분기보다 한 단계씩 순위가 올랐다. 우리은행은 8월 은행·증권업권 최초로 약 4조원 규모의 안정형 디폴트옵션 포트폴리오에 GIC를 편입하는 변경안을 고용노동부로부터 승인받았다.",
+      "category": "업계·경쟁사",
+      "importance": 3,
+      "source": "뉴스맵",
+      "published": "2026-10-22",
+      "url": "https://www.newsmap.co.kr/news/articleView.html?idxno=4272"
     },
     {
       "id": "d90dd7f2d72e",
