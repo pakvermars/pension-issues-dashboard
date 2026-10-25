@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-10-25",
   "label": "2026-10-25 (일)",
-  "generated_at": "2026-10-25T10:32:46+09:00",
-  "item_count": 14,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 14건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-10-25T10:38:51+09:00",
+  "item_count": 15,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 15건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "4bbbd1457f44",
@@ -55,6 +55,16 @@
       "source": "이데일리",
       "published": "2026-10-25",
       "url": "https://www.edaily.co.kr/News/Read?newsId=01082406645616528&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
+    },
+    {
+      "id": "9ac65932140a",
+      "title": "“퇴직연금도 반도체 ETF ‘몰빵’?…TDF로 모으고 RIF로 받아야”",
+      "summary": "김성훈 신한자산운용 글로벌투자운용본부장은 이데일리 인터뷰에서 퇴직연금 자산의 최소 50%, 가능하면 70~80%를 TDF에 투자하고 나머지 20~30%를 개별 ETF 등에 배분하는 전략을 권했다. 신한운용의 TDF 시리즈 설정액은 올해 1월부터 8월 말까지 6893억원 늘어 국내 TDF 운용사 가운데 순증 규모 1위를 기록했고, 전체 설정액 2조568억원으로 시장점유율 약 11%, 업계 4위다. 김 본부장은 2년 안에 TDF 점유율을 20%까지 끌어올려 업계 2위 이상으로 도약하겠다고 밝혔다. 신한운용은 인출 기간과 잔존자산을 함께 고려한 은퇴자금인출펀드 '신한마음편한RIF'를 2040년형과 2050년형으로 출시했으며, 연 8% 수준의 분배금을 지급하도록 설계했다.",
+      "category": "업계·경쟁사",
+      "importance": 3,
+      "source": "이데일리",
+      "published": "2026-10-25",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01384166645616528&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article"
     },
     {
       "id": "c2ef78aa9c37",
