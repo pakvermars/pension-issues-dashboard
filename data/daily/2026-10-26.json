@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-10-26",
   "label": "2026-10-26 (월)",
-  "generated_at": "2026-10-26T09:32:22+09:00",
-  "item_count": 12,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 12건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-10-26T09:46:49+09:00",
+  "item_count": 13,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 13건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "b486e9feffda",
@@ -125,6 +125,16 @@
       "source": "더페어",
       "published": "2026-10-26",
       "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=91820"
+    },
+    {
+      "id": "05ec7d4ac99b",
+      "title": "NH농협은행, 퇴직연금 고객 세미나…운용 전략 공유",
+      "summary": "NH농협은행이 지난 22일 서울 여의도 콘래드 호텔에서 퇴직연금 고객을 초청해 '업위고(UP WE GO) 퇴직연금 끌어올려 세미나 2026'을 개최했다. 수익률 세션에서는 안정형·투자형 퇴직연금 운용 전략을 소개했고, 성상현 전무가 자산 운용 전략과 대응 방안을 강연했다. 2015년 시작한 이 세미나는 올해 11년째로, 퇴직연금 전문 강의를 통한 금융교육과 함께 기업 및 농협은행 담당자가 의견을 나누는 자리로 운영된다. 강태영 NH농협은행장은 전사적인 사후관리를 강화하고 있으며 고객 의견을 향후 퇴직연금 관리에 적극 반영하겠다고 밝혔다.",
+      "category": "업계·경쟁사",
+      "importance": 1,
+      "source": "화이트페이퍼",
+      "published": "2026-10-26",
+      "url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=268084"
     }
   ]
 }
