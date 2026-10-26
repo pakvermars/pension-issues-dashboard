@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-10-26",
   "label": "2026-10-26 (월)",
-  "generated_at": "2026-10-26T10:02:01+09:00",
-  "item_count": 14,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 14건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-10-26T10:17:24+09:00",
+  "item_count": 18,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 18건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "b486e9feffda",
@@ -15,6 +15,16 @@
       "source": "한국보험신문",
       "published": "2026-10-26",
       "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93459"
+    },
+    {
+      "id": "671db33cd634",
+      "title": "하나증권, DC 장기 수익률 ‘트리플 1위’…수익률·적립금 동반 성장",
+      "summary": "하나증권은 올해 3분기 말 기준 확정기여형(DC) 퇴직연금 원리금비보장형 상품의 5·7·10년 수익률이 증권사 가운데 가장 높았다고 밝혔다. 금융감독원 통합연금포털 공시에 따르면 수익률은 5년 연 8.03%, 7년 연 8.88%, 10년 연 7.21%였고, 1년 수익률은 연 18.72%, 3년은 연 16.32%였다. 개인형퇴직연금(IRP) 1년 수익률도 연 18.50%로 증권업 상위 10개사 중 1위를 차지했다. 올해 들어 하나증권의 DC 적립금은 36.5%, IRP 적립금은 38.8% 증가했다.",
+      "category": "업계·경쟁사",
+      "importance": 4,
+      "source": "한경머니",
+      "published": "2026-10-26",
+      "url": "https://magazine.hankyung.com/money/article/202610264624c"
     },
     {
       "id": "04e27515ed12",
@@ -35,6 +45,16 @@
       "source": "이코노미스트",
       "published": "2026-10-26",
       "url": "https://economist.co.kr/article/view/ecn202610200050"
+    },
+    {
+      "id": "9f01dea0efad",
+      "title": "[핫이슈] '시한폭탄' 된 세계 연금…55개국 중 43곳 출산율 '유지선' 붕괴",
+      "summary": "머서와 CFA협회가 발표한 '2026 글로벌 연금지수' 보고서에서 조사 대상 55개국 중 43개국의 합계출산율이 인구 대체 수준인 2.1명에 미치지 못했다. 한국은 종합 점수 56.4점으로 C등급을 받아 55개국 중 45위에 그쳤고, 적정성 지수는 43.0점으로 51위였다. 보고서는 한국에 노인 빈곤층 지원 확대, 퇴직연금의 일시금 수령 제한 및 종신 연금화 의무화, 국민연금 적립 보험료율의 조속한 인상을 권고했다. 종합 1위는 85.8점으로 A등급을 받은 네덜란드였다.",
+      "category": "가입자·사회",
+      "importance": 3,
+      "source": "더투데이",
+      "published": "2026-10-26",
+      "url": "https://www.the-today.com/news/articleView.html?idxno=92403"
     },
     {
       "id": "763ff6de322e",
@@ -75,6 +95,16 @@
       "source": "데일리팝",
       "published": "2026-10-26",
       "url": "http://www.dailypop.kr/news/articleView.html?idxno=103650"
+    },
+    {
+      "id": "63b014684673",
+      "title": "커버드콜 ETF 개인자금 올해 4조원 몰렸다",
+      "summary": "삼성자산운용은 KODEX 코스피200 커버드콜 ETF 2종의 올해 개인 투자자 누적 순매수액이 총 4조원을 넘어섰다고 밝혔다. KODEX 200타겟위클리커버드콜이 3조92억원, KODEX 200커버드콜액티브가 1조1천305억원의 순매수를 기록했다. 삼성자산운용의 전체 커버드콜 ETF 순자산은 12조원 규모로 국내 시장 점유율은 약 45%이다. 금융투자업계는 퇴직연금 계좌에 커버드콜 ETF를 편입하는 중장년층 투자자도 늘고 있다고 설명했다.",
+      "category": "운용·상품",
+      "importance": 2,
+      "source": "공감신문",
+      "published": "2026-10-26",
+      "url": "https://www.gokorea.kr/news/articleView.html?idxno=882682"
     },
     {
       "id": "53cab69490bb",
@@ -145,6 +175,16 @@
       "source": "화이트페이퍼",
       "published": "2026-10-26",
       "url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=268084"
+    },
+    {
+      "id": "b6ee9bcda75a",
+      "title": "KB증권, 기업 담당자 100여명 초청 '퇴직연금 세미나' 개최",
+      "summary": "KB증권은 지난 22일 서울 여의도 본사에서 기업 퇴직연금 담당자 100여 명을 대상으로 '퇴직연금 세미나'를 개최했다고 밝혔다. 세미나에서는 2027년 경제 전망과 퇴직연금 의무화·기금형 퇴직연금 등 제도 이슈가 다뤄졌다. KB자산운용은 '퇴직연금 시장 변화와 DB 적립금 운용'을, KB증권은 '연금 절세와 DC 상품 운용 방안'을 주제로 실무 강연을 했다.",
+      "category": "법인·자금운용",
+      "importance": 1,
+      "source": "비즈월드",
+      "published": "2026-10-26",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=149789"
     }
   ]
 }
