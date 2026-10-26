@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-10-26",
   "label": "2026-10-26 (월)",
-  "generated_at": "2026-10-26T09:01:59+09:00",
-  "item_count": 11,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 11건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-10-26T09:32:22+09:00",
+  "item_count": 12,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 12건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "b486e9feffda",
@@ -115,6 +115,16 @@
       "source": "충남일보",
       "published": "2026-10-26",
       "url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=916715"
+    },
+    {
+      "id": "f6d8f46806b1",
+      "title": "\"연말정산 혜택 잡자\"…우리투자증권, IRP 단계별 리워드 행사 진행",
+      "summary": "우리투자증권이 개인형퇴직연금(IRP) 고객을 대상으로 '스텝-업 이벤트'를 12월 31일까지 진행한다. 이벤트 기간 내 IRP 계좌를 처음 개설하면 상품권 1만원권을, 해당 계좌에서 ETF를 30만원 이상 최초 매수하면 1만원권을 추가로 지급한다. 두 달 연속 20만원 이상 입금하거나 순입금액 기준을 채우면 최대 3만원 상당의 상품권을 주며, 경품은 1인당 연간 3만원 한도 내에서 제공된다. 우리투자증권은 IRP 자산·운용관리 수수료 전액 면제와 저보수 S클래스 펀드 공급을 바탕으로 연금 운용 경쟁력을 높여가고 있다고 밝혔다.",
+      "category": "업계·경쟁사",
+      "importance": 1,
+      "source": "더페어",
+      "published": "2026-10-26",
+      "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=91820"
     }
   ]
 }
