@@ -1,8 +1,8 @@
 {
   "period": "monthly",
   "key": "current",
-  "label": "2026-09-27 ~ 2026-10-26",
-  "generated_at": "2026-10-27T19:45:57+09:00",
+  "label": "2026-09-28 ~ 2026-10-27",
+  "generated_at": "2026-10-28T07:03:51+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -20,11 +20,6 @@
           "title": "퇴직연금 들어온 개인투자용 국채…금리보다 먼저 볼 '만기'",
           "source": "이투데이",
           "url": "https://www.etoday.co.kr/news/view/2633616"
-        },
-        {
-          "title": "[개인국채 시대] 삼성·한투·KB·NH證 합류…경쟁 본격화",
-          "source": "딜사이트경제TV",
-          "url": "https://news.dealsitetv.com/articles/176341"
         },
         {
           "title": "1000만원 넣으면 10년 뒤 1597만원…국채 사볼까",
@@ -114,11 +109,6 @@
           "title": "[사설] 미래세대 부담 줄일 연금 구조개혁, 더는 미룰 수 없다",
           "source": "서울경제",
           "url": "https://www.sedaily.com/article/20095714"
-        },
-        {
-          "title": "윤영석 의원 '연금제도 구조개혁' 정책토론회 개최",
-          "source": "경남도민신문",
-          "url": "http://www.gndomin.com/news/articleView.html?idxno=490747"
         }
       ]
     },
