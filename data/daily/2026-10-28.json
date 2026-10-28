@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-10-28",
   "label": "2026-10-28 (수)",
-  "generated_at": "2026-10-28T09:17:14+09:00",
-  "item_count": 19,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 19건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-10-28T09:32:01+09:00",
+  "item_count": 20,
+  "shortfall_note": null,
   "items": [
     {
       "id": "8736f7f36a18",
@@ -155,6 +155,16 @@
       "source": "뉴스핌",
       "published": "2026-10-28",
       "url": "https://www.newspim.com/news/view/20261028000199"
+    },
+    {
+      "id": "0c481df3e242",
+      "title": "삼성액티브운용, 'KoAct 코리아TOP5플러스채권혼합50액티브' ETF 상장",
+      "summary": "삼성액티브자산운용은 'KoAct 코리아TOP5플러스채권혼합50액티브' ETF를 지난 27일 신규 상장했다고 28일 밝혔다. 이 ETF는 시가총액 상위 5종목을 핵심으로 상위권 후보군을 포함해 최대 10종목에 압축 투자하고, 채권 부문은 국내 우량 단기채권에 평균 듀레이션 약 1년 수준으로 투자한다. 퇴직연금(DC·IRP) 안전자산으로 분류돼 퇴직·개인연금과 ISA 계좌에서 100% 투자할 수 있다. 의무 안전자산 편입 한도(30%)를 이 상품으로 채우면 포트폴리오 내 실질 주식 비중을 높일 수 있다.",
+      "category": "운용·상품",
+      "importance": 2,
+      "source": "비즈월드",
+      "published": "2026-10-28",
+      "url": "http://www.bizwnews.com/news/articleView.html?idxno=150081"
     },
     {
       "id": "1622ea183525",
