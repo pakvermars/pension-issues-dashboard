@@ -1,9 +1,11 @@
 {
   "date": "2026-10-29",
   "urls": [
+    "http://datanews.co.kr/news/article.html?no=147220",
     "http://mbn.mk.co.kr/pages/news/newsView.php?category=mbn00006&news_seq_no=5227763",
     "http://www.4th.kr/news/articleView.html?idxno=2120664",
     "http://www.beyondpost.co.kr/view.php?ud=202610291106338369be44c0aacd_30",
+    "http://www.beyondpost.co.kr/view.php?ud=202610291424404543be44c0aacd_30",
     "http://www.bizwnews.com/news/articleView.html?idxno=150284",
     "http://www.breaknews.com/1246649",
     "http://www.consumernews.co.kr/news/articleView.html?idxno=766904",
@@ -25,6 +27,7 @@
     "http://www.popcornnews.net/news/articleView.html?idxno=137827",
     "http://www.popcornnews.net/news/articleView.html?idxno=137831",
     "http://www.popcornnews.net/news/articleView.html?idxno=137890",
+    "http://www.press9.kr/news/articleView.html?idxno=85202",
     "http://www.queen.co.kr/news/articleView.html?idxno=465469",
     "http://www.seouleconews.com/news/articleView.html?idxno=94664",
     "http://www.srtimes.kr/news/articleView.html?idxno=216155",
@@ -93,6 +96,7 @@
     "https://www.dailian.co.kr/news/view/1707885/?sc=Naver",
     "https://www.ddaily.co.kr/page/view/2026102910081033434",
     "https://www.discoverynews.kr/news/articleView.html?idxno=1105212",
+    "https://www.dkilbo.com/news/articleView.html?idxno=558914",
     "https://www.donga.com/news/Economy/article/all/20261028/134919929/2",
     "https://www.donga.com/news/Economy/article/all/20261029/134928685/2",
     "https://www.donga.com/news/Politics/article/all/20261029/134929980/1",
@@ -142,6 +146,8 @@
     "https://www.kyeongin.com/article/1773657",
     "https://www.kyosu.net/news/articleView.html?idxno=211805",
     "https://www.lawleader.co.kr/news/articleView.html?idxno=20272",
+    "https://www.m-i.kr/news/articleView.html?idxno=2011491",
+    "https://www.m-i.kr/news/articleView.html?idxno=2011910",
     "https://www.mediapen.com/news/view/1133467",
     "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065571572298002",
     "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065580573371189",
@@ -165,6 +171,7 @@
     "https://www.newscj.com/news/articleView.html?idxno=3444114",
     "https://www.newsclaim.co.kr/news/articleView.html?idxno=3080589",
     "https://www.newsfreezone.co.kr/news/articleView.html?idxno=716620",
+    "https://www.newsis.com/view/NISX20261029_0003846604",
     "https://www.newsmap.co.kr/news/articleView.html?idxno=4573",
     "https://www.newspim.com/news/view/20261028000326",
     "https://www.newspim.com/news/view/20261029000361",
@@ -195,12 +202,14 @@
     "https://www.shinailbo.co.kr/news/articleView.html?idxno=5077386",
     "https://www.shinailbo.co.kr/news/articleView.html?idxno=5077425",
     "https://www.sidae.com/article/2026102809385970671",
+    "https://www.sidae.com/article/2026102910491242929",
     "https://www.sisain.co.kr/news/articleView.html?idxno=58659",
     "https://www.slist.kr/news/articleView.html?idxno=777392",
     "https://www.smarttoday.co.kr/ko-kr/articles/113265",
     "https://www.taxtimes.co.kr/news/article.html?no=277527",
     "https://www.thefairnews.co.kr/news/articleView.html?idxno=92280",
     "https://www.thefairnews.co.kr/news/articleView.html?idxno=92317",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=92378",
     "https://www.todaykorea.co.kr/news/articleView.html?idxno=407816",
     "https://www.tokenpost.kr/news/economy/428815",
     "https://www.webeconomy.co.kr/news/articleView.html?idxno=2353415",
@@ -212,6 +221,7 @@
     "https://www.yna.co.kr/view/AKR20261029072400003?input=1195m",
     "https://www.ytn.co.kr/_ln/0102_202610290508174900",
     "https://www.ytn.co.kr/_ln/0103_202610290956007817",
-    "https://www.ziksir.com/news/articleView.html?idxno=151221"
+    "https://www.ziksir.com/news/articleView.html?idxno=151221",
+    "https://www.ziksir.com/news/articleView.html?idxno=151251"
   ]
 }
