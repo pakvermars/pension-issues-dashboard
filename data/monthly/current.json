@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-10-01 ~ 2026-10-30",
-  "generated_at": "2026-10-31T07:46:28+09:00",
+  "generated_at": "2026-10-31T08:17:49+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -212,6 +212,11 @@
           "title": "[퇴직연금 개편] 퇴직연금도 국민연금처럼…정부, 장기 연금 수령 유도 방안 발표",
           "source": "CBC뉴스",
           "url": "https://www.cbci.co.kr/news/articleView.html?idxno=620807"
+        },
+        {
+          "title": "퇴직연금 사외적립 2030년까지 전 사업장 의무화",
+          "source": "매일노동뉴스",
+          "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=237470"
         },
         {
           "title": "당정, ‘퇴직연금 강화·고용부 예산’ 살핀다…초광역특구법 논의 가능성",
