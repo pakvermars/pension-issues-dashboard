@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-10-01 ~ 2026-10-30",
-  "generated_at": "2026-10-31T07:02:49+09:00",
+  "generated_at": "2026-10-31T07:39:48+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -197,6 +197,21 @@
           "title": "정부, 퇴직연금 기금형 활성화…IRP 위험자산 투자한도 상향 추진",
           "source": "연합인포맥스",
           "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4441777"
+        },
+        {
+          "title": "기업 퇴직연금 모아 전문기관이 굴려… ‘쥐꼬리 수익’ 개선 기대",
+          "source": "동아일보",
+          "url": "https://www.donga.com/news/Economy/article/all/20261030/134936451/2"
+        },
+        {
+          "title": "국민연금, 기금형 퇴직연금 참여 미정···‘시장 개입 우려’에 국회로 공 넘긴 정부",
+          "source": "경향신문",
+          "url": "https://www.khan.co.kr/article/202610300600041"
+        },
+        {
+          "title": "[퇴직연금 개편] 퇴직연금도 국민연금처럼…정부, 장기 연금 수령 유도 방안 발표",
+          "source": "CBC뉴스",
+          "url": "https://www.cbci.co.kr/news/articleView.html?idxno=620807"
         },
         {
           "title": "당정, ‘퇴직연금 강화·고용부 예산’ 살핀다…초광역특구법 논의 가능성",
