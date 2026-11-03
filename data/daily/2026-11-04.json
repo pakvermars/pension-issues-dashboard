@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-11-04",
   "label": "2026-11-04 (수)",
-  "generated_at": "2026-11-04T08:02:01+09:00",
-  "item_count": 11,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 11건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-11-04T08:46:38+09:00",
+  "item_count": 12,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 12건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "10b970957023",
@@ -95,6 +95,16 @@
       "source": "시사캐스트",
       "published": "2026-11-04",
       "url": "http://www.sisacast.kr/news/articleView.html?idxno=101571"
+    },
+    {
+      "id": "b458b7b98a72",
+      "title": "[CEO 전망대] KB자산운용 김영성 대표, ETF·연금서 성과…'2+1' 넘어설까",
+      "summary": "김영성 KB자산운용 대표의 임기가 12월 말 만료되며, 통상적인 2+1 임기를 다 채워 추가 연임 여부에 관심이 쏠리고 있다. KB자산운용은 퇴직연금 계좌에서 안전자산으로 분류되는 RISE 삼성전자SK하이닉스채권혼합50 ETF가 순자산 4조원을 넘기며 지난 5월 ETF 시장점유율 3위를 탈환했다. KB온국민TDF와 KB다이나믹TDF 시리즈는 5월 18일 기준 순자산 4조1000억원, 점유율 13.5%로 TDF 시장 2위에 올랐다. 다만 9월 21일 기준 ETF 점유율은 7.75%로 취임 당시와 비슷한 수준에 머물러 있다.",
+      "category": "업계·경쟁사",
+      "importance": 2,
+      "source": "딜사이트경제TV",
+      "published": "2026-11-04",
+      "url": "https://news.dealsitetv.com/articles/177863"
     },
     {
       "id": "42e195608df9",
