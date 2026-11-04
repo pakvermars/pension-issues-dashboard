@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-10-05 ~ 2026-11-04",
-  "generated_at": "2026-11-05T07:03:57+09:00",
+  "generated_at": "2026-11-05T07:17:40+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -72,6 +72,68 @@
           "title": "미래에셋증권, 개인투자용 국채 10년물 확대..퇴직연금 청약 두 달째",
           "source": "포쓰저널",
           "url": "http://www.4th.kr/news/articleView.html?idxno=2119412"
+        }
+      ]
+    },
+    {
+      "id": "b7e8a161b6af",
+      "title": "2028년부터 퇴직급여 사외적립 의무화… 체불 막는다",
+      "summary": "근로자의 퇴직금 체불을 막기 위해 내후년부터 100인 이상 사업장을 대상으로 퇴직급여 사외 적립을 단계적으로 의무화하는 방안이 추진된다. 이형일 부총리 겸 재정경제부 장관과 배경훈 부총리 겸 과학기술정보통신부 장관은 28일 경제관계장관회의·과학기술관계장관회의 첫 연석회의에서 이 방안을 논의했으며, 기금형 퇴직연금의 구체적 도입 방안도 마련해 전문적인 자산 운용과 엄격한 수탁자 책임을 부과하기로 했다. 퇴직연금 사업자 평가 기준은 연금 성과 수익률 중심으로 개편하고, 디폴트옵션 적용 예정 통보 시점은 만기 후 4주에서 만기 전 2주로 앞당긴다. 구체적인 퇴직연금 기능 강화 방안은 29일 국회 기후에너지환경노동위원회 여당 위원과의 당정협의를 거쳐 발표된다.",
+      "category": "제도·규제",
+      "importance": 5,
+      "source": "서울신문",
+      "published": "2026-10-29",
+      "url": "https://www.seoul.co.kr/news/economy/2026/10/29/20261029031004",
+      "related": [
+        {
+          "title": "당정 \"2030년 전 사업장 퇴직금 사외적립 의무화…120억 재정지원\"",
+          "source": "이데일리",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=03250486645617840&mediaCodeNo=257"
+        },
+        {
+          "title": "540조 퇴직연금 대수술… ‘기금형’ 전면 도입한다",
+          "source": "동아일보",
+          "url": "https://www.donga.com/news/Economy/article/all/20261030/134936461/2"
+        },
+        {
+          "title": "퇴직연금, 전문가가 대신 굴린다…'기금형' 도입, 국민연금 참여는 미정",
+          "source": "뉴스1",
+          "url": "https://www.news1.kr/economy/trend/6335473"
+        },
+        {
+          "title": "정부, 퇴직연금 기금형 활성화…IRP 위험자산 투자한도 상향 추진",
+          "source": "연합인포맥스",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4441777"
+        },
+        {
+          "title": "\"퇴직금 못 받는 일 줄인다\", 사외적립 전 사업장 확대 추진",
+          "source": "데일리환경",
+          "url": "https://www.dailyt.co.kr/newsView/dlt202611040003"
+        },
+        {
+          "title": "기업 퇴직연금 모아 전문기관이 굴려… ‘쥐꼬리 수익’ 개선 기대",
+          "source": "동아일보",
+          "url": "https://www.donga.com/news/Economy/article/all/20261030/134936451/2"
+        },
+        {
+          "title": "국민연금, 기금형 퇴직연금 참여 미정···‘시장 개입 우려’에 국회로 공 넘긴 정부",
+          "source": "경향신문",
+          "url": "https://www.khan.co.kr/article/202610300600041"
+        },
+        {
+          "title": "[퇴직연금 개편] 퇴직연금도 국민연금처럼…정부, 장기 연금 수령 유도 방안 발표",
+          "source": "CBC뉴스",
+          "url": "https://www.cbci.co.kr/news/articleView.html?idxno=620807"
+        },
+        {
+          "title": "퇴직연금 사외적립 2030년까지 전 사업장 의무화",
+          "source": "매일노동뉴스",
+          "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=237470"
+        },
+        {
+          "title": "당정, ‘퇴직연금 강화·고용부 예산’ 살핀다…초광역특구법 논의 가능성",
+          "source": "디지털타임스",
+          "url": "https://www.dt.co.kr/article/12091950"
         }
       ]
     },
@@ -165,63 +227,6 @@
           "title": "국민연금 ‘10배 장사’ 2만명 육박… 833만원 내고 1억 넘게 수령",
           "source": "국민일보",
           "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000022005&cp=nv"
-        }
-      ]
-    },
-    {
-      "id": "b7e8a161b6af",
-      "title": "2028년부터 퇴직급여 사외적립 의무화… 체불 막는다",
-      "summary": "근로자의 퇴직금 체불을 막기 위해 내후년부터 100인 이상 사업장을 대상으로 퇴직급여 사외 적립을 단계적으로 의무화하는 방안이 추진된다. 이형일 부총리 겸 재정경제부 장관과 배경훈 부총리 겸 과학기술정보통신부 장관은 28일 경제관계장관회의·과학기술관계장관회의 첫 연석회의에서 이 방안을 논의했으며, 기금형 퇴직연금의 구체적 도입 방안도 마련해 전문적인 자산 운용과 엄격한 수탁자 책임을 부과하기로 했다. 퇴직연금 사업자 평가 기준은 연금 성과 수익률 중심으로 개편하고, 디폴트옵션 적용 예정 통보 시점은 만기 후 4주에서 만기 전 2주로 앞당긴다. 구체적인 퇴직연금 기능 강화 방안은 29일 국회 기후에너지환경노동위원회 여당 위원과의 당정협의를 거쳐 발표된다.",
-      "category": "제도·규제",
-      "importance": 5,
-      "source": "서울신문",
-      "published": "2026-10-29",
-      "url": "https://www.seoul.co.kr/news/economy/2026/10/29/20261029031004",
-      "related": [
-        {
-          "title": "당정 \"2030년 전 사업장 퇴직금 사외적립 의무화…120억 재정지원\"",
-          "source": "이데일리",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=03250486645617840&mediaCodeNo=257"
-        },
-        {
-          "title": "540조 퇴직연금 대수술… ‘기금형’ 전면 도입한다",
-          "source": "동아일보",
-          "url": "https://www.donga.com/news/Economy/article/all/20261030/134936461/2"
-        },
-        {
-          "title": "퇴직연금, 전문가가 대신 굴린다…'기금형' 도입, 국민연금 참여는 미정",
-          "source": "뉴스1",
-          "url": "https://www.news1.kr/economy/trend/6335473"
-        },
-        {
-          "title": "정부, 퇴직연금 기금형 활성화…IRP 위험자산 투자한도 상향 추진",
-          "source": "연합인포맥스",
-          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4441777"
-        },
-        {
-          "title": "기업 퇴직연금 모아 전문기관이 굴려… ‘쥐꼬리 수익’ 개선 기대",
-          "source": "동아일보",
-          "url": "https://www.donga.com/news/Economy/article/all/20261030/134936451/2"
-        },
-        {
-          "title": "국민연금, 기금형 퇴직연금 참여 미정···‘시장 개입 우려’에 국회로 공 넘긴 정부",
-          "source": "경향신문",
-          "url": "https://www.khan.co.kr/article/202610300600041"
-        },
-        {
-          "title": "[퇴직연금 개편] 퇴직연금도 국민연금처럼…정부, 장기 연금 수령 유도 방안 발표",
-          "source": "CBC뉴스",
-          "url": "https://www.cbci.co.kr/news/articleView.html?idxno=620807"
-        },
-        {
-          "title": "퇴직연금 사외적립 2030년까지 전 사업장 의무화",
-          "source": "매일노동뉴스",
-          "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=237470"
-        },
-        {
-          "title": "당정, ‘퇴직연금 강화·고용부 예산’ 살핀다…초광역특구법 논의 가능성",
-          "source": "디지털타임스",
-          "url": "https://www.dt.co.kr/article/12091950"
         }
       ]
     },
@@ -397,6 +402,23 @@
       ]
     },
     {
+      "id": "52bb3ea27011",
+      "title": "국민연금 10년 부은 평균소득자, 기초연금보다 덜 받는다…‘급여 역전’",
+      "summary": "국민연금연구원 김형수 부연구위원의 보고서에 따르면 소득대체율 43%를 적용할 때 평균소득자가 최소가입기간 10년을 채운 월 연금액은 A값의 10.75%로, 올해 기초연금 기준연금액(A값의 약 10.95%)보다 낮다. 올해 A값 319만3511원을 넣으면 국민연금은 월 약 34만3300원으로 기준연금액 34만9700원보다 6400원가량 적다. 보고서는 국민연금 최소가입기간을 상향하거나 기초연금 기준연금액 수준을 조정하는 방향이 필요하다고 제시했다. 최소가입기간을 15년으로 높여도 59세 말 기준 미달 비율은 1.6%로 추정됐다.",
+      "category": "가입자·사회",
+      "importance": 3,
+      "source": "세계일보",
+      "published": "2026-11-04",
+      "url": "https://www.segye.com/newsView/20261103517557",
+      "related": [
+        {
+          "title": "국민연금 10년 부었는데 기초연금보다 적다…월 6400원 역전",
+          "source": "핀포인트뉴스",
+          "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=500742"
+        }
+      ]
+    },
+    {
       "id": "f82595e9660f",
       "title": "\"1년 미만·초단기 근로자도 퇴직금\"…정부 실태조사 착수",
       "summary": "정부가 1년 미만 근속자와 주 15시간 미만 초단시간 근로자에게도 퇴직급여를 지급하는 방안을 검토한다. 29일 발표된 퇴직연금 기능강화 방안에 따라 한국노동연구원이 이들의 퇴직급여 운영 실태와 의무화에 따른 사용자 부담·노동시장 영향을 분석한다. 지난해 주 1~14시간 일한 취업자는 177만9000명으로 전체 취업자의 6.2%였고 관련 통계 작성 이후 가장 많았다. DC형 법정 최소 사용자 부담금이 연간 임금총액의 12분의 1인 만큼 영세 사업장의 채용 위축 우려도 제기된다.",
@@ -461,23 +483,6 @@
           "title": "다음주 금융당국 일정",
           "source": "이데일리",
           "url": "https://www.edaily.co.kr/News/Read?newsId=01626886645616200&mediaCodeNo=257"
-        }
-      ]
-    },
-    {
-      "id": "c2ef78aa9c37",
-      "title": "삼성생명, 퇴직연금 부가서비스 앱 'SSUM 라운지' 개편",
-      "summary": "삼성생명이 퇴직연금 가입자 전용 부가서비스 앱 'SSUM 라운지'를 전면 개편했다고 24일 밝혔다. 새로 마련된 '퇴직연금정보'에는 시장 지표를 보여주는 '투데이브리핑'과 '연금 첫걸음', '투자 인사이트', '투자 가이드북', '연금 클래스' 등 콘텐츠가 담겼다. '연금 클래스'는 매월 한 차례 온라인 세미나로 삼성생명 퇴직연금 전문가와 삼성자산운용이 제도·상품과 시장 전망을 소개한다. 서비스는 삼성생명 퇴직연금(DB·DC·IRP) 가입자라면 누구나 무료로 이용할 수 있다.",
-      "category": "업계·경쟁사",
-      "importance": 2,
-      "source": "비즈월드",
-      "published": "2026-10-25",
-      "url": "http://www.bizwnews.com/news/articleView.html?idxno=149782",
-      "related": [
-        {
-          "title": "삼성생명, 퇴직연금 앱 ‘SSUM 라운지’ 개편…투자정보 강화",
-          "source": "메가경제",
-          "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065569724632297"
         }
       ]
     }
