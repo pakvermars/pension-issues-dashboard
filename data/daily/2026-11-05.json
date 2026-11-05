@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-11-05",
   "label": "2026-11-05 (목)",
-  "generated_at": "2026-11-05T09:01:56+09:00",
-  "item_count": 13,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 13건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-11-05T09:16:22+09:00",
+  "item_count": 14,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 14건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "76a2423a270f",
@@ -95,6 +95,16 @@
       "source": "FETV",
       "published": "2026-11-05",
       "url": "https://www.fetv.co.kr/news/articleView.html?idxno=313088"
+    },
+    {
+      "id": "5775e5c4dc1e",
+      "title": "삼성자산운용, 연말 연금투자 KODEX ETF 추천…TDF·미국 대표지수 주목",
+      "summary": "삼성자산운용이 연말 연금계좌 납입 수요에 맞춰 투자자를 초보 투자자와 대표지수형 투자자로 나눠 KODEX ETF를 추천했다. 초보 투자자에게는 KODEX TDF 2030·2040·2050·2060 시리즈를 제안했으며, 이 시리즈는 적격 TDF 요건을 충족해 퇴직연금 계좌에서 적립금의 100%까지 투자할 수 있다. 미국 증시 장기 성장을 추구하는 투자자에게는 KODEX 미국S&P500과 KODEX 미국배당다우존스액티브를 결합하는 전략을 제시했다. 전용우 연금OCIO본부장은 처음에는 TDF에 맡기고 익숙해지면 대표지수 분산투자로 범위를 넓히는 것이 좋은 방법이라고 말했다.",
+      "category": "운용·상품",
+      "importance": 2,
+      "source": "메가경제",
+      "published": "2026-11-05",
+      "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065570666252809"
     },
     {
       "id": "f6280e4764ae",
