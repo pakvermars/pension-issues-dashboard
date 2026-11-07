@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-11-07",
   "label": "2026-11-07 (토)",
-  "generated_at": "2026-11-07T10:01:30+09:00",
-  "item_count": 19,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 19건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-11-07T11:16:33+09:00",
+  "item_count": 20,
+  "shortfall_note": null,
   "items": [
     {
       "id": "d6a53703477c",
@@ -195,6 +195,16 @@
       "source": "이데일리",
       "published": "2026-11-07",
       "url": "https://www.edaily.co.kr/News/Read?newsId=02184486645643424&mediaCodeNo=257"
+    },
+    {
+      "id": "13e0d63f86aa",
+      "title": "[짠富테크] 연금저축·IRP 900만원 넣으면…세금 최대 148만5000원 줄인다",
+      "summary": "연금저축과 IRP를 합한 세액공제 한도는 연간 900만원이며, 연금저축 600만원에 IRP 300만원을 더하는 방식이 대표적이다. 16.5% 세액공제를 적용하면 최대 148만5000원, 13.2%를 적용하면 최대 118만8000원의 세금 부담을 줄일 수 있다. IRP는 법정 사유가 아니면 중도인출이 제한되고 위험자산 투자한도가 적립금의 70%이며, 정부는 이 한도를 단계적으로 완화하는 방안을 추진하기로 했다. ISA 만기자금을 60일 안에 연금계좌로 옮기면 이전금액의 10%, 최대 300만원까지 세액공제 한도가 추가된다.",
+      "category": "가입자·사회",
+      "importance": 1,
+      "source": "뉴스웍스",
+      "published": "2026-11-07",
+      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=902176"
     }
   ]
 }
