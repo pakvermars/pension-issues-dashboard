@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-11-09",
   "label": "2026-11-09 (월)",
-  "generated_at": "2026-11-09T07:16:44+09:00",
-  "item_count": 19,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 19건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-11-09T07:31:45+09:00",
+  "item_count": 20,
+  "shortfall_note": null,
   "items": [
     {
       "id": "2fe6ca10b844",
@@ -195,6 +195,16 @@
       "source": "조선일보",
       "published": "2026-11-09",
       "url": "https://www.chosun.com/economy/money/2026/11/09/4L7YTBXWWVA2LNS4ND3N7INPRI/"
+    },
+    {
+      "id": "a88d81812bd9",
+      "title": "[머니 멘토링] \"40대 은퇴 준비, 수익률보다 중요한 건 현금·리밸런싱\"",
+      "summary": "임상아 KB증권 테크노마트지점 부지점장은 은퇴를 10년 앞둔 40대 투자자에게 무조건적인 투자 축소가 아니라 자산 증식과 보전을 함께 고려한 포트폴리오 전략이 필요하다고 조언했다. 근로소득이 있는 시기인 만큼 주식과 채권 등에 분산 투자하되 장기 보유할 핵심 자산을 먼저 정해야 한다고 설명했다. 개인형퇴직연금(IRP) 계좌를 만들어 노후 자산을 일반 투자자산과 구분해 관리하는 것이 중요하다고 말했다. 은퇴 초기 시장 급락에 대비해 생활비와 비상자금 등 용도를 구분한 현금성 자산을 확보해야 한다고 강조했다.",
+      "category": "가입자·사회",
+      "importance": 1,
+      "source": "THE Biz(더비즈)",
+      "published": "2026-11-09",
+      "url": "http://www.the-biz.co.kr/news/articleView.html?idxno=730726"
     }
   ]
 }
