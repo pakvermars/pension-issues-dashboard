@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-10-17 ~ 2026-11-16",
-  "generated_at": "2026-11-17T07:04:50+09:00",
+  "generated_at": "2026-11-17T07:21:59+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -16,6 +16,11 @@
       "published": "2026-10-20",
       "url": "https://www.mt.co.kr/stock/2026/10/21/2026102016164749417",
       "related": [
+        {
+          "title": "증시 급락에 퇴직연금 수익률 급감…적립금 11조7천억원 감소",
+          "source": "광주매일신문",
+          "url": "http://www.kjdaily.com/article.php?aid=1794759721692238276"
+        },
         {
           "title": "3분기 퇴직연금 적립금 542조… 증시 조정 속 보험·은행 동반 감소",
           "source": "한국보험신문",
