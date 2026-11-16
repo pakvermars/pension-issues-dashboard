@@ -3,6 +3,7 @@
   "urls": [
     "http://mbnmoney.mbn.co.kr/news/view?news_no=MM1005962504",
     "http://www.00news.co.kr/news/articleView.html?idxno=108070",
+    "http://www.biztribune.co.kr/news/articleView.html?idxno=362575",
     "http://www.bizwnews.com/news/articleView.html?idxno=151874",
     "http://www.breaknews.com/1251124",
     "http://www.enewstoday.co.kr/news/articleView.html?idxno=2492739",
@@ -15,6 +16,7 @@
     "http://www.joseilbo.com/news/news_read.php?uid=579713&class=18&grp=",
     "http://www.metroseoul.co.kr/article/20261115500296",
     "http://www.metroseoul.co.kr/article/20261116500208",
+    "http://www.metroseoul.co.kr/article/20261116500371",
     "http://www.newsdream.kr/news/articleView.html?idxno=122249",
     "http://www.newskr.kr/news/articleView.html?idxno=108034",
     "http://www.paxetv.com/news/articleView.html?idxno=287032",
@@ -31,6 +33,9 @@
     "http://www.thevaluenews.co.kr/news/view.php?idx=203331",
     "http://www.ttlnews.com/news/articleView.html?idxno=3162669",
     "http://www.whitepaper.co.kr/news/articleView.html?idxno=268782",
+    "http://www.yonhapnewstv.co.kr/news/AKR20261116152336sbI",
+    "http://www.yonhapnewstv.co.kr/news/AKR20261116152718TAC",
+    "https://biz.chosun.com/topics/law_firm/2026/11/16/KFRYGKG2OZAW3EBZL5Z22YG2WA/",
     "https://biz.heraldcorp.com/article/10937957?ref=naver",
     "https://biz.heraldcorp.com/article/10938068?ref=naver",
     "https://biz.heraldcorp.com/article/10938075?ref=naver",
@@ -54,6 +59,7 @@
     "https://weekly.hankooki.com/news/articleView.html?idxno=7194012",
     "https://www.aitimes.com/news/articleView.html?idxno=217441",
     "https://www.ajunews.com/view/20261115181428612",
+    "https://www.asiaa.co.kr/news/articleView.html?idxno=271329",
     "https://www.asiatime.co.kr/article/20261116500107",
     "https://www.bloter.net/news/articleView.html?idxno=678683",
     "https://www.bloter.net/news/articleView.html?idxno=678692",
@@ -71,6 +77,7 @@
     "https://www.ebn.co.kr/news/articleView.html?idxno=1731759",
     "https://www.edaily.co.kr/News/Read?newsId=01121766645646376&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
     "https://www.edaily.co.kr/News/Read?newsId=02004086645646376&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+    "https://www.edaily.co.kr/News/Read?newsId=02601046645646376&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
     "https://www.eroun.net/news/articleView.html?idxno=95423",
     "https://www.etnews.com/20261116000041",
     "https://www.etnews.com/20261116000067",
@@ -102,6 +109,7 @@
     "https://www.joongang.co.kr/article/25478845",
     "https://www.joongangenews.com/news/articleView.html?idxno=564038",
     "https://www.kado.net/news/articleView.html?idxno=2084908",
+    "https://www.kbanker.co.kr/news/articleView.html?idxno=226444",
     "https://www.koreadaily.com/article/20261115185231849",
     "https://www.koreadaily.com/article/20261115191101999",
     "https://www.koreajoongangdaily.com/bilingual-news/stock-market-reform-alone-cannot-stabilize-share-prices-kor/12974087",
@@ -117,6 +125,7 @@
     "https://www.news1.kr/world/international-economy/6354782",
     "https://www.news2day.co.kr/article/20261116500074",
     "https://www.news2day.co.kr/article/20261116500160",
+    "https://www.newsclaim.co.kr/news/articleView.html?idxno=3082855",
     "https://www.newsis.com/view/NISX20261114_0003868252",
     "https://www.newsis.com/view/NISX20261116_0003868922",
     "https://www.newsis.com/view/NISX20261116_0003869058",
@@ -151,6 +160,7 @@
     "https://www.yna.co.kr/view/AKR20261115036000002?input=1195m",
     "https://www.yna.co.kr/view/AKR20261116043400008?input=1195m",
     "https://www.youthdaily.co.kr/news/article.html?no=229823",
-    "https://www.ziksir.com/news/articleView.html?idxno=153446"
+    "https://www.ziksir.com/news/articleView.html?idxno=153446",
+    "https://www.ziksir.com/news/articleView.html?idxno=153489"
   ]
 }
