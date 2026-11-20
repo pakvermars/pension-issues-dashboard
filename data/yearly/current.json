@@ -2,7 +2,7 @@
   "period": "yearly",
   "key": "current",
   "label": "2025-11-20 ~ 2026-11-19",
-  "generated_at": "2026-11-20T08:32:22+09:00",
+  "generated_at": "2026-11-20T09:04:08+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -164,6 +164,53 @@
       ]
     },
     {
+      "id": "829c3e49cc3f",
+      "title": "흔들린 증시에 퇴직연금 적립금 6년여 만에 감소",
+      "summary": "3분기 말 퇴직연금 적립금이 542조1214억원으로 전 분기보다 2.1% 줄었다. 코로나19 초기인 2020년 1분기 이후 6년여 만의 감소다. 업권별로는 증권 160조2935억원(2.9% 감소), 은행 275조4860억원(2.1% 감소), 보험 106조3419억원(0.9% 감소)이다. 실적배당형이 185조2078억원으로 6.3% 줄어든 반면 원리금보장형은 356조9051억원으로 0.2% 늘었다.",
+      "category": "운용·상품",
+      "importance": 5,
+      "source": "머니투데이",
+      "published": "2026-10-20",
+      "url": "https://www.mt.co.kr/stock/2026/10/21/2026102016164749417",
+      "related": [
+        {
+          "title": "증시 급락에 퇴직연금 수익률 급감…적립금 11조7천억원 감소",
+          "source": "광주매일신문",
+          "url": "http://www.kjdaily.com/article.php?aid=1794759721692238276"
+        },
+        {
+          "title": "3분기 퇴직연금 적립금 542조… 증시 조정 속 보험·은행 동반 감소",
+          "source": "한국보험신문",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93459"
+        },
+        {
+          "title": "\"노후자금 넣었는데\"…퇴직연금 12조 줄자 직장인들 '울상'",
+          "source": "한국경제",
+          "url": "https://www.hankyung.com/article/2026102167161"
+        },
+        {
+          "title": "5대 은행 퇴직연금 5조원 증발…7년 만에 첫 감소세",
+          "source": "컨슈머타임스",
+          "url": "https://www.cstimes.com/news/articleView.html?idxno=724898"
+        },
+        {
+          "title": "증시 시름에… 퇴직연금도 휘청",
+          "source": "머니투데이",
+          "url": "https://www.mt.co.kr/stock/2026/10/21/2026102019471522048"
+        },
+        {
+          "title": "증시 '휘청'에…5대銀 퇴직연금 적립금 7년 만에 첫 감소",
+          "source": "연합인포맥스",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440263"
+        },
+        {
+          "title": "[퇴직연금 긴급점검] 6년 반 만에 적립금 감소…9월말 기준 3개월만에 11.7조 줄어",
+          "source": "대한경제",
+          "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611181327078600627"
+        }
+      ]
+    },
+    {
       "id": "8bb193e0ea59",
       "title": "“정부 기초연금개편안, 겉으로는 하후상박 실제는 재정 절감안”",
       "summary": "정부가 노인 하위 70%를 세 집단으로 나눠 차등 지급하는 하후상박 방식을 내놨다. 하위 30%에 월 38만원, 30~45%에 35만9000원, 45~70%에 35만원(동결)을 지급한다. 필자는 기초연금이 빈곤대책이 아니라 연금제도의 기초선 역할을 위해 도입된 제도라며 빈곤대책과 혼동된 정책이라고 비판했다. 실제로는 전체 노인의 70%가 아니라 약 40%만 인상되므로 지출 절감이 핵심이라는 평가다.",
@@ -207,48 +254,6 @@
           "title": "[충남시론] 개혁 발표 중단된 기초연금제도 허점 많다",
           "source": "충남일보",
           "url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=909274"
-        }
-      ]
-    },
-    {
-      "id": "829c3e49cc3f",
-      "title": "흔들린 증시에 퇴직연금 적립금 6년여 만에 감소",
-      "summary": "3분기 말 퇴직연금 적립금이 542조1214억원으로 전 분기보다 2.1% 줄었다. 코로나19 초기인 2020년 1분기 이후 6년여 만의 감소다. 업권별로는 증권 160조2935억원(2.9% 감소), 은행 275조4860억원(2.1% 감소), 보험 106조3419억원(0.9% 감소)이다. 실적배당형이 185조2078억원으로 6.3% 줄어든 반면 원리금보장형은 356조9051억원으로 0.2% 늘었다.",
-      "category": "운용·상품",
-      "importance": 5,
-      "source": "머니투데이",
-      "published": "2026-10-20",
-      "url": "https://www.mt.co.kr/stock/2026/10/21/2026102016164749417",
-      "related": [
-        {
-          "title": "증시 급락에 퇴직연금 수익률 급감…적립금 11조7천억원 감소",
-          "source": "광주매일신문",
-          "url": "http://www.kjdaily.com/article.php?aid=1794759721692238276"
-        },
-        {
-          "title": "3분기 퇴직연금 적립금 542조… 증시 조정 속 보험·은행 동반 감소",
-          "source": "한국보험신문",
-          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93459"
-        },
-        {
-          "title": "\"노후자금 넣었는데\"…퇴직연금 12조 줄자 직장인들 '울상'",
-          "source": "한국경제",
-          "url": "https://www.hankyung.com/article/2026102167161"
-        },
-        {
-          "title": "5대 은행 퇴직연금 5조원 증발…7년 만에 첫 감소세",
-          "source": "컨슈머타임스",
-          "url": "https://www.cstimes.com/news/articleView.html?idxno=724898"
-        },
-        {
-          "title": "증시 시름에… 퇴직연금도 휘청",
-          "source": "머니투데이",
-          "url": "https://www.mt.co.kr/stock/2026/10/21/2026102019471522048"
-        },
-        {
-          "title": "증시 '휘청'에…5대銀 퇴직연금 적립금 7년 만에 첫 감소",
-          "source": "연합인포맥스",
-          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4440263"
         }
       ]
     },
