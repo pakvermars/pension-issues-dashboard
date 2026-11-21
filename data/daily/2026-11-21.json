@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-11-21",
   "label": "2026-11-21 (토)",
-  "generated_at": "2026-11-21T15:35:00+09:00",
-  "item_count": 12,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 12건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-11-21T16:31:49+09:00",
+  "item_count": 13,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 13건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "4203baa5dde5",
@@ -125,6 +125,16 @@
       "source": "비즈월드",
       "published": "2026-11-21",
       "url": "http://www.bizwnews.com/news/articleView.html?idxno=152300"
+    },
+    {
+      "id": "33f5644ac413",
+      "title": "월급 끊겨도 연금은 계속된다...『월 천 연금 부자 이야기』 출간",
+      "summary": "박종연 IBK연금보험 증권운용부장이 연금 투자 전략을 담은 신간 『월 천 연금 부자 이야기』를 출간했다. 책은 국민연금·퇴직연금·개인연금을 운용해 70대에 월평균 1천만 원의 연금 수령을 목표로 하는 이야기를 중심으로 ETF·채권·리츠·TDF 등 투자 상품을 설명한다. 연금저축펀드·IRP·ISA를 활용한 통합 포트폴리오 구축과 세액공제·과세이연을 활용한 절세 전략, 생애주기별 투자와 은퇴 후 인출 순서도 다룬다.",
+      "category": "가입자·사회",
+      "importance": 1,
+      "source": "한국경제TV",
+      "published": "2026-11-21",
+      "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202611210028&t=NN"
     }
   ]
 }
