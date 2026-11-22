@@ -1,43 +1,11 @@
 {
   "period": "monthly",
   "key": "current",
-  "label": "2026-10-22 ~ 2026-11-21",
-  "generated_at": "2026-11-22T20:01:20+09:00",
+  "label": "2026-10-23 ~ 2026-11-22",
+  "generated_at": "2026-11-23T07:03:11+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
-    {
-      "id": "df6d8c8ff511",
-      "title": "증시 급락에 퇴직연금 수익률 급감…적립금 11조7천억원 감소",
-      "summary": "올해 3분기 말 퇴직연금 적립금은 542조1214억원으로 6월 말 553조8779억원보다 11조7565억원(2.1%) 줄었으며, 분기 적립금 감소는 2020년 1분기 이후 처음이다. 유형별 감소액은 IRP 5조129억원, DC형 3조8374억원, DB형 2조9062억원으로 IRP와 DC형이 전체 감소액의 약 75%를 차지했다. 증권사 11곳의 DC형 원금비보장상품 연간 누적 수익률은 2분기 말 52.85%에서 14.46%로, IRP는 46.97%에서 14.19%로 떨어졌다. DB형 수익률은 11.35%에서 3.86%로 낮아졌다.",
-      "category": "운용·상품",
-      "importance": 4,
-      "source": "광주매일신문",
-      "published": "2026-11-16",
-      "url": "http://www.kjdaily.com/article.php?aid=1794759721692238276",
-      "related": [
-        {
-          "title": "3분기 퇴직연금 적립금 542조… 증시 조정 속 보험·은행 동반 감소",
-          "source": "한국보험신문",
-          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93459"
-        },
-        {
-          "title": "\"노후자금 넣었는데\"…퇴직연금 12조 줄자 직장인들 '울상'",
-          "source": "한국경제",
-          "url": "https://www.hankyung.com/article/2026102167161"
-        },
-        {
-          "title": "5대 은행 퇴직연금 5조원 증발…7년 만에 첫 감소세",
-          "source": "컨슈머타임스",
-          "url": "https://www.cstimes.com/news/articleView.html?idxno=724898"
-        },
-        {
-          "title": "[퇴직연금 긴급점검] 6년 반 만에 적립금 감소…9월말 기준 3개월만에 11.7조 줄어",
-          "source": "대한경제",
-          "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611181327078600627"
-        }
-      ]
-    },
     {
       "id": "b7e8a161b6af",
       "title": "2028년부터 퇴직급여 사외적립 의무화… 체불 막는다",
@@ -97,6 +65,28 @@
           "title": "당정, ‘퇴직연금 강화·고용부 예산’ 살핀다…초광역특구법 논의 가능성",
           "source": "디지털타임스",
           "url": "https://www.dt.co.kr/article/12091950"
+        }
+      ]
+    },
+    {
+      "id": "df6d8c8ff511",
+      "title": "증시 급락에 퇴직연금 수익률 급감…적립금 11조7천억원 감소",
+      "summary": "올해 3분기 말 퇴직연금 적립금은 542조1214억원으로 6월 말 553조8779억원보다 11조7565억원(2.1%) 줄었으며, 분기 적립금 감소는 2020년 1분기 이후 처음이다. 유형별 감소액은 IRP 5조129억원, DC형 3조8374억원, DB형 2조9062억원으로 IRP와 DC형이 전체 감소액의 약 75%를 차지했다. 증권사 11곳의 DC형 원금비보장상품 연간 누적 수익률은 2분기 말 52.85%에서 14.46%로, IRP는 46.97%에서 14.19%로 떨어졌다. DB형 수익률은 11.35%에서 3.86%로 낮아졌다.",
+      "category": "운용·상품",
+      "importance": 4,
+      "source": "광주매일신문",
+      "published": "2026-11-16",
+      "url": "http://www.kjdaily.com/article.php?aid=1794759721692238276",
+      "related": [
+        {
+          "title": "3분기 퇴직연금 적립금 542조… 증시 조정 속 보험·은행 동반 감소",
+          "source": "한국보험신문",
+          "url": "https://www.insnews.co.kr/news/articleView.html?idxno=93459"
+        },
+        {
+          "title": "[퇴직연금 긴급점검] 6년 반 만에 적립금 감소…9월말 기준 3개월만에 11.7조 줄어",
+          "source": "대한경제",
+          "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611181327078600627"
         }
       ]
     },
