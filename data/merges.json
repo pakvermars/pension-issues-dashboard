@@ -354,6 +354,14 @@
     [
       "https://www.edaily.co.kr/News/Read?newsId=01626886645616200&mediaCodeNo=257",
       "https://www.edaily.co.kr/News/Read?newsId=01111926645618496&mediaCodeNo=257"
+    ],
+    [
+      "https://www.edaily.co.kr/News/Read?newsId=01626886645616200&mediaCodeNo=257",
+      "https://www.edaily.co.kr/News/Read?newsId=01259526645648016&mediaCodeNo=257"
+    ],
+    [
+      "https://www.edaily.co.kr/News/Read?newsId=01259526645648016&mediaCodeNo=257",
+      "https://www.edaily.co.kr/News/Read?newsId=01111926645618496&mediaCodeNo=257"
     ]
   ]
 }
