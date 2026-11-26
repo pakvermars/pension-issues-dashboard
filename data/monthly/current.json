@@ -2,7 +2,7 @@
   "period": "monthly",
   "key": "current",
   "label": "2026-10-27 ~ 2026-11-26",
-  "generated_at": "2026-11-27T07:05:20+09:00",
+  "generated_at": "2026-11-27T07:18:38+09:00",
   "item_count": 20,
   "shortfall_note": null,
   "items": [
@@ -394,7 +394,13 @@
       "source": "조선일보",
       "published": "2026-11-26",
       "url": "https://www.chosun.com/economy/economy_general/2026/11/26/M5B6AZBCD5DFZAR4JQFSFM4ZSA/",
-      "related": []
+      "related": [
+        {
+          "title": "\"환매중단펀드도 갈아탄다\"…실물이전 확대에 '사각지대' 계좌도 움직인다",
+          "source": "매일일보",
+          "url": "https://www.m-i.kr/news/articleView.html?idxno=2023677"
+        }
+      ]
     },
     {
       "id": "81bc674fd165",
