@@ -2,9 +2,9 @@
   "period": "daily",
   "key": "2026-11-27",
   "label": "2026-11-27 (금)",
-  "generated_at": "2026-11-27T09:16:34+09:00",
-  "item_count": 18,
-  "shortfall_note": "오늘 지금까지 나온 관련 기사는 18건입니다. 갱신될수록 늘어납니다.",
+  "generated_at": "2026-11-27T09:35:00+09:00",
+  "item_count": 19,
+  "shortfall_note": "오늘 지금까지 나온 관련 기사는 19건입니다. 갱신될수록 늘어납니다.",
   "items": [
     {
       "id": "9bbd8631a50c",
@@ -185,6 +185,16 @@
       "source": "여성경제신문",
       "published": "2026-11-27",
       "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=261492"
+    },
+    {
+      "id": "aecfa4a024cd",
+      "title": "한국투자증권, 기업 임원 맞춤형 절세 콘텐츠 공개",
+      "summary": "한국투자증권은 기업 임원을 위한 세무 숏폼 영상 시리즈 '리더를 위한 절세전집'을 공개했다고 27일 밝혔다. 콘텐츠는 MTS '한국투자'와 퇴직연금 유튜브 채널 '한국인의 연금', 인스타그램 등을 통해 제공한다. 영상은 재직 중, 퇴직 전, 인출(수령) 등 3단계로 구성돼 연금 활용 세액공제, DC형 퇴직연금 운용, 퇴직소득세 계산법 등을 다룬다. 인출 단계에서는 일시금 수령 대비 퇴직소득세 부담을 30~50% 줄일 수 있는 연금 수령 방법 등을 안내한다.",
+      "category": "업계·경쟁사",
+      "importance": 1,
+      "source": "디지털투데이",
+      "published": "2026-11-27",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=718624"
     }
   ]
 }
